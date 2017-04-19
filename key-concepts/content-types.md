@@ -27,8 +27,8 @@ GET: /api/management/projects/movieDb/contenttypes/movie/
 |:-|:-|:-|
 | 200 | Success | [Content Type](/model/content-type.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project or content type not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Remarks
 
@@ -140,8 +140,10 @@ POST: /api/management/projects/movieDb/contenttypes/
 |:-|:-|:-|
 | 201 | Created | [Content Type](/model/content-type.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 409 | Conflict | [Error](/key-concepts/errors.md) |
+| 422 | ValidationError | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 **TODO: Add validation responses**
 
 ### Validations
@@ -262,10 +264,12 @@ PUT: /api/management/projects/movieDb/contenttypes/movie
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Content Type](/model/content-type.md) |
+| 200 | Updated | [Content Type](/model/content-type.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project or content type not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 409 | NotLatestVersion | [Error](/key-concepts/errors.md) |
+| 422 | ValidationError | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 **TODO: Add validation responses**
 
 ### Validations

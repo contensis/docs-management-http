@@ -18,8 +18,8 @@ GET: /api/management/projects/movieDb/
 |:-|:-|:-|
 | 200 | Success | [Project](/model/project.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 
@@ -53,6 +53,7 @@ POST: /api/management/projects/
 |:-|:-|:-|
 | 201 | Created | [Project](/model/project.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 409 | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
@@ -101,9 +102,9 @@ PUT: /api/management/projects/movieDb
 |:-|:-|:-|
 | 200 | Success | [Project](/model/project.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 **TODO: Add validation responses**
@@ -131,6 +132,7 @@ GET: /api/management/projects/
 |:-|:-|:-|
 | 200 | Success | [Project [...]](/model/project.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
