@@ -285,7 +285,35 @@ If the *defaultLanguage* value is not included in the *supportedLanguages* array
 
 TODO: Explain the optimistic concurrency versioning model
 
+## Publish content types
 
+Publishes a content type making it available for creating entries.
+
+<span class="label label--get">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/**{versionNumber}**/publish
+
+## Parameters
+
+| Name | Parameter type | Type | Format | Description |
+|:-|:-|:-|:-|:-|
+| projectId | path | string |  | The project identifier |
+| contentTypeId | path | string |  | The content type identifier |
+| versionNumber | path | string |  | The version to publish |
+
+### Example request
+
+```http
+PUT: /api/management/projects/movieDb/contenttypes/movie/0.1/publish
+```
+
+### Response message
+
+| HTTP status code | Reason | Response model |
+|:-|:-|:-|
+| 200 | Success | [Content Type [...]](/model/content-type.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 403 | BadRequest | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 ## List content types
