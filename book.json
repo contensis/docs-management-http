@@ -1,0 +1,29 @@
+{
+    "title": "Contensis HTTP Management API",
+    "links": {
+      "sidebar": {
+        "Development Home": "https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"
+      }
+    },
+    "plugins": [
+      "-sharing",
+      "fontsettings",
+      "-highlight",
+      "prism"
+    ],
+    "pluginsConfig": {
+      "fontsettings": {
+        "theme": "white",
+        "family": "sans",
+        "size": 2
+      },
+      "prism": {
+        "css": [
+          "prismjs/themes/prism-okaidia.css"
+        ],
+        "lang": {
+          "json": "json"
+        }
+      }
+    }
+}
