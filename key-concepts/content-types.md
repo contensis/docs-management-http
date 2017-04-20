@@ -285,25 +285,32 @@ If the *defaultLanguage* value is not included in the *supportedLanguages* array
 
 TODO: Explain the optimistic concurrency versioning model
 
+
 ## Publish content types
 
 Publishes a content type making it available for creating entries.
 
-<span class="label label--get">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/**{versionNumber}**/publish
+<span class="label label--get">PUT</span> /api/management/workflow
 
 ## Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| contentTypeId | path | string |  | The content type identifier |
-| versionNumber | path | string |  | The version to publish |
+None.
 
 ### Example request
 
 ```http
-PUT: /api/management/projects/movieDb/contenttypes/movie/0.1/publish
+PUT: /api/management/workflow
+
+{  
+   "projectId":"movieDb",
+   "objectApiId":"movie",
+   "objectVersion":"0.4",
+   "workflowName":"ContensisDefault",
+   "event":"submit,approve"
+}
+
 ```
+
 
 ### Response message
 
@@ -368,4 +375,5 @@ DELETE: /api/management/projects/movieDb/contenttypes/actor
 |:-|:-|:-|
 | 200 | Success |  |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
