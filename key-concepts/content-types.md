@@ -333,7 +333,7 @@ Gets the content types for a project.
 ### Example request
 
 ```http
-GET: /api/management/projects/movieDb/contenttypes/
+GET: /api/management/projects/movieDb/contenttypes?versionStatus=published&dataFormat=entry
 ```
 
 ### Response message
@@ -342,8 +342,8 @@ GET: /api/management/projects/movieDb/contenttypes/
 |:-|:-|:-|
 | 200 | Success | [Content Type [...]](/model/content-type.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 
