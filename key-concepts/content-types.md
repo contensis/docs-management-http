@@ -286,7 +286,7 @@ If the *defaultLanguage* value is not included in the *supportedLanguages* array
 TODO: Explain the optimistic concurrency versioning model
 
 
-## Publish content types
+## Publish a content type
 
 Publishes a content type making it available for creating entries.
 
