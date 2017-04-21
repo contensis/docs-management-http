@@ -218,7 +218,7 @@ Lists entries
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
 | version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
 | pageIndex | query | number | integer | The index of page |
-| pageSize | query | number | integer | The index of page |
+| pageSize | query | number | integer | The number of results per page. The default is 25 |
 | language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
 
 ### Example request
@@ -261,7 +261,7 @@ Lists entries
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
 | version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
 | pageIndex | query | number | integer | The index of page |
-| pageSize | query | number | integer | The index of page |
+| pageSize | query | number | integer | The number of results per page. The default is 25 |
 | language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
 
 ### Example request
