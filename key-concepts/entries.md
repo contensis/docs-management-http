@@ -101,10 +101,11 @@ POST: /api/management/projects/movieDb/entries/
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Content Type](/model/entry.md) |
+| 201 | Created | [Content Type](/model/content-type.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 422 | ValidationError | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 **TODO: Add validation responses**
 
 ### Validations
