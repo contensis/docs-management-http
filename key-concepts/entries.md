@@ -2,7 +2,7 @@
 
 ## Get an entry
 
-Gets an existing entry by it's id.
+Gets an existing entry by its id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 
@@ -291,7 +291,7 @@ If a specific *versionNo* value has been provided then the *versionStatus* value
 
 ## Delete an entry
 
-Deletes an entry by it's id.
+Deletes an entry by its id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 
@@ -301,13 +301,12 @@ Deletes an entry by it's id.
 |:-|:-|:-|:-|:-|
 | projectId | path | string |  | The project identifier |
 | entryId | path | string | GUID | The entry identifier |
-| language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
 
 ### Example request
 
 ```http
 Accept: application/json
-GET: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c
+DELETE: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 ```
 
 ### Response message
@@ -316,8 +315,8 @@ GET: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 
@@ -325,7 +324,7 @@ GET: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee
 
 ## Delete an entry variation
 
-Deletes an entry variation by it's id.
+Deletes an entry variation by its id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**
 
