@@ -348,5 +348,6 @@ DELETE: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 403 | CannotDeleteDefaultVariation | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
