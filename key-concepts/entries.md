@@ -218,10 +218,11 @@ Lists entries
 | projectId | path | string |  | The project identifier |
 | entryId | path | string | GUID | The entry identifier |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
-| pageIndex | query | number | integer | The index of page |
+| pageIndex | query | number | integer | The index of the page |
 | pageSize | query | number | integer | The number of results per page. The default is 25 |
+| order | query | string |  | A comma-separated list of the field Ids to order the results by. Prefix field Id with - for descending order. |
 | language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
+| dataFormat | query | string | | The data format of the entry, either *entries*, *assets* or *all*. The default is *entries* |
 
 ### Example request
 
@@ -236,12 +237,9 @@ GET: /api/management/projects/movieDb/entries/
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
-### Remarks
-
-If a specific *versionNo* value has been provided then the *versionStatus* value will be ignored.
 
 
 
@@ -250,7 +248,7 @@ If a specific *versionNo* value has been provided then the *versionStatus* value
 
 ## List entries by content type
 
-Lists entries
+Lists entries by content type
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries
 
@@ -261,9 +259,9 @@ Lists entries
 | projectId | path | string |  | The project identifier |
 | entryId | path | string | GUID | The entry identifier |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
 | pageIndex | query | number | integer | The index of page |
 | pageSize | query | number | integer | The number of results per page. The default is 25 |
+| order | query | string |  | A comma-separated list of the field Ids to order the results by. Prefix field Id with - for descending order. |
 | language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
 
 ### Example request
@@ -278,12 +276,9 @@ GET: /api/management/projects/movieDb/contenttypes/movie/entries/
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
-### Remarks
-
-If a specific *versionNo* value has been provided then the *versionStatus* value will be ignored.
 
 
 
