@@ -29,8 +29,8 @@ GET: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Remarks
 
@@ -205,6 +205,83 @@ TODO: Explain the optimistic concurrency versioning model
 
 
 
+
+
+## Publish an entry
+
+Publishes an entry.
+
+<span class="label label--get">PUT</span> /api/management/workflow
+
+## Parameters
+
+None.
+
+### Example request
+
+```http
+PUT: /api/management/workflow
+
+{  
+   "projectId":"movieDb",
+   "objectId":"71f73a9b-2a13-4d63-bcc1-e8ee5047b01c",
+   "objectVersion":"0.4",
+   "languageCode":"en-GB",
+   "workflowName":"ContensisDefault",
+   "event":"submit,approve"
+}
+
+```
+
+### Response message
+
+| HTTP status code | Reason | Response model |
+|:-|:-|:-|
+| 200 | Success | [Content Type [...]](/model/content-type.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 403 | BadRequest | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
+
+
+
+
+
+## List content types
+
+Gets the content types for a project.
+
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/
+
+## Parameters
+
+| Name | Parameter type | Type | Format | Description |
+|:-|:-|:-|:-|:-|
+| projectId | path | string |  | The project identifier |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
+| dataFormat | query | string |  | The specific dataFormat, e.g. *entry*, *asset*. The default is all |
+
+### Example request
+
+```http
+GET: /api/management/projects/movieDb/contenttypes?versionStatus=published&dataFormat=entry
+```
+
+### Response message
+
+| HTTP status code | Reason | Response model |
+|:-|:-|:-|
+| 200 | Success | [Content Type [...]](/model/content-type.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
+
+
+
+
+
 ## List entries
 
 Lists entries
@@ -239,7 +316,6 @@ GET: /api/management/projects/movieDb/entries/
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-
 
 
 
