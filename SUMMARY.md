@@ -2,8 +2,11 @@
 * [Introduction](/README.md)
 
 ## Key concepts
+* [DataFormats](/key-concepts/data-formats.md)
+* [DataTypes](/key-concepts/data-types.md)
 * [Errors](/key-concepts/errors.md)
 * [Localization](/key-concepts/localization.md)
+* [Validations](/key-concepts/validations.md)
 
 ## Security
 * [Authentication](security/authentication.md)
