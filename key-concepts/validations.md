@@ -13,6 +13,8 @@ Validations are only executed on entry create and update when a value has been s
 - [AllowedContentTypes](#allowedcontenttypes)
 - [AllowedDates](#alloweddates)
 - [DecimalPlaces](#decimalplaces)
+- [MaxCount](#maxcount)
+- [MinCount](#mincount)
 
 
 ## Publish
@@ -397,6 +399,58 @@ decimal, decimalArray
         "value": 3,
         "message": {
             "en-GB": "The value must be to 3 decimal places"
+        }
+    }
+}
+```
+### Example response
+
+```http
+Validation error response here
+```
+
+## MaxCount
+
+### Description
+Validates the maximum amount of elements an array type field can have.
+
+### Applies to
+booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArray
+
+### Definition
+
+```json
+"validations": {
+    "maxCount": {
+        "value": 3,
+        "message": {
+            "en-GB": "The value cannot contain more than 3 elements"
+        }
+    }
+}
+```
+### Example response
+
+```http
+Validation error response here
+```
+
+## MinCount
+
+### Description
+Validates the minimum amount of elements an array type field can have.
+
+### Applies to
+booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArray
+
+### Definition
+
+```json
+"validations": {
+    "minCount": {
+        "value": 3,
+        "message": {
+            "en-GB": "The value cannot contain less than 3 elements"
         }
     }
 }
