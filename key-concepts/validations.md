@@ -44,8 +44,18 @@ All fields.
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"A value is required"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## MaxLength
@@ -70,8 +80,18 @@ string, stringArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"Maximum length of 50"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## MinLength
@@ -96,8 +116,18 @@ string, stringArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"Minimum length of 50"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## Min
@@ -122,10 +152,19 @@ integer, integerArray, decimal, decimalArray, dateTime, dateTimeArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The value is too low. A minimum of 5 is required"
+      }
+   ],
+   "type":"Validation"
+}
 ```
-
 ## Max
 
 ### Description
@@ -148,8 +187,18 @@ integer, integerArray, decimal, decimalArray, dateTime, dateTimeArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The value is too high. A maximum of 100 is allowed"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## Regex
@@ -174,8 +223,18 @@ string, stringArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The value does not match the regex"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## AllowedValues
@@ -202,7 +261,7 @@ string, stringArray
             }
         ],
         "message": {
-            "en-GB": "The selected value is not allowed.",
+            "en-GB": "The selected value is not allowed",
             "fr-FR": "La valeur sélectionnée n'est pas autorisée."
         }
     }
@@ -210,8 +269,18 @@ string, stringArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The selected value is not allowed"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## RequiredFields
@@ -252,8 +321,22 @@ quote, image
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"A source is required"
+      },
+        {  
+         "field":"fieldId",
+         "message":"A caption is required"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## AllowedFieldTypes
@@ -300,8 +383,18 @@ composer
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The field type is not allowed"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## TaxonomyRoot
@@ -324,8 +417,18 @@ taxonomy, taxonomyArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The taxonomy code is not in the allowed root"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## AllowedContentTypes
@@ -353,14 +456,24 @@ entry, entryArray, asset, assetArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The asset type is not allowed"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## AllowedDates
 
 ### Description
-Specifies the allowed selectable date tense - Either past or future. To allow all dates, do not apply this validation to the field.
+Specifies the allowed selectable date tense. To allow all dates, do not apply this validation to the field.
 
 ### Applies to
 dateTime, dateTimeArray
@@ -370,7 +483,7 @@ dateTime, dateTimeArray
 ```json
 "validations": {
     "allowedDates": {
-        "value": "past" | "future",
+        "value": "past",
         "message": {
             "en-GB": "The date must be in the past"
         }
@@ -379,8 +492,18 @@ dateTime, dateTimeArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The date must be in the past"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## DecimalPlaces
@@ -405,8 +528,18 @@ decimal, decimalArray
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The value must be to 3 decimal places"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## MaxCount
@@ -431,8 +564,18 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The value cannot contain more than 3 elements"
+      }
+   ],
+   "type":"Validation"
+}
 ```
 
 ## MinCount
@@ -457,6 +600,16 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
 ```
 ### Example response
 
-```http
-Validation error response here
+```json
+{  
+   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
+   "message":"There are validation errors creating the entry",
+   "data":[  
+      {  
+         "field":"fieldId",
+         "message":"The value cannot contain less than 3 elements"
+      }
+   ],
+   "type":"Validation"
+}
 ```
