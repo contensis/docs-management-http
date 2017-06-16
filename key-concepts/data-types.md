@@ -4,20 +4,20 @@ A data type is the storage type for a field, and determines how the field data i
 
 Contensis supports the following basic data types:
 
-| Type | Description |
-| :--- | :---------- |
-| string | Used for text entries such as titles, content or markup |
-| integer | A whole number |
-| decimal | A number with a fractional part |
-| boolean | A value of *true* or *false* |
-| dateTime | A point in time |
-| object | Any arbitrary structure as JSON or a string |
-| stringArray | An array of strings |
-| integerArray | An array of integers |
-| decimalArray | An array of decimals |
-| booleanArray | An array of booleans |
-| dateTimeArray | An array of dateTimes |
-| objectArray | An array of objects |
+| Type | Description | Applicable Validations |
+| :--- | :---------- | :--------------------- |
+| string | Used for text entries such as titles, content or markup | [required](/key-concepts/validations.md#required)<br/> [maxChars](/key-concepts/validations.md#maxchars)<br/> [minChars](/key-concepts/validations.md#minchars)<br/> [regex](/key-concepts/validations.md#regex)<br/> [allowedValues](/key-concepts/validations.md#allowedvalues)<br/> |
+| integer | A whole number | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> |
+| decimal | A number with a fractional part | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [decimalPlaces](/key-concepts/validations.md#decimalplaces)<br/> |
+| boolean | A value of *true* or *false* | [required](/key-concepts/validations.md#required)<br/> |
+| dateTime | A point in time | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [allowedDates](/key-concepts/validations.md#alloweddates)<br/> |
+| object | Any arbitrary structure as JSON or a string | [required](/key-concepts/validations.md#required)<br/> |
+| stringArray | An array of strings | [required](/key-concepts/validations.md#required)<br/> [maxChars](/key-concepts/validations.md#maxchars)<br/> [minChars](/key-concepts/validations.md#minchars)<br/> [regex](/key-concepts/validations.md#regex)<br/> [allowedValues](/key-concepts/validations.md#allowedvalues)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
+| integerArray | An array of integers | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/>  |
+| decimalArray | An array of decimals | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [decimalPlaces](/key-concepts/validations.md#decimalplaces)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
+| booleanArray | An array of booleans | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
+| dateTimeArray | An array of dateTimes | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [allowedDates](/key-concepts/validations.md#alloweddates)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/>|
+| objectArray | An array of objects | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
 
 
 ## Examples

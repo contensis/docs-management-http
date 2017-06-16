@@ -2,6 +2,8 @@
 
 ## Create/Update
 Validations are only executed on entry create and update when a value has been set. If there is no value set, the validation is ignored.
+Messages are optional and if not specified, a default validation error message is returned from the API.
+
 - [MaxLength](#maxlength)
 - [MinLength](#minlength)
 - [Min](#min)
@@ -21,7 +23,6 @@ Validations are only executed on entry create and update when a value has been s
 All validations are always executed on entry publish.
 - [Required](#required)
 - [RequiredFields](#requiredfields)
-
 
 
 ## Required
