@@ -13,7 +13,7 @@ Messages are optional and if not specified, a default validation error message i
 - [AllowedFieldTypes](#allowedfieldtypes)
 - [TaxonomyRoot](#taxonomyroot)
 - [AllowedContentTypes](#allowedcontenttypes)
-- [AllowedDates](#alloweddates)
+- [PastDateTime](#pastdatetime)
 - [DecimalPlaces](#decimalplaces)
 - [MaxCount](#maxcount)
 - [MinCount](#mincount)
@@ -299,19 +299,19 @@ quote, image
     "requiredFields": {
         "fields": [
             {
-                "name": "Source",
+                "name": "source",
                 "message": {
                     "en-GB": "A source is required"
                 }
             },
             {
-                "name": "Quote",
+                "name": "quote",
                 "message": {
                     "en-GB": "A quote is required"
                 }
             },
             {
-                "name": "Caption",
+                "name": "caption",
                 "message": {
                     "en-GB": "An image caption is required"
                 }
@@ -327,14 +327,14 @@ quote, image
    "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
    "message":"There are validation errors creating the entry",
    "data":[  
-      {  
-         "field":"fieldId",
-         "message":"A source is required"
-      },
+        {  
+            "field":"fieldId",
+            "message":"A source is required"
+        },
         {  
          "field":"fieldId",
          "message":"A caption is required"
-      }
+        }
    ],
    "type":"Validation"
 }
@@ -410,9 +410,11 @@ taxonomy, taxonomyArray
 
 ```json
 "validations": {
-    "key": "0/1/2",
-    "message": {
-        "en-GB": "The taxonomy code is not in the allowed root"        
+    "taxonomyRoot": {
+        "key": "0/1/2",
+        "message": {
+            "en-GB": "The taxonomy code is not in the allowed root"        
+        }
     }
 }
 ```
@@ -423,10 +425,10 @@ taxonomy, taxonomyArray
    "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
    "message":"There are validation errors creating the entry",
    "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The taxonomy code is not in the allowed root"
-      }
+        {  
+            "field":"fieldId",
+            "message":"The taxonomy code is not in the allowed root"
+        }
    ],
    "type":"Validation"
 }
@@ -462,19 +464,19 @@ entry, entryArray, asset, assetArray
    "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
    "message":"There are validation errors creating the entry",
    "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The asset type is not allowed"
-      }
+        {  
+            "field":"fieldId",
+            "message":"The asset type is not allowed"
+        }
    ],
    "type":"Validation"
 }
 ```
 
-## AllowedDates
+## PastDateTime
 
 ### Description
-Specifies the allowed selectable date tense. To allow all dates, do not apply this validation to the field.
+Specifies that the date time value must be in the past. To allow future dates times, do not apply this validation to the field.
 
 ### Applies to
 dateTime, dateTimeArray
@@ -483,8 +485,7 @@ dateTime, dateTimeArray
 
 ```json
 "validations": {
-    "allowedDates": {
-        "value": "past",
+    "pastDateTime": {
         "message": {
             "en-GB": "The date must be in the past"
         }
@@ -498,10 +499,10 @@ dateTime, dateTimeArray
    "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
    "message":"There are validation errors creating the entry",
    "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The date must be in the past"
-      }
+        {  
+            "field":"fieldId",
+            "message":"The date must be in the past"
+        }
    ],
    "type":"Validation"
 }
@@ -534,10 +535,10 @@ decimal, decimalArray
    "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
    "message":"There are validation errors creating the entry",
    "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The value must be to 3 decimal places"
-      }
+        {  
+            "field":"fieldId",
+            "message":"The value must be to 3 decimal places"
+        }
    ],
    "type":"Validation"
 }
@@ -570,10 +571,10 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
    "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
    "message":"There are validation errors creating the entry",
    "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The value cannot contain more than 3 elements"
-      }
+        {  
+            "field":"fieldId",
+            "message":"The value cannot contain more than 3 elements"
+        }
    ],
    "type":"Validation"
 }
@@ -606,10 +607,10 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
    "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
    "message":"There are validation errors creating the entry",
    "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The value cannot contain less than 3 elements"
-      }
+        {  
+            "field":"fieldId",
+            "message":"The value cannot contain less than 3 elements"
+        }
    ],
    "type":"Validation"
 }
