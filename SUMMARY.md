@@ -31,6 +31,7 @@
 * [Delete a content type](/key-concepts/content-types.md#delete-a-content-type)
 
 ## Components
+* [Get a component](/key-concepts/components.md#get-a-component)
 * [Create a component](/key-concepts/components.md#create-a-component)
 
 

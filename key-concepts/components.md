@@ -1,5 +1,39 @@
 # Components
 
+## Get a component
+
+Gets an existing component by the component id.
+
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/components/**{componentId}**
+
+## Parameters
+
+| Name | Parameter type | Type | Format | Description |
+|:-|:-|:-|:-|:-|
+| projectId | path | string |  | The project identifier |
+| componentId | path | string |  | The component identifier |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
+| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
+
+### Example request
+
+```http
+GET: /api/management/projects/movieDb/components/socialCard/
+```
+
+### Response message
+
+| HTTP status code | Reason | Response model |
+|:-|:-|:-|
+| 200 | Success | [Component](/model/content-type.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
+### Remarks
+
+If a specific *versionNo* value has been provided then the *versionStatus* value will be ignored.
+
 ## Create a component
 
 Creates a new component resource.
