@@ -30,6 +30,10 @@
 * [List content types](/key-concepts/content-types.md#list-content-types)
 * [Delete a content type](/key-concepts/content-types.md#delete-a-content-type)
 
+## Components
+* [Create a component](/key-concepts/components.md#create-a-component)
+
+
 ## Entries
 
 * [Get an entry](/key-concepts/entries.md#get-an-entry)
