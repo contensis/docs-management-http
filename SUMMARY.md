@@ -33,7 +33,7 @@
 ## Components
 * [Get a component](/key-concepts/components.md#get-a-component)
 * [Create a component](/key-concepts/components.md#create-a-component)
-
+* [Publish a component](/key-concepts/components.md#publish-a-component)
 
 ## Entries
 

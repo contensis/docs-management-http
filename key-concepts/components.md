@@ -34,6 +34,9 @@ GET: /api/management/projects/movieDb/components/socialCard/
 
 If a specific *versionNo* value has been provided then the *versionStatus* value will be ignored.
 
+
+
+
 ## Create a component
 
 Creates a new component resource.
@@ -125,3 +128,41 @@ POST: /api/management/projects/movieDb/components/
 | Non-unique id | The content type or component must be unique for the project |
 
 ### Remarks
+
+
+
+
+## Publish a component
+
+Publishes a component making it available for use in content types.
+
+<span class="label label--get">PUT</span> /api/management/workflow
+
+## Parameters
+
+None.
+
+### Example request
+
+```http
+PUT: /api/management/workflow
+
+{  
+   "projectId":"movieDb",
+   "objectApiId":"socialCard",
+   "objectVersion":"0.4",
+   "workflowName":"ContensisDefault",
+   "event":"submit,approve"
+}
+
+```
+
+### Response message
+
+| HTTP status code | Reason | Response model |
+|:-|:-|:-|
+| 200 | Success | [Component [...]](/model/component.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 403 | BadRequest | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
