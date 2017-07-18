@@ -225,10 +225,11 @@ PUT: /api/management/workflow
 {  
    "projectId":"movieDb",
    "objectId":"71f73a9b-2a13-4d63-bcc1-e8ee5047b01c",
+   "language":"en-GB",
+   "type":"Entry",
    "objectVersion":"0.4",
-   "languageCode":"en-GB",
    "workflowName":"ContensisDefault",
-   "event":"submit,approve"
+   "events":["submit","approve"]
 }
 
 ```
