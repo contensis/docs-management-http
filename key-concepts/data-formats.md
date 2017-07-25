@@ -16,7 +16,8 @@ The following list contains the data formats that are currently understood by Co
 | [quote](/model/quote.md) | object | A quote with text and a source | [required](/key-concepts/validations.md#required)<br/> [requiredFields](/key-concepts/validations.md#requiredfields)<br/>  |
 | [dateRange](/model/date-range.md) | object | Represents a range of date times | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [pastDateTime](/key-concepts/validations.md#pastdatetime)<br/>|
 | [image](/model/image.md) | object | Wraps an Asset with an additional caption property | [required](/key-concepts/validations.md#required)<br/> [requiredFields](/key-concepts/validations.md#requiredfields)<br/> |
-| field | objectArray | Represents a [composed](/model/composed.md) type, defined as an objectArray data type | [required](/key-concepts/validations.md#required)<br/>  [allowedFieldTypes](/key-concepts/validations.md#allowedfieldtypes)<br/> |
+| field | objectArray | Represents a [composed](/model/composed.md) type, defined as an objectArray data type | [required](/key-concepts/validations.md#required)<br/>  [allowedFieldTypes]
+| component.* | object | Represents a [component](/key-concepts/components.md) type. The asterisk represents the component id| [required](/key-concepts/validations.md#required)<br/>  [allowedFieldTypes](/key-concepts/validations.md#allowedfieldtypes)<br/> |
 | heading | string | Represents a document heading | [required](/key-concepts/validations.md#required)<br/> | 
 | html | string | A string of HTML markup | [required](/key-concepts/validations.md#required)<br/> |
 | markdown | string | A string of markdown markup | [required](/key-concepts/validations.md#required)<br/> |

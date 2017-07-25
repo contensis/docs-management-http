@@ -29,6 +29,7 @@
 * [Publish a content type](/key-concepts/content-types.md#publish-a-content-type)
 * [List content types](/key-concepts/content-types.md#list-content-types)
 * [Delete a content type](/key-concepts/content-types.md#delete-a-content-type)
+* [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type)
 
 ## Components
 * [Get a component](/key-concepts/components.md#get-a-component)

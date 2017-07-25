@@ -166,3 +166,7 @@ PUT: /api/management/workflow
 | 403 | BadRequest | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
+
+# See also
+[Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type)
