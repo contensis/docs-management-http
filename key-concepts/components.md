@@ -35,8 +35,6 @@ GET: /api/management/projects/movieDb/components/socialCard/
 If a specific *versionNo* value has been provided then the *versionStatus* value will be ignored.
 
 
-
-
 ## Create a component
 
 Creates a new component resource.
@@ -129,7 +127,90 @@ POST: /api/management/projects/movieDb/components/
 
 ### Remarks
 
+## Update a component
+Updates an existing component resource.
 
+<span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/components/**{componentId}**
+
+### Parameters
+
+| Name | Parameter type | Type | Format | Description |
+|:-|:-|:-|:-|:-|
+| projectId | path | string |  | The project identifier |
+| componentId | path | string |  | The component identifier |
+
+### Example request
+
+```http
+PUT: /api/management/projects/movieDb/components/socialCard
+
+{
+    "id": "socialCard",
+    "projectId": "movieDb",
+    "name": {
+        "en-GB": "Social Card"
+    },
+    "description": {
+        "en-GB": "A Social Media Card"
+    },
+    "fields": [
+        {
+            "id": "title",
+            "name": {
+                "en-GB": "Title"
+            },
+            "dataType": "string",
+            "editor": {
+                "id": "text",
+                "instructions": {
+                    "en-GB": "The title of the social media card"
+                },
+                "properties": {
+                    "placeholderText": {
+                        "en-GB": "Enter the title to be displayed as part of the card"
+                    }
+                }
+            }
+        },
+        {
+            "id": "description",
+            "name": {
+                "en-GB": "Description"
+            },
+            "dataType": "string",
+        },
+        {
+            "id": "image",
+            "name": {
+                "en-GB": "Image"
+            },
+            "dataType": "objectArray",
+            "dataFormat": "asset",
+            "validations": {
+                "allowedContentTypes": {
+                    "contentTypes": ["image"]
+                }
+            }
+        }
+    ],
+    "workflowId": "ContensisDefault",
+    "dataFormat": "component",
+    "version": {
+        "versionNo": "0.2"
+    }
+}
+```
+
+### Response message
+
+| HTTP status code | Reason | Response model |
+|:-|:-|:-|
+| 200 | Updated | [Component](/model/component.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 409 | NotLatestVersion | [Error](/key-concepts/errors.md) |
+| 422 | ValidationError | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 ## Publish a component

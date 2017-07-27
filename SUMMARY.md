@@ -34,6 +34,7 @@
 ## Components
 * [Get a component](/key-concepts/components.md#get-a-component)
 * [Create a component](/key-concepts/components.md#create-a-component)
+* [Update a component](/key-concepts/components.md#update-a-component)
 * [Publish a component](/key-concepts/components.md#publish-a-component)
 
 ## Entries
@@ -51,6 +52,7 @@
 
 * [Project](/model/project.md)
 * [Content type](/model/content-type.md)
+* [Component](/model/component.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)
 
