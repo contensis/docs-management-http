@@ -148,11 +148,15 @@ None.
 PUT: /api/management/workflow
 
 {  
-   "projectId":"movieDb",
-   "objectApiId":"socialCard",
-   "objectVersion":"0.4",
+   "projectId":"website",
+   "id":"socialCard",
+   "objectVersion":"0.1",
+   "type":"Component",
    "workflowName":"ContensisDefault",
-   "event":"submit,approve"
+   "events":[  
+      "Submit",
+      "Approve"
+   ]
 }
 
 ```
