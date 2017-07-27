@@ -39,41 +39,47 @@ A localized value is a object that has values that are keyed by [language codes]
 
 ```json
 {
-  "id": "socialCard",
+  "id": "movieRole",
   "projectId": "website",
   "name": {
-    "en-GB": "Movie Social Card"
+    "en-GB": "Movie Role"
   },
   "description": {
-    "en-GB": "A brief overview and information about a movie to be displayed within social media cards"
+    "en-GB": "A Persons role within a movie"
   },
   "fields": [
     {
-      "id": "title",
-      "name": {
-        "en-GB": "Title"
-      },
-      "dataType": "String",
-      "dataFormat": null,
-      "description": {},
-      "default": {},
-      "validations": null,
-      "editor": {
-        "id": "text",
-        "instructions": {
-          "en-GB": "The title of the movie"
+        "id": "person",
+        "name": {
+        "en-GB": "Person"
         },
-        "properties": {
-          "placeholderText": {
-            "en-GB": "Enter the full title of the movie appropriate to the region"
-          }
+        "dataType": "object",
+        "dataFormat": "entry",
+        "description": {
+            "en-GB": "The actor or crew member"
+        },
+        "default": {},
+        "validations": {
+            "allowedContentTypes": {
+                "contentTypes": ["person"]
+            }
+        },
+        "editor": {
+            "id": "entry",
+            "instructions": {
+                "en-GB": ""
+            },
+            "properties": {
+                "placeholderText": {
+                    "en-GB": ""
+                }
+            }
         }
-      }
     },
     {
-      "id": "tagline",
+      "id": "role",
       "name": {
-        "en-GB": "Tagline"
+        "en-GB": "Role"
       },
       "dataType": "String",
       "dataFormat": null,
@@ -81,19 +87,7 @@ A localized value is a object that has values that are keyed by [language codes]
       "default": {},
       "validations": null,
       "editor": null
-    },
-    {
-      "id": "overview",
-      "name": {
-        "en-GB": "Overview"
-      },
-      "dataType": "String",
-      "dataFormat": "html",
-      "description": {},
-      "default": {},
-      "validations": null,
-      "editor": null
-    }    
+    }  
   ],
   "workflowId": "ContensisDefault",
   "dataFormat": "component",

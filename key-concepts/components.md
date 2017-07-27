@@ -18,7 +18,7 @@ Gets an existing component by the component id.
 ### Example request
 
 ```http
-GET: /api/management/projects/movieDb/components/socialCard/
+GET: /api/management/projects/movieDb/components/movieRole/
 ```
 
 ### Response message
@@ -53,56 +53,67 @@ Creates a new component resource.
 POST: /api/management/projects/movieDb/components/
 
 {
-    "id": "socialCard",
-    "projectId": "movieDb",
+    "id": "movieRole",
+    "projectId": "website",
     "name": {
-        "en-GB": "Social Card"
+        "en-GB": "Movie Role"
     },
     "description": {
-        "en-GB": "A Social Media Card"
+        "en-GB": "A Persons role within a movie"
     },
     "fields": [
         {
-            "id": "title",
+            "id": "person",
             "name": {
-                "en-GB": "Title"
+            "en-GB": "Person"
             },
-            "dataType": "string",
+            "dataType": "object",
+            "dataFormat": "entry",
+            "description": {
+                "en-GB": "The actor or crew member"
+            },
+            "default": {},
+            "validations": {
+                "allowedContentTypes": {
+                    "contentTypes": ["person"]
+                }
+            },
             "editor": {
-                "id": "text",
+                "id": "entry",
                 "instructions": {
-                    "en-GB": "The title of the social media card"
+                    "en-GB": ""
                 },
                 "properties": {
                     "placeholderText": {
-                        "en-GB": "Enter the title to be displayed as part of the card"
+                        "en-GB": ""
                     }
                 }
             }
         },
         {
-            "id": "description",
+            "id": "role",
             "name": {
-                "en-GB": "Description"
+                "en-GB": "Role"
             },
-            "dataType": "string",
-        },
-        {
-            "id": "image",
-            "name": {
-                "en-GB": "Image"
-            },
-            "dataType": "objectArray",
-            "dataFormat": "asset",
-            "validations": {
-                "allowedContentTypes": {
-                    "contentTypes": ["image"]
-                }
-            }
-        }
+            "dataType": "String",
+            "dataFormat": null,
+            "description": {},
+            "default": {},
+            "validations": null,
+            "editor": null
+        }     
     ],
     "workflowId": "ContensisDefault",
-    "dataFormat": "component"
+    "dataFormat": "component",
+    "version": {
+        "createdBy": "s.derrickson",
+        "created": "2016-10-12T09:29:18.5144641+01:00",
+        "modifiedBy": "b.cumberbatch",
+        "modified": "2016-10-13T10:15:12.1973648+01:00",
+        "publishedBy": "b.cumberbatch",
+        "published": "2016-10-13T10:15:12.1973648+01:00",
+        "versionNo": "0.2"
+    }
 }
 ```
 
@@ -142,62 +153,61 @@ Updates an existing component resource.
 ### Example request
 
 ```http
-PUT: /api/management/projects/movieDb/components/socialCard
+PUT: /api/management/projects/movieDb/components/movieRole
 
 {
-    "id": "socialCard",
-    "projectId": "movieDb",
-    "name": {
-        "en-GB": "Social Card"
-    },
-    "description": {
-        "en-GB": "A Social Media Card"
-    },
-    "fields": [
-        {
-            "id": "title",
-            "name": {
-                "en-GB": "Title"
-            },
-            "dataType": "string",
-            "editor": {
-                "id": "text",
-                "instructions": {
-                    "en-GB": "The title of the social media card"
-                },
-                "properties": {
-                    "placeholderText": {
-                        "en-GB": "Enter the title to be displayed as part of the card"
-                    }
-                }
+  "id": "movieRole",
+  "projectId": "website",
+  "name": {
+    "en-GB": "Movie Role"
+  },
+  "description": {
+    "en-GB": "A Persons role within a movie"
+  },
+  "fields": [
+    {
+        "id": "person",
+        "name": {
+            "en-GB": "Person"
+        },
+        "dataType": "object",
+        "dataFormat": "entry",
+        "description": {
+            "en-GB": "The actor or crew member"
+        },
+        "default": {},
+        "validations": {
+            "allowedContentTypes": {
+                "contentTypes": ["person"]
             }
         },
-        {
-            "id": "description",
-            "name": {
-                "en-GB": "Description"
+        "editor": {
+            "id": "entry",
+            "instructions": {
+                "en-GB": ""
             },
-            "dataType": "string",
-        },
-        {
-            "id": "image",
-            "name": {
-                "en-GB": "Image"
-            },
-            "dataType": "objectArray",
-            "dataFormat": "asset",
-            "validations": {
-                "allowedContentTypes": {
-                    "contentTypes": ["image"]
+            "properties": {
+                "placeholderText": {
+                    "en-GB": ""
                 }
             }
         }
-    ],
-    "workflowId": "ContensisDefault",
-    "dataFormat": "component",
-    "version": {
-        "versionNo": "0.2"
-    }
+    },
+    {
+      "id": "role",
+      "name": {
+        "en-GB": "Role"
+      },
+      "dataType": "String",
+      "dataFormat": null,
+      "description": {},
+      "default": {},
+      "validations": null,
+      "editor": null
+    }  
+  ],
+  "workflowId": "ContensisDefault",
+  "dataFormat": "component"
 }
 ```
 
@@ -230,7 +240,7 @@ PUT: /api/management/workflow
 
 {  
    "projectId":"website",
-   "id":"socialCard",
+   "id":"movieRole",
    "objectVersion":"0.1",
    "type":"Component",
    "workflowName":"ContensisDefault",
