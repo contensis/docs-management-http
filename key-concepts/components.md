@@ -273,6 +273,13 @@ Deletes a component from a specific project.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/components/**{componentId}**
 
+### Parameters
+
+| Name | Parameter type | Type | Format | Description |
+|:-|:-|:-|:-|:-|
+| projectId | path | string |  | The project identifier |
+| componentId | path | string |  | The component identifier |
+
 ### Example request
 
 ```http
