@@ -265,3 +265,25 @@ PUT: /api/management/workflow
 
 # See also
 [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type)
+
+
+## Delete a component
+
+Deletes a component from a specific project.
+
+<span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/components/**{componentId}**
+
+### Example request
+
+```http
+DELETE: /api/management/projects/movieDb/components/movieRole
+```
+
+### Response message
+
+| HTTP status code | Reason | Response model |
+|:-|:-|:-|
+| 200 | Success |  |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |

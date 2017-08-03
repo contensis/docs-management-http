@@ -36,6 +36,7 @@
 * [Create a component](/key-concepts/components.md#create-a-component)
 * [Update a component](/key-concepts/components.md#update-a-component)
 * [Publish a component](/key-concepts/components.md#publish-a-component)
+* [Delete a component](/key-concepts/components.md#delete-a-component)
 
 ## Entries
 
