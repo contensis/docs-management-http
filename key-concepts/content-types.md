@@ -388,84 +388,24 @@ DELETE: /api/management/projects/movieDb/contenttypes/actor
 
 Components are added to a content type as a field just like any other field, however the dataFormat of the field specifies the id of the component to add.
 
-For example if you have a component with an id of "socialCard" then the dataFormat value would be "component.socialCard".
+For example if you have a component with an id of "movieRole" then the dataFormat value would be "component.movieRole".
 
 ### Example JSON
 
 ```json
 "fields":[
     {  
-        "id":"socialCard",
+        "id":"movieRole",
         "name": {  
-            "en-GB":"Social Card"
+            "en-GB":"Movie Role"
         },
         "dataType":"object",
-        "dataFormat":"component.socialCard",
+        "dataFormat":"component.movieRole",
         "description": {  
-            "en-GB":"The social card"
+            "en-GB":"The movie Role"
         }
     }
 ]
 ```
 
 After a content type has been saved with a component field, all of the component's fields are added to a nested fields collection within the component field on the content type. A components' fields are read only, and cannot be modified from the content type.
-
-The following JSON example shows the structure of a component field within a content type.
-
-### Example JSON
-
-```json
-"fields": [  
-    {  
-        "id":"socialCard",
-        "name": {  
-            "en-GB":"Social Card"
-        },
-        "dataType":"object",
-        "dataFormat":"component.socialCard",
-        "description": {  
-            "en-GB":"The social card"
-        },
-        "fields": [
-            {
-                "id": "title",
-                "name": {
-                    "en-GB": "Title"
-                },
-                "dataType": "string",
-                "editor": {
-                    "id": "text",
-                    "instructions": {
-                        "en-GB": "The title of the social media card"
-                    },
-                    "properties": {
-                        "placeholderText": {
-                            "en-GB": "Enter the title to be displayed as part of the card"
-                        }
-                    }
-                }
-            },
-            {
-                "id": "description",
-                "name": {
-                    "en-GB": "Description"
-                },
-                "dataType": "string",
-            },
-            {
-                "id": "image",
-                "name": {
-                    "en-GB": "Image"
-                },
-                "dataType": "objectArray",
-                "dataFormat": "asset",
-                "validations": {
-                    "allowedContentTypes": {
-                        "contentTypes": ["image"]
-                    }
-                }
-            }
-        ]
-    }
-]
-```
