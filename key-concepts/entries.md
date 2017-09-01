@@ -101,7 +101,7 @@ POST: /api/management/projects/movieDb/entries/
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 201 | Created | [Content Type](/model/content-type.md) |
+| 201 | Created | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
@@ -112,7 +112,7 @@ POST: /api/management/projects/movieDb/entries/
 
 | Type | Description |
 |-|-|
-| Project does not exist | A project must exist to be able to create content types |
+| Project does not exist | A project must exist to be able to create entries |
 | Content type does not exist | The published content type must exist to be able to create an entry |
 
 
@@ -185,7 +185,7 @@ PUT: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b0
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Content Type](/model/entry.md) |
+| 200 | Success | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
@@ -196,7 +196,7 @@ PUT: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b0
 
 | Type | Description |
 |-|-|
-| Project does not exist | A project must exist to be able to create content types |
+| Project does not exist | A project must exist to be able to create entries |
 | Content type does not exist | The published content type must exist to be able to create an entry |
 
 
@@ -238,43 +238,9 @@ PUT: /api/management/workflow
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Content Type [...]](/model/content-type.md) |
+| 200 | Success | [Entry](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 403 | BadRequest | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-
-
-
-
-
-
-## List content types
-
-Gets the content types for a project.
-
-<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/
-
-## Parameters
-
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| dataFormat | query | string |  | The specific dataFormat, e.g. *entry*, *asset*. The default is all |
-
-### Example request
-
-```http
-GET: /api/management/projects/movieDb/contenttypes?versionStatus=published&dataFormat=entry
-```
-
-### Response message
-
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Content Type [...]](/model/content-type.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
@@ -313,7 +279,7 @@ GET: /api/management/projects/movieDb/entries/
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Entry](/model/entry.md) |
+| 200 | Success | [PagedList&lt;Entry&gt;](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
@@ -351,7 +317,7 @@ GET: /api/management/projects/movieDb/contenttypes/movie/entries/
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Entry](/model/entry.md) |
+| 200 | Success | [PagedList&lt;Entry&gt;](/model/entry.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |

@@ -11,7 +11,7 @@
 ## Security
 * [Authentication](security/authentication.md)
 * [Authorization](security/authorization.md)
-* [Scopes](security/scopes.md)
+<!-- * [Scopes](security/scopes.md) -->
 
 ## Projects
 
@@ -21,7 +21,7 @@
 * [List projects](/key-concepts/projects.md#list-projects)
 * [Delete a project](/key-concepts/projects.md#delete-a-project)
 
-## Content Types
+<!-- ## Content Types
 
 * [Get a content type](/key-concepts/content-types.md#get-a-content-type)
 * [Create a content type](/key-concepts/content-types.md#create-a-content-type)
@@ -29,7 +29,7 @@
 * [Publish a content type](/key-concepts/content-types.md#publish-a-content-type)
 * [List content types](/key-concepts/content-types.md#list-content-types)
 * [Delete a content type](/key-concepts/content-types.md#delete-a-content-type)
-* [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type)
+* [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type) -->
 
 ## Components
 * [Get a component](/key-concepts/components.md#get-a-component)
@@ -52,7 +52,7 @@
 ## Models
 
 * [Project](/model/project.md)
-* [Content type](/model/content-type.md)
+<!-- * [Content type](/model/content-type.md) -->
 * [Component](/model/component.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)

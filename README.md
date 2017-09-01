@@ -1,14 +1,5 @@
 # Contensis HTTP Management API
 
-
-<ul class="methods">
-  <li class="method__item method__item--put"><span class="label label--big label--put">PUT</span>  /api/delivery/projects/{projectId}</li>
-  <li class="method__item method__item--post"><span class="label label--big label--post">POST</span> /api/delivery/projects/{projectId}</li>
-  <li class="method__item method__item--get"><span class="label label--big label--get">GET</span> /api/delivery/projects/{projectId}</li>
-  <li class="method__item method__item--delete"><span class="label label--big label--delete">DELETE</span> /api/delivery/projects/{projectId}</li>
-  <li class="method__item method__item--patch"><span class="label label--big label--patch">PATCH</span> /api/delivery/projects/{projectId}</li>
-</ul>
-
 ## Introduction
 
 ## Key concepts
@@ -24,7 +15,7 @@
 | [Delete a project](/key-concepts/projects.md#delete-a-project) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/ |
 
 
-### Content Types
+<!-- ### Content Types
 
 |||
 |-|-|
@@ -33,7 +24,7 @@
 | [Update a content type](/key-concepts/content-types.md#update-a-content-type) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
 | [Publish a content type](/key-concepts/content-types.md#publish-a-content-type) | <span class="label label--post">POST</span> /api/management/workflow/ |
 | [List content types](/key-concepts/content-types.md#list-content-types) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/ |
-| [Delete a content type](/key-concepts/content-types.md#delete-a-content-type) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/ |
+| [Delete a content type](/key-concepts/content-types.md#delete-a-content-type) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/ | -->
 
 ### Entries
 
