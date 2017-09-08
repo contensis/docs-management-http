@@ -22,7 +22,6 @@
 * [Delete a project](/key-concepts/projects.md#delete-a-project)
 
 <!-- ## Content Types
-
 * [Get a content type](/key-concepts/content-types.md#get-a-content-type)
 * [Create a content type](/key-concepts/content-types.md#create-a-content-type)
 * [Update a content type](/key-concepts/content-types.md#update-a-content-type)
@@ -31,12 +30,12 @@
 * [Delete a content type](/key-concepts/content-types.md#delete-a-content-type)
 * [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type) -->
 
-## Components
+<!-- ## ## Components
 * [Get a component](/key-concepts/components.md#get-a-component)
 * [Create a component](/key-concepts/components.md#create-a-component)
 * [Update a component](/key-concepts/components.md#update-a-component)
 * [Publish a component](/key-concepts/components.md#publish-a-component)
-* [Delete a component](/key-concepts/components.md#delete-a-component)
+* [Delete a component](/key-concepts/components.md#delete-a-component) -->
 
 ## Entries
 
