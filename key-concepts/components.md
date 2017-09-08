@@ -1,5 +1,5 @@
 # Components
-Components are groups of fields that can added to your content types as independent fields or be used multiple times when assigned to a composer field. [Read more about components on Zenhub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/components/components-overview.aspx)
+A component determines a reusable schema added to content types which entries are then created from. Components contain a list of fields just like content types, and allow for a standardized schema for modeling content.[Find out more about components on Zenhub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/components/components-overview.aspx)
 
 ## Get a component
 Gets an existing component by the component id.

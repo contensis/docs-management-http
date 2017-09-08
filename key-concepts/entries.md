@@ -1,7 +1,7 @@
 # Entries
+An entry definition in the Management API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. [Find out more about entries on Zenhub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/entries/entries-overview.aspx)
 
 ## Get an entry
-
 Gets an existing entry by its id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
