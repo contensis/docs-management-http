@@ -136,9 +136,11 @@ PUT: /api/management/projects/movieDb
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
+### Remarks
+It is not possible to update the Id once you've created a project.
+
 
 ## List projects
-
 Returns a list of the project resources for a Contensis instance.
 
 <span class="label label--get">GET</span> /api/management/projects/
