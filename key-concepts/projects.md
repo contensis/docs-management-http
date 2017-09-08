@@ -50,7 +50,7 @@ POST: /api/management/projects/
 }
 ```
 
-## Response messages
+### Response messages
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
@@ -137,7 +137,7 @@ PUT: /api/management/projects/movieDb
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
-## List projects
+### List projects
 
 Returns a list of the project resources for a Contensis instance.
 
@@ -158,7 +158,6 @@ GET: /api/management/projects/
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-
 
 
 ## Delete a project
@@ -182,8 +181,6 @@ DELETE: /api/management/projects/movieDb/
 | 403 | CannotBeDeleted | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-
-**TODO: Add validation responses**
 
 ### Validation Responses
 
@@ -219,5 +216,4 @@ In order to delete a project it has to be empty. This is a safeguard to stop peo
     ],
     "type": "Validation"
 }
-
 ```
