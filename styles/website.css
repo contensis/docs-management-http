@@ -100,3 +100,7 @@ background-color: #e27a7a;
 .label--patch {
 background-color: #e09d43;
 }
+
+th:empty {
+  display: none;
+}
