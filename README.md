@@ -10,13 +10,13 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 ### Projects
 
-||||
-|-|-|-|
-| [Get a project](/key-concepts/projects.md#get-a-project) | <span class="label label--get">GET</span> | /api/management/projects/**{projectId}**/ |
-| [Create a project](/key-concepts/projects.md#create-a-project) | <span class="label label--post">POST</span> |  /api/management/projects/ |
-| [Update a project](/key-concepts/projects.md#update-a-project) | <span class="label label--post">PUT</span> |  /api/management/projects/**{projectId}**/ |
-| [List projects](/key-concepts/projects.md#list-projects) | <span class="label label--get">GET</span> |  /api/management/projects/ |
-| [Delete a project](/key-concepts/projects.md#delete-a-project) | <span class="label label--delete">DELETE</span> |  /api/management/projects/**{projectId}**/ |
+|||
+|-|-|
+| [Get a project](/key-concepts/projects.md#get-a-project) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/ |
+| [Create a project](/key-concepts/projects.md#create-a-project) | <span class="label label--post">POST</span> /api/management/projects/ |
+| [Update a project](/key-concepts/projects.md#update-a-project) | <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/ |
+| [List projects](/key-concepts/projects.md#list-projects) | <span class="label label--get">GET</span> /api/management/projects/ |
+| [Delete a project](/key-concepts/projects.md#delete-a-project) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/ |
 
 
 <!-- ### Content Types
@@ -32,13 +32,13 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 ### Entries
 
-||||
-|-|-|-|
-| [Get an entry](/key-concepts/entries.md#get-an-entry) | <span class="label label--get">GET</span> |  /api/management/projects/**{projectId}**/entries/**{entryId}** |
-| [Create an entry](/key-concepts/entries.md#create-an-entry) | <span class="label label--post">POST</span> |  /api/management/projects/**{projectId}**/entries/ |
-| [Update an entry variation](/key-concepts/entries.md#update-an-entry) | <span class="label label--put">PUT</span> |  /api/management/projects/**{projectId}**/entries/**{entryId}**
-| [Publish an entry](/key-concepts/entries.md#publish-an-entry) | <span class="label label--post">POST</span> |  /api/management/workflow/ |
-| [List entries](/key-concepts/entries.md#list-entries) | <span class="label label--get">GET</span> | /api/management/projects/**{projectId}**/entries/ |
-| [List entries by content type](/key-concepts/entries.md#list-entries-by-content-type) | <span class="label label--get">GET</span> |  /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
-| [Delete an entry](/key-concepts/entries.md#delete-an-entry) | <span class="label label--delete">DELETE</span> |  /api/management/projects/**{projectId}**/entries/**{entryId}**
-| [Delete an entry variation](/key-concepts/entries.md#delete-an-entry-variation) | <span class="label label--delete">DELETE</span> |  /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
+|||
+|-|-|
+| [Get an entry](/key-concepts/entries.md#get-an-entry) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}** |
+| [Create an entry](/key-concepts/entries.md#create-an-entry) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/ |
+| [Update an entry variation](/key-concepts/entries.md#update-an-entry) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
+| [Publish an entry](/key-concepts/entries.md#publish-an-entry) | <span class="label label--post">POST</span> /api/management/workflow/ |
+| [List entries](/key-concepts/entries.md#list-entries) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/ |
+| [List entries by content type](/key-concepts/entries.md#list-entries-by-content-type) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
+| [Delete an entry](/key-concepts/entries.md#delete-an-entry) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
+| [Delete an entry variation](/key-concepts/entries.md#delete-an-entry-variation) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
