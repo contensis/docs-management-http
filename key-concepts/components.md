@@ -1,7 +1,7 @@
 # Components
+Components are groups of fields that can added to your content types as independent fields or be used multiple times when assigned to a composer field. [Read more about components on Zenhub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/components/components-overview.aspx)
 
 ## Get a component
-
 Gets an existing component by the component id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/components/**{componentId}**
@@ -127,14 +127,43 @@ POST: /api/management/projects/movieDb/components/
 | 409 | Conflict | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-**TODO: Add validation responses**
 
 ### Validations
 
-| Type | Description |
-|-|-|
-| Project does not exist | A project must exist to be able to create components |
-| Non-unique id | The content type or component must be unique for the project |
+#### Project does not exist
+A project must exist to be able to create a component. If you specify a project which doesn't exist you will get the following response.
+
+```http
+{
+    "logId": "694b56b4-bdd9-4330-9b48-a32047037a0a",
+    "message": "Unknown project 'movieDb'",
+    "data": [
+        {
+            "field": "projectId",
+            "message": "A project with the Id 'movieDb' does not exist"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+#### Non-unique id
+The id given to a component must be unique. If there is an existing component or content type with the same id then you will get the following response.
+
+```http
+{
+    "logId": "ea13ba29-33f4-423c-9789-5c94b978e03f",
+    "message": "There are validation errors creating the component",
+    "data": [
+        {
+            "field": "id",
+            "message": "A content type or component with this Id already exists"
+        }
+    ],
+    "type": "Validation"
+}
+
+```
 
 ### Remarks
 
@@ -294,3 +323,22 @@ DELETE: /api/management/projects/movieDb/components/movieRole
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
+### Validations
+
+#### Deleting a component which is in use
+If a component is in use within a content type then it can't be deleted. If you attempt to delete a component which is in use you will get the follwoing response.
+
+```http
+{
+    "logId": "6eda131e-c8eb-44dc-8665-ae3a8b1815d8",
+    "message": "There are validation errors deleting the component",
+    "data": [
+        {
+            "field": "",
+            "message": "The component cannot be deleted as it is in use in one or more content types"
+        }
+    ],
+    "type": "Validation"
+}
+```
