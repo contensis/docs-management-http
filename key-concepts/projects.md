@@ -61,7 +61,7 @@ POST: /api/management/projects/
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
-### Validation responses
+### Validations
 
 #### Non-unique id 
 A project must have a unique id. If you attempt to create a project with an id which is already in use you will get the following response.
@@ -182,7 +182,7 @@ DELETE: /api/management/projects/movieDb/
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
-### Validation Responses
+### Validations
 
 #### Single project
 A project cannot be deleted if it is the only project in a Contensis instance. If you attempt to delete all projects in a Contensis instance, you will get the following response.
