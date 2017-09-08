@@ -137,7 +137,7 @@ PUT: /api/management/projects/movieDb
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
-### List projects
+## List projects
 
 Returns a list of the project resources for a Contensis instance.
 
