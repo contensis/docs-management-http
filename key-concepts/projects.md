@@ -44,14 +44,13 @@ POST: /api/management/projects/
     "description": "A source of movie and TV series",
     "primaryLanguage": "en-GB",
     "supportedLanguage": [
-        "en-GB",
         "fr-FR",
         "de-DE"
     ]
 }
 ```
 
-### Response messages
+## Response messages
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
@@ -62,14 +61,42 @@ POST: /api/management/projects/
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
-**TODO: Add validation responses**
+### Validation responses
 
-### Validations
+#### Non-unique id 
+A project must have a unique id. If you attempt to create a project with an id which is already in use you will get the following response.
 
-| Type | Description |
-|-|-|
-| Non-unique id | The project must be unique for the instance of Contensis |
-| Primary language is required | A primary language must be specified |
+```http
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There are validation errors creating the project",
+    "data": [
+        {
+            "field": "",
+            "message": "A project with this Id already exists"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+#### Primary language is required
+A project must have a primary language defined. If you attempt to create a project without specifying a primary language you will get the following response.
+
+```http
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There are validation errors creating the project",
+    "data": [
+        {
+            "field": "Project",
+            "message": "The primary language code is not valid"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
 
 ### Remarks
 
@@ -93,7 +120,6 @@ PUT: /api/management/projects/movieDb
     "description": "A source of movie and TV series",
     "primaryLanguage": "en-GB",
     "supportedLanguage": [
-        "en-GB",
         "fr-FR",
         "de-DE"
     ]
@@ -109,12 +135,6 @@ PUT: /api/management/projects/movieDb
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-
-
-**TODO: Add validation responses**
-
-
-
 
 
 ## List projects
@@ -138,8 +158,6 @@ GET: /api/management/projects/
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-
-
 
 
 
@@ -167,8 +185,39 @@ DELETE: /api/management/projects/movieDb/
 
 **TODO: Add validation responses**
 
-### Validations
+### Validation Responses
 
-| Type | Description |
-|-|-|
-| Single project | A project cannot be deleted if it is the only project |
+#### Single project
+A project cannot be deleted if it is the only project in a Contensis instance. If you attempt to delete all projects in a Contensis instance, you will get the following response.
+
+```http
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There are validation errors deleting the project 'movieDb'",
+    "data": [
+        {
+            "field": "",
+            "message": "The specified project is the only project and therefore cannot be deleted"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+#### A project containing content
+In order to delete a project it has to be empty. This is a safeguard to stop people deleting projects which are in use. If you attempt to delete a project which contains content types, you will get the following response.
+
+```http
+{
+    "logId": "5fca7986-5ba3-4eb4-9cea-b5f25aaaed09",
+    "message": "There are validation errors deleting the project 'movieDb'",
+    "data": [
+        {
+            "field": "",
+            "message": "The project has associated content types so cannot be deleted"
+        }
+    ],
+    "type": "Validation"
+}
+
+```
