@@ -1,6 +1,10 @@
 # Contensis HTTP Management API
 
 ## Introduction
+The Management API allows you to create and manage entries within Contensis. 
+Our primary aim with this version of the API is to enable you to easily import/integrate content from other systems.
+
+The API is a RESTful service to ensure maximum compatibility, delivering content as JSON and resource files (assets) as text or binary files. We currently provide a .NET client API wrapper to simplify using the API.
 
 ## Key concepts
 
