@@ -1,6 +1,6 @@
 # Authentication
 
-To access any resource from the Delivery API, a client needs to authenticate with the Zengenti OAuth 2.0 Identity Provider, which is hosted with the Contensis application.
+To access any resource from the Management API, a client needs to authenticate with the Zengenti OAuth 2.0 Identity Provider, which is hosted with the Contensis application.
 
 Websites and applications are authenticated using the [OAuth 2.0 client credential flow](https://tools.ietf.org/html/rfc6749#section-4.4), which is used to grant access to resources such as entries, content types and projects.
 
