@@ -110,11 +110,40 @@ POST: /api/management/projects/movieDb/entries/
 
 ### Validations
 
-| Type | Description |
-|-|-|
-| Project does not exist | A project must exist to be able to create entries |
-| Content type does not exist | The published content type must exist to be able to create an entry |
+#### Project does not exist
+A project must exist to be able to create entries. If you attempt to create an entry in a project which doesn't exist you will get the following response. 
 
+```http
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There are validation errors creating the entry",
+    "data": [
+        {
+            "field": "projectId",
+            "message": "The project does not exist"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+
+#### Content type does not exist 
+The published content type must exist to be able to create an entry. If you attempt to create an entry for a content type which doesn't exist or hasn't been published you will get the following response.
+
+```http
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There are validation errors creating the entry",
+    "data": [
+        {
+            "field": "contentType",
+            "message": "The content type 'movie' does not exist"
+        }
+    ],
+    "type": "Validation"
+}
+```
 
 
 
@@ -190,21 +219,24 @@ PUT: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b0
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-**TODO: Add validation responses**
-
-### Validations
-
-| Type | Description |
-|-|-|
-| Project does not exist | A project must exist to be able to create entries |
-| Content type does not exist | The published content type must exist to be able to create an entry |
 
 
-TODO: Explain the optimistic concurrency versioning model
+### Versioning
+Contensis uses an optimistic concurrency versioning model. Rather than checking out entries and locking them we allow concurrent updating of entries. At the point in which you update an entry the version you pass in is checked to make sure it is the latest and no one else has created a newer version. If the version you pass in is the latest version then the entry will get updated. If you pass in a version which isn't now the latest then you will get the following response.
 
-
-
-
+```http
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There are validation errors updating the entry",
+    "data": [
+        {
+            "field": "Entry.Variations.Values[0].entryVariation",
+            "message": "The entry variation is not the latest"
+        }
+    ],
+    "type": "Validation"
+}
+``` 
 
 
 ## Publish an entry
