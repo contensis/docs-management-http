@@ -1,8 +1,8 @@
 # Validations
+Validations allow you to control the content which is entered within a field. Each validation has a set of properties which are described in more detail below. A common property across all validators is the message. Messages are optional on validations and if not specified, a default validation error message is returned from the API.
 
-## Create/Update
-Validations are only executed on entry create and update when a value has been set. If there is no value set, the validation is ignored.
-Messages are optional and if not specified, a default validation error message is returned from the API.
+## Content validations
+When creating, updating or publishing an entry, if a field has been populated then the value will be evaluated against the following validations. If the field hasn't been populated then the validation is ignored. This is to allow for partial completion of an entry when saving.
 
 - [MaxLength](#maxlength)
 - [MinLength](#minlength)
@@ -19,8 +19,9 @@ Messages are optional and if not specified, a default validation error message i
 - [MinCount](#mincount)
 
 
-## Publish
-All validations are always executed on entry publish.
+## Required validations
+When publishing an entry, in addition to the above content validations, required validations are evaluated. If a required field hasn't been populated at this stage then the entry will fail to publish and a validation message will be returned.
+
 - [Required](#required)
 - [RequiredFields](#requiredfields)
 
@@ -559,7 +560,7 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
     "maxCount": {
         "value": 3,
         "message": {
-            "en-GB": "The value cannot contain more than 3 elements"
+            "en-GB": "The value cannot contain more ts 3 elements"
         }
     }
 }
@@ -573,7 +574,7 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
    "data":[  
         {  
             "field":"fieldId",
-            "message":"The value cannot contain more than 3 elements"
+            "message":"The value cannot contain more ts 3 elements"
         }
    ],
    "type":"Validation"
@@ -595,7 +596,7 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
     "minCount": {
         "value": 3,
         "message": {
-            "en-GB": "The value cannot contain less than 3 elements"
+            "en-GB": "The value cannot contain less ts 3 elements"
         }
     }
 }
@@ -609,7 +610,7 @@ booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArra
    "data":[  
         {  
             "field":"fieldId",
-            "message":"The value cannot contain less than 3 elements"
+            "message":"The value cannot contain less ts 3 elements"
         }
    ],
    "type":"Validation"
