@@ -20,7 +20,7 @@ When creating, updating or publishing an entry, if a field has been populated th
 
 
 ## Required validations
-When publishing an entry, in addition to the above content validations, required validations are evaluated. If a required field hasn't been populated at this stage then the entry will fail to publish and a validation message will be returned.
+When publishing an entry, in addition to the above content validations, required validations are evaluated. If a required field hasn't been populated at this stage then the entry will fail to publish and a validation message will be returned. 
 
 - [Required](#required)
 - [RequiredFields](#requiredfields)
