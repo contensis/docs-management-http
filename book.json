@@ -9,7 +9,8 @@
       "-sharing",
       "fontsettings",
       "-highlight",
-      "prism"
+      "prism",
+      "scripts"
     ],
     "pluginsConfig": {
       "fontsettings": {
@@ -24,6 +25,13 @@
         "lang": {
           "json": "json"
         }
+      },
+      "scripts": {
+        "files": [
+          "./scripts/es6-promise.min.js",
+          "./scripts/fetch.min.js",
+          "./scripts/api-docs.js"
+        ]
       }
     }
 }
