@@ -1,14 +1,13 @@
 # Scopes
 
-OAuth 2.0 scopes allow a developer to specify which resources their application can access. These are included as a space-separated list value, in the scope parameter when invoking an [authentication](/authentication.md) request.
+OAuth 2.0 scopes allow a developer to specify which resources their application can access. These are included as a space-separated list value, in the scope parameter when invoking an [authentication](/security/authentication.md) request.
 
 | Scope name | Associated methods |
 |:-|:-|
-| Project_Read | [GET a single project](/key-concepts/get-project.md) |
-| Project_Write | [Create a project](/key-concepts/get-project.md)<br />[Update a project]()|
-| Project_Delete | [GET a single project](/key-concepts/get-project.md) |
-| ContentType_Read | [GET a single content type](/key-concepts/get-contenttype.md) |
-| Entry_Read | [GET a single entry](/key-concepts/get-entry.md)<br />[GET a list of all entries ](/key-concepts/list-entries.md#list-all-entries)<br />[GET a list of entries by content type](/key-concepts/list-entries-by-content-type.md) |
+| Project_Read | [Get a project](/key-concepts/projects.md#get-a-project) |
+| Entry_Read | [Get a entry](/key-concepts/entries.md#get-an-entry)<br />[List entries](/key-concepts/entries.md#list-entries)<br />[List entries by content type](/key-concepts/entries.md#list-entries-by-content-type) |
+|Entry_Write|[Create an entry](/key-concepts/entries.md#create-an-entry)<br />[Update an entry](/key-concepts/entries.md#update-an-entry) <br /> [Publish an entry](/key-concepts/entries.md#publish-an-entry) |
+|Entry_Delete|[Delete an entry](/key-concepts/entries.md#delete-an-entry)|
 
 
 

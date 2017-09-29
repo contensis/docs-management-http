@@ -1,7 +1,9 @@
 ## HTTP Management API
+
 * [Introduction](/README.md)
 
 ## Key concepts
+
 * [DataFormats](/key-concepts/data-formats.md)
 * [DataTypes](/key-concepts/data-types.md)
 * [Errors](/key-concepts/errors.md)
@@ -9,9 +11,10 @@
 * [Validations](/key-concepts/validations.md)
 
 ## Security
+
 * [Authentication](security/authentication.md)
 * [Authorization](security/authorization.md)
-<!-- * [Scopes](security/scopes.md) -->
+* [Scopes](security/scopes.md)
 
 ## Projects
 
@@ -51,9 +54,13 @@
 ## Models
 
 * [Project](/model/project.md)
-<!-- * [Content type](/model/content-type.md) -->
 * [Component](/model/component.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)
+* [DateRnage](/model/date-range.md)
+* [Image](/model/image.md)
+* [Link](/model/link.md)
+* [Location](/model/location.md)
+* [Quote](/model/quote.md)
 
-
+<!-- * [Content type](/model/content-type.md) -->
