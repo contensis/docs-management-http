@@ -9,7 +9,7 @@ A component determines a reusable schema added to [content types](/model/content
 | id | string | | A unique component identifier |
 | projectId | string |  | The project identifier |
 | name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to a component |
-| description | object | [Localized value](/key-conceptslocalization.md) | The description text given to a component |
+| description | object | [Localized value](/key-concepts/localization.md) | The description text given to a component |
 | fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry |
 | workflowId | string |  | The workflow process that derived entries will follow |
 | dataFormat | string |  | Either *entry* or *asset* |

@@ -9,7 +9,7 @@ A content type determines the schema of an [entry](/model/entry.md). Entries are
 | id | string | | A unique content type identifier |
 | projectId | string |  | The project identifier |
 | name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to a content type |
-| description | object | [Localized value](/key-conceptslocalization.md) | The description text given to a content type |
+| description | object | [Localized value](/key-concepts/localization.md) | The description text given to a content type |
 | entryTitleField | string |  | The id of the field which should be used as the title in entry listings |
 | fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry |
 | enabled | boolean |  |  |
