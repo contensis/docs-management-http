@@ -54,10 +54,11 @@
 ## Models
 
 * [Project](/model/project.md)
-* [Component](/model/component.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)
-* [DateRnage](/model/date-range.md)
+* [Composed Fields](/model/composed.md)
+* [Component](/model/component.md)
+* [DateRange](/model/date-range.md)
 * [Image](/model/image.md)
 * [Link](/model/link.md)
 * [Location](/model/location.md)
