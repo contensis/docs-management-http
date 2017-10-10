@@ -2,18 +2,18 @@
 
 ## Get a content type
 
-Gets an existing content type by the content type id.
+Gets an existing content type by the content type Id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| contentTypeId | path | string |  | The content type identifier |
-| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
+| projectId | path | string |  | The project identifier. |
+| contentTypeId | path | string |  | The content type identifier. |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
+| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |
 
 ### Example request
 
@@ -37,19 +37,17 @@ If a specific *versionNo* value has been provided then the *versionStatus* value
 
 
 
-
-
 ## Create a content type
 
 Creates a new content type resource.
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
+| projectId | path | string |  | The project identifier. |
 
 ### Example request
 
@@ -150,13 +148,12 @@ POST: /api/management/projects/movieDb/contenttypes/
 
 | Type | Description |
 |-|-|
-| Project does not exist | A project must exist to be able to create content types |
-| Non-unique id | The content type must be unique for the project |
+| Project does not exist | A project must exist to be able to create content types. |
+| Non-unique id | The content type must be unique for the project. |
 
 ### Remarks
 
 If the *defaultLanguage* value is not included in the *supportedLanguages* array then it will automatically added by the service when the project is created. Additionally, if the *defaultLanguage* is not specified then the [project](/model/project.md) *primaryLanguage* will be automatically set as the value by the service.
-
 
 
 
@@ -171,8 +168,8 @@ Creates a new content type resource.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| contentTypeId | path | string |  | The content type identifier |
+| projectId | path | string |  | The project identifier. |
+| contentTypeId | path | string |  | The content type identifier. |
 
 ### Example request
 
@@ -270,7 +267,6 @@ PUT: /api/management/projects/movieDb/contenttypes/movie
 | 409 | NotLatestVersion | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-**TODO: Add validation responses**
 
 ### Validations
 
@@ -282,10 +278,6 @@ PUT: /api/management/projects/movieDb/contenttypes/movie
 ### Remarks
 
 If the *defaultLanguage* value is not included in the *supportedLanguages* array then it will automatically added by the service when the project is created. Additionally, if the *defaultLanguage* is not specified then the [project](/model/project.md) *primaryLanguage* will be automatically set as the value by the service.
-
-TODO: Explain the optimistic concurrency versioning model
-
-
 
 
 
@@ -337,9 +329,9 @@ Gets the content types for a project.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| dataFormat | query | string |  | The specific dataFormat, e.g. *entry*, *asset*. The default is all |
+| projectId | path | string |  | The project identifier. |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
+| dataFormat | query | string |  | The specific dataFormat, e.g. *entry*, *asset*. The default is all. |
 
 ### Example request
 
@@ -355,8 +347,6 @@ GET: /api/management/projects/movieDb/contenttypes?versionStatus=published&dataF
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-
-
 
 
 
@@ -408,4 +398,4 @@ For example if you have a component with an id of "movieRole" then the dataForma
 ]
 ```
 
-After a content type has been saved with a component field, all of the component's fields are added to a nested fields collection within the component field on the content type. A components' fields are read only, and cannot be modified from the content type.
+After a content type has been saved with a component field, all of the component's fields are added to a nested fields collection within the component field on the content type. A components' fields are read-only, and cannot be modified from the content type.

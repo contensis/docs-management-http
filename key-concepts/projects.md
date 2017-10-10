@@ -1,4 +1,5 @@
 # Projects
+
 Projects offer a way of grouping related content types, entries and assets. Typically a project would represent a single application such as a website, intranet or mobile application.
 
 Projects are a licensed feature and the number you can create will depend on which license you have purchased.
@@ -24,6 +25,7 @@ GET: /api/management/projects/movieDb/
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
 
 
 
@@ -63,7 +65,8 @@ POST: /api/management/projects/
 
 ### Validations
 
-#### Non-unique id 
+#### Non-unique id
+
 A project must have a unique id. If you attempt to create a project with an id which is already in use you will get the following response.
 
 ```http
@@ -81,6 +84,7 @@ A project must have a unique id. If you attempt to create a project with an id w
 ```
 
 #### Primary language is required
+
 A project must have a primary language defined. If you attempt to create a project without specifying a primary language you will get the following response.
 
 ```http
@@ -97,10 +101,11 @@ A project must have a primary language defined. If you attempt to create a proje
 }
 ```
 
-
 ### Remarks
 
 If the *primaryLanguage* value is not included in the *supportedLanguages* array then it will automatically be added by the service when the project is created.
+
+
 
 
 ## Update a project
@@ -137,10 +142,14 @@ PUT: /api/management/projects/movieDb
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Remarks
+
 It is not possible to update the Id once you've created a project.
 
 
+
+
 ## List projects
+
 Returns a list of the project resources for a Contensis instance.
 
 <span class="label label--get">GET</span> /api/management/projects/
@@ -160,6 +169,8 @@ GET: /api/management/projects/
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
+
 
 
 ## Delete a project
@@ -187,6 +198,7 @@ DELETE: /api/management/projects/movieDb/
 ### Validations
 
 #### Single project
+
 A project cannot be deleted if it is the only project in a Contensis instance. If you attempt to delete all projects in a Contensis instance, you will get the following response.
 
 ```http
@@ -204,6 +216,7 @@ A project cannot be deleted if it is the only project in a Contensis instance. I
 ```
 
 #### A project containing content
+
 In order to delete a project it has to be empty. This is a safeguard to stop people deleting projects which are in use. If you attempt to delete a project which contains content types, you will get the following response.
 
 ```http

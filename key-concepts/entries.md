@@ -1,20 +1,22 @@
 # Entries
-An entry definition in the Management API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. [Find out more about entries on Zenhub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/entries/entries-overview.aspx)
+
+An entry definition in the Management API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. [Find out more about entries on ZenHub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/entries/entries-overview.aspx)
 
 ## Get an entry
+
 Gets an existing entry by its id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| entryId | path | string | GUID | The entry identifier |
-| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
-| language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
+| projectId | path | string |  | The project identifier. |
+| entryId | path | string | GUID | The entry identifier. |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
+| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |
+| language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code. |
 
 ### Example request
 
@@ -39,19 +41,17 @@ If a specific *versionNo* value has been provided then the *versionStatus* value
 
 
 
-
-
 ## Create an entry
 
 Creates a new entry resource.
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
+| projectId | path | string |  | The project identifier. |
 
 ### Example request
 
@@ -87,7 +87,7 @@ POST: /api/management/projects/movieDb/entries/
             }
         }
     ],
-    
+
     "sys": {
         "contentTypeId": "movie",
         "projectId": "movieDb",
@@ -106,11 +106,11 @@ POST: /api/management/projects/movieDb/entries/
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
-**TODO: Add validation responses**
 
 ### Validations
 
 #### Project does not exist
+
 A project must exist to be able to create entries. If you attempt to create an entry in a project which doesn't exist you will get the following response. 
 
 ```http
@@ -128,7 +128,8 @@ A project must exist to be able to create entries. If you attempt to create an e
 ```
 
 
-#### Content type does not exist 
+#### Content type does not exist
+
 The published content type must exist to be able to create an entry. If you attempt to create an entry for a content type which doesn't exist or hasn't been published you will get the following response.
 
 ```http
@@ -148,19 +149,18 @@ The published content type must exist to be able to create an entry. If you atte
 
 
 
-
 ## Update an entry
 
 Updates an entry resource.
 
 <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| entryId   | path | string |  | The entry identifier |
+| projectId | path | string |  | The project identifier.|
+| entryId   | path | string |  | The entry identifier. |
 
 ### Example request
 
@@ -196,7 +196,7 @@ PUT: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b0
             }
         }
     ],
-    
+
     "sys": {
         "id": "71f73a9b-2a13-4d63-bcc1-e8ee5047b01c",
         "contentTypeId": "movie",
@@ -222,6 +222,7 @@ PUT: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b0
 
 
 ### Versioning
+
 Contensis uses an optimistic concurrency versioning model. Rather than checking out entries and locking them we allow concurrent updating of entries. At the point in which you update an entry the version you pass in is checked to make sure it is the latest and no one else has created a newer version. If the version you pass in is the latest version then the entry will get updated. If you pass in a version which isn't now the latest then you will get the following response.
 
 ```http
@@ -236,7 +237,9 @@ Contensis uses an optimistic concurrency versioning model. Rather than checking 
     ],
     "type": "Validation"
 }
-``` 
+```
+
+
 
 
 ## Publish an entry
@@ -245,7 +248,7 @@ Publishes an entry.
 
 <span class="label label--get">PUT</span> /api/management/workflow
 
-## Parameters
+### Parameters
 
 None.
 
@@ -279,26 +282,24 @@ PUT: /api/management/workflow
 
 
 
-
-
 ## List entries
 
 Lists entries
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| entryId | path | string | GUID | The entry identifier |
-| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
+| projectId | path | string |  | The project identifier. |
+| entryId | path | string | GUID | The entry identifier. |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
 | pageIndex | query | number | integer | The index of the page |
-| pageSize | query | number | integer | The number of results per page. The default is 25 |
+| pageSize | query | number | integer | The number of results per page. The default is 25. |
 | order | query | string |  | A comma-separated list of the field Ids to order the results by. Prefix field Id with - for descending order. |
-| language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
-| dataFormat | query | string | | The data format of the entry, either *entries*, *assets* or *all*. The default is *entries* |
+| language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code. |
+| dataFormat | query | string | | The data format of the entry, either *entries*, *assets* or *all*. The default is *entries*. |
 
 ### Example request
 
@@ -319,25 +320,23 @@ GET: /api/management/projects/movieDb/entries/
 
 
 
-
-
 ## List entries by content type
 
 Lists entries by content type
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| entryId | path | string | GUID | The entry identifier |
-| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| pageIndex | query | number | integer | The index of page |
-| pageSize | query | number | integer | The number of results per page. The default is 25 |
+| projectId | path | string |  | The project identifier. |
+| entryId | path | string | GUID | The entry identifier. |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
+| pageIndex | query | number | integer | The index of page. |
+| pageSize | query | number | integer | The number of results per page. The default is 25. |
 | order | query | string |  | A comma-separated list of the field Ids to order the results by. Prefix field Id with - for descending order. |
-| language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
+| language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code. |
 
 ### Example request
 
@@ -357,20 +356,18 @@ GET: /api/management/projects/movieDb/contenttypes/movie/entries/
 
 
 
-
-
 ## Delete an entry
 
-Deletes an entry by its id.
+Deletes an entry by its Id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| entryId | path | string | GUID | The entry identifier |
+| projectId | path | string |  | The project identifier. |
+| entryId | path | string | GUID | The entry identifier. |
 
 ### Example request
 
@@ -391,20 +388,19 @@ DELETE: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e
 
 
 
-
 ## Delete an entry variation
 
 Deletes an entry variation by its id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**
 
-## Parameters
+### Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| entryId | path | string | GUID | The entry identifier |
-| language | path | string | [LanguageCode](/key-concepts/localization.md) | The variation language code |
+| projectId | path | string |  | The project identifier. |
+| entryId | path | string | GUID | The entry identifier. |
+| language | path | string | [LanguageCode](/key-concepts/localization.md) | The variation language code. |
 
 ### Example request
 

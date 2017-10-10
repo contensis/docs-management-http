@@ -6,18 +6,17 @@ Contensis supports the following basic data types:
 
 | Type | Description | Applicable Validations |
 | :--- | :---------- | :--------------------- |
-| string | Used for text entries such as titles, content or markup | [required](/key-concepts/validations.md#required)<br/> [maxChars](/key-concepts/validations.md#maxchars)<br/> [minChars](/key-concepts/validations.md#minchars)<br/> [regex](/key-concepts/validations.md#regex)<br/> [allowedValues](/key-concepts/validations.md#allowedvalues)<br/> |
-| integer | A whole number | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> |
-| decimal | A number with a fractional part | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [decimalPlaces](/key-concepts/validations.md#decimalplaces)<br/> |
-| boolean | A value of *true* or *false* | [required](/key-concepts/validations.md#required)<br/> |
-| dateTime | A point in time | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [pastDateTime](/key-concepts/validations.md#pastdatetime)<br/> |
-| object | Any arbitrary structure as JSON or a string | [required](/key-concepts/validations.md#required)<br/> |
-| stringArray | An array of strings | [required](/key-concepts/validations.md#required)<br/> [maxChars](/key-concepts/validations.md#maxchars)<br/> [minChars](/key-concepts/validations.md#minchars)<br/> [regex](/key-concepts/validations.md#regex)<br/> [allowedValues](/key-concepts/validations.md#allowedvalues)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
-| integerArray | An array of integers | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/>  |
-| decimalArray | An array of decimals | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [decimalPlaces](/key-concepts/validations.md#decimalplaces)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
-| booleanArray | An array of booleans | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
-| dateTimeArray | An array of dateTimes | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [pastDateTime](/key-concepts/validations.md#pastdatetime)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/>|
-| objectArray | An array of objects | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
+| string | Used for text entries such as titles, content or markup. | [required](/key-concepts/validations.md#required)<br/> [maxChars](/key-concepts/validations.md#maxchars)<br/> [minChars](/key-concepts/validations.md#minchars)<br/> [regex](/key-concepts/validations.md#regex)<br/> [allowedValues](/key-concepts/validations.md#allowedvalues)<br/> |
+| integer | A whole number. | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> |
+| decimal | A number with a fractional part. | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [decimalPlaces](/key-concepts/validations.md#decimalplaces)<br/> |
+| boolean | A value of *true* or *false*. | [required](/key-concepts/validations.md#required)<br/> |
+| dateTime | A point in time. | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [pastDateTime](/key-concepts/validations.md#pastdatetime)<br/> |
+| object | Any arbitrary structure as JSON or a string .| [required](/key-concepts/validations.md#required)<br/> |
+| stringArray | An array of strings. | [required](/key-concepts/validations.md#required)<br/> [maxChars](/key-concepts/validations.md#maxchars)<br/> [minChars](/key-concepts/validations.md#minchars)<br/> [regex](/key-concepts/validations.md#regex)<br/> [allowedValues](/key-concepts/validations.md#allowedvalues)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
+| integerArray | An array of integers. | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/>  |
+| decimalArray | An array of decimals. | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [decimalPlaces](/key-concepts/validations.md#decimalplaces)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
+| dateTimeArray | An array of dateTimes. | [required](/key-concepts/validations.md#required)<br/> [min](/key-concepts/validations.md#min)<br/> [max](/key-concepts/validations.md#max)<br/> [pastDateTime](/key-concepts/validations.md#pastdatetime)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/>|
+| objectArray | An array of objects. | [required](/key-concepts/validations.md#required)<br/> [maxCount](/key-concepts/validations.md#maxcount)<br/> [minCount](/key-concepts/validations.md#mincount)<br/> |
 
 
 ## Examples
@@ -43,9 +42,6 @@ Contensis supports the following basic data types:
     ],
     "decimalArray": [
         1.2, 3.4, 5.6
-    ],
-    "booleanArray": [
-        true, false, true
     ],
     "dateTimeArray": [
         "2017-03-07T14:37:27.0998174+00:00",

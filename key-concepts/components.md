@@ -1,8 +1,10 @@
 # Components
-A component determines a reusable schema added to content types which entries are then created from. Components contain a list of fields just like content types, and allow for a standardized schema for modeling content.[Find out more about components on Zenhub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/components/components-overview.aspx)
+
+A component determines a reusable schema added to content types which entries are then created from. Components contain a list of fields just like content types, and allow for a standardized schema for modelling content.[Find out more about components on ZenHub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/components/components-overview.aspx)
 
 ## Get a component
-Gets an existing component by the component id.
+
+Gets an existing component by the component Id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/components/**{componentId}**
 
@@ -10,10 +12,10 @@ Gets an existing component by the component id.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| componentId | path | string |  | The component identifier |
-| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest* |
-| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested |
+| projectId | path | string |  | The project identifier. |
+| componentId | path | string |  | The component identifier. |
+| versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
+| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |
 
 ### Example request
 
@@ -45,7 +47,7 @@ Creates a new component resource.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
+| projectId | path | string |  | The project identifier. |
 
 ### Example request
 
@@ -56,7 +58,7 @@ POST: /api/management/projects/movieDb/components/
     "id": "movieRole",
     "projectId": "website",
     "name": {
-        "en-GB": "Movie Role"
+        "en-GB": "Movie role"
     },
     "description": {
         "en-GB": "A Persons role within a movie"
@@ -101,7 +103,7 @@ POST: /api/management/projects/movieDb/components/
             "default": {},
             "validations": null,
             "editor": null
-        }     
+        }
     ],
     "workflowId": "ContensisDefault",
     "dataFormat": "component",
@@ -131,6 +133,7 @@ POST: /api/management/projects/movieDb/components/
 ### Validations
 
 #### Project does not exist
+
 A project must exist to be able to create a component. If you specify a project which doesn't exist you will get the following response.
 
 ```http
@@ -148,7 +151,8 @@ A project must exist to be able to create a component. If you specify a project 
 ```
 
 #### Non-unique id
-The id given to a component must be unique. If there is an existing component or content type with the same id then you will get the following response.
+
+The Id given to a component must be unique. If there is an existing component or content type with the same Id then you will get the following response.
 
 ```http
 {
@@ -168,6 +172,7 @@ The id given to a component must be unique. If there is an existing component or
 ### Remarks
 
 ## Update a component
+
 Updates an existing component resource.
 
 <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/components/**{componentId}**
@@ -176,8 +181,8 @@ Updates an existing component resource.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| componentId | path | string |  | The component identifier |
+| projectId | path | string |  | The project identifier. |
+| componentId | path | string |  | The component identifier. |
 
 ### Example request
 
@@ -292,7 +297,8 @@ PUT: /api/management/workflow
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
-# See also
+### See also
+
 [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type)
 
 
@@ -306,8 +312,8 @@ Deletes a component from a specific project.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
-| componentId | path | string |  | The component identifier |
+| projectId | path | string |  | The project identifier. |
+| componentId | path | string |  | The component identifier. |
 
 ### Example request
 
@@ -327,7 +333,8 @@ DELETE: /api/management/projects/movieDb/components/movieRole
 ### Validations
 
 #### Deleting a component which is in use
-If a component is in use within a content type then it can't be deleted. If you attempt to delete a component which is in use you will get the follwoing response.
+
+If a component is in use within a content type then it can't be deleted. If you attempt to delete a component which is in use you will get the following response.
 
 ```http
 {
