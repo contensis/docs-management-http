@@ -42,14 +42,14 @@
 
 ## Entries
 
-* [Get an entry](/key-concepts/entries.md#get-an-entry)
-* [Create an entry](/key-concepts/entries.md#create-an-entry)
-* [Update an entry](/key-concepts/entries.md#update-an-entry)
-* [Publish an entry](/key-concepts/entries.md#publish-an-entry)
-* [List entries](/key-concepts/entries.md#list-entries)
-* [List entries by content type](/key-concepts/entries.md#list-entries-by-content-type)
-* [Delete an entry](/key-concepts/entries.md#delete-an-entry)
-* [Delete an entry variation](/key-concepts/entries.md#delete-an-entry-variation)
+* [Get an entry](/entries/get-an-entry.md)
+* [Create an entry](/entries/create-an-entry.md)
+* [Update an entry](/entries/update-an-entry.md)
+* [Publish an entry](/entries/publish-an-entry.md)
+* [List entries](/entries.md/list-entries.md)
+* [List entries by content type](/entries/list-entries-by-content-type.md)
+* [Delete an entry](/entries/delete-an-entry.md)
+* [Delete an entry variation](/entries/delete-an-entry-variation.md)
 
 ## Models
 
