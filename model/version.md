@@ -1,21 +1,23 @@
 # Version
+
 The version object contains the version status information for the current version of the resource.
 
 ## Properties
+
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
-| createdBy | string | | The user id of who created the resource |
-| created | string | datetime | The date and time the resource was created |
-| modifiedBy | string | | The user id of who last modified the resource |
-| modified | string | datetime | The date and time the resource version was last modified |
-| publishedBy | string | | The user id of who last published the resource |
-| published | string | datetime | The date and time the resource version was last published |
-| versionNo | string | {Major}.{Minor} | The version number of the resource |
+| createdBy | string | | The user id of who created the resource. |
+| created | string | datetime | The date and time the resource was created. |
+| modifiedBy | string | | The user id of who last modified the resource. |
+| modified | string | datetime | The date and time the resource version was last modified. |
+| publishedBy | string | | The user id of who last published the resource. |
+| published | string | datetime | The date and time the resource version was last published. |
+| versionNo | string | {Major}.{Minor} | The version number of the resource. |
 
 
 ## VersionNo
 
-The *versionNo* value follows a two-part versioning scheme:
+The *versionNo* value follows a two-part version scheme:
 
 > {Major}.{Minor}
 

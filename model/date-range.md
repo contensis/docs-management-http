@@ -6,8 +6,8 @@ The date range object represents a start and end point in time.
 
 | Name | Type | Format | Description |
 | :------- | :--- | :-- | :---------- |
-| from | datetime | | The date and time the range starts |
-| to | datetime | | The date and time the range ends |
+| from | datetime | | The date and time the range starts. |
+| to | datetime | | The date and time the range ends. |
 
 ## Validation
 
