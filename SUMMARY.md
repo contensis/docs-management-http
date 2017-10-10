@@ -18,11 +18,11 @@
 
 ## Projects
 
-* [Get a project](/key-concepts/projects.md#get-a-project)
-* [Create a project](/key-concepts/projects.md#create-a-project)
-* [Update a project](/key-concepts/projects.md#update-a-project)
-* [List projects](/key-concepts/projects.md#list-projects)
-* [Delete a project](/key-concepts/projects.md#delete-a-project)
+* [Get a project](/projects/get-a-project.md)
+* [Create a project](/projects/create-a-project.md)
+* [Update a project](/projects/update-a-project.md)
+* [List projects](/projects/list-projects.md)
+* [Delete a project](/projects/delete-a-project.md)
 
 <!-- ## Content Types
 * [Get a content type](/key-concepts/content-types.md#get-a-content-type)
@@ -46,7 +46,7 @@
 * [Create an entry](/entries/create-an-entry.md)
 * [Update an entry](/entries/update-an-entry.md)
 * [Publish an entry](/entries/publish-an-entry.md)
-* [List entries](/entries.md/list-entries.md)
+* [List entries](/entries/list-entries.md)
 * [List entries by content type](/entries/list-entries-by-content-type.md)
 * [Delete an entry](/entries/delete-an-entry.md)
 * [Delete an entry variation](/entries/delete-an-entry-variation.md)
