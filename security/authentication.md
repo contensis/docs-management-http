@@ -34,6 +34,7 @@ scope=Entry_Read ContentType_Read Project_Read
 > **Note** The *expires_in* value is in seconds.
 
 ## Unsuccessful response
+s
 `400 - BadRequest`
 
 ```json

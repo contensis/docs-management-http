@@ -1,6 +1,7 @@
 # Contensis HTTP Management API
 
 ## Introduction
+
 The Management API allows you to create and manage entries within Contensis. 
 Our primary aim with this version of the API is to enable you to easily import/integrate content from other systems.
 
