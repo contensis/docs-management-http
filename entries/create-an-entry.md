@@ -12,7 +12,7 @@ Creates a new entry resource.
 
 ### Example request
 
-```http
+```json
 POST: /api/management/projects/movieDb/entries/
 
 {
@@ -70,7 +70,7 @@ POST: /api/management/projects/movieDb/entries/
 
 A project must exist to be able to create entries. If you attempt to create an entry in a project which doesn't exist you will get the following response. 
 
-```http
+```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
     "message": "There are validation errors creating the entry",
@@ -89,7 +89,7 @@ A project must exist to be able to create entries. If you attempt to create an e
 
 The published content type must exist to be able to create an entry. If you attempt to create an entry for a content type which doesn't exist or hasn't been published you will get the following response.
 
-```http
+```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
     "message": "There are validation errors creating the entry",
