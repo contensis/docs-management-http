@@ -10,7 +10,7 @@ None.
 
 ### Example request
 
-```http
+```json
 PUT: /api/management/workflow
 
 {  

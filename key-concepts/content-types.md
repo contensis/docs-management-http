@@ -51,7 +51,7 @@ Creates a new content type resource.
 
 ### Example request
 
-```http
+```json
 POST: /api/management/projects/movieDb/contenttypes/
 
 {
@@ -173,7 +173,7 @@ Creates a new content type resource.
 
 ### Example request
 
-```http
+```json
 PUT: /api/management/projects/movieDb/contenttypes/movie
 
 {
@@ -294,7 +294,7 @@ None.
 
 ### Example request
 
-```http
+```json
 PUT: /api/management/workflow
 
 {  

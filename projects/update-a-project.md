@@ -6,7 +6,7 @@ Updates an existing project resource.
 
 ### Example request
 
-```http
+```json
 PUT: /api/management/projects/movieDb
 
 {

@@ -6,7 +6,7 @@ Creates a new project resource.
 
 ### Example request
 
-```http
+```json
 POST: /api/management/projects/
 
 {
@@ -38,7 +38,7 @@ POST: /api/management/projects/
 
 A project must have a unique id. If you attempt to create a project with an id which is already in use you will get the following response.
 
-```http
+```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
     "message": "There are validation errors creating the project",
@@ -56,7 +56,7 @@ A project must have a unique id. If you attempt to create a project with an id w
 
 A project must have a primary language defined. If you attempt to create a project without specifying a primary language you will get the following response.
 
-```http
+```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
     "message": "There are validation errors creating the project",

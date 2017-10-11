@@ -51,7 +51,7 @@ Creates a new component resource.
 
 ### Example request
 
-```http
+```json
 POST: /api/management/projects/movieDb/components/
 
 {
@@ -136,7 +136,7 @@ POST: /api/management/projects/movieDb/components/
 
 A project must exist to be able to create a component. If you specify a project which doesn't exist you will get the following response.
 
-```http
+```json
 {
     "logId": "694b56b4-bdd9-4330-9b48-a32047037a0a",
     "message": "Unknown project 'movieDb'",
@@ -154,7 +154,7 @@ A project must exist to be able to create a component. If you specify a project 
 
 The Id given to a component must be unique. If there is an existing component or content type with the same Id then you will get the following response.
 
-```http
+```json
 {
     "logId": "ea13ba29-33f4-423c-9789-5c94b978e03f",
     "message": "There are validation errors creating the component",
@@ -186,7 +186,7 @@ Updates an existing component resource.
 
 ### Example request
 
-```http
+```json
 PUT: /api/management/projects/movieDb/components/movieRole
 
 {
@@ -269,7 +269,7 @@ None.
 
 ### Example request
 
-```http
+```json
 PUT: /api/management/workflow
 
 {  
@@ -336,7 +336,7 @@ DELETE: /api/management/projects/movieDb/components/movieRole
 
 If a component is in use within a content type then it can't be deleted. If you attempt to delete a component which is in use you will get the following response.
 
-```http
+```json
 {
     "logId": "6eda131e-c8eb-44dc-8665-ae3a8b1815d8",
     "message": "There are validation errors deleting the component",

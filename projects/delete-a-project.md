@@ -26,7 +26,7 @@ DELETE: /api/management/projects/movieDb/
 
 A project cannot be deleted if it is the only project in a Contensis instance. If you attempt to delete all projects in a Contensis instance, you will get the following response.
 
-```http
+```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
     "message": "There are validation errors deleting the project 'movieDb'",
@@ -44,7 +44,7 @@ A project cannot be deleted if it is the only project in a Contensis instance. I
 
 In order to delete a project it has to be empty. This is a safeguard to stop people deleting projects which are in use. If you attempt to delete a project which contains content types, you will get the following response.
 
-```http
+```json
 {
     "logId": "5fca7986-5ba3-4eb4-9cea-b5f25aaaed09",
     "message": "There are validation errors deleting the project 'movieDb'",
