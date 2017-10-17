@@ -64,4 +64,11 @@
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
 
+## Roles
+* [Get a role](/roles/get-a-role.md)
+* [Create a role](/roles/create-a-role.md)
+* [Update a role](/roles/update-a-role.md)
+* [List roles](/roles/list-roles.md)
+* [Delete a role](/entries/delete-a-role.md)
+
 <!-- * [Content type](/model/content-type.md) -->
