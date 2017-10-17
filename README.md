@@ -42,3 +42,13 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [List entries by content type](/entries/list-entries-by-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
 | [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 | [Delete an entry variation](/entries/delete-an-entry-variation.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
+
+### Roles
+
+|||
+|-|-|
+| [Get a role](/roles/get-a-role.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** |
+| [Create a role](/roles/create-a-role.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/security/roles/ |
+| [Update a role](/roles/update-a-role.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** 
+| [List roles](/roles/list-roles.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/ |
+| [Delete a role](/roles/delete-a-role.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** 
