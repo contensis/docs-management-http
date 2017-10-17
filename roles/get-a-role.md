@@ -1,8 +1,8 @@
-## Delete a role
+## Get a role
 
-Deletes a role by its Id.
+Gets a role by its Id.
 
-<span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**
 
 ### Parameters
 
@@ -14,14 +14,14 @@ Deletes a role by its Id.
 ### Example request
 
 ```http
-DELETE: /api/management/projects/movieDb/security/roles/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c
+GET: /api/management/projects/movieDb/security/roles/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 ```
 
 ### Response message
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 204 | Success | |
+| 200 | Success | [Role](/model/role.md) |
 | 403 | Forbidden | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
@@ -30,12 +30,12 @@ DELETE: /api/management/projects/movieDb/security/roles/71f73a9b-2a13-4d63-bcc1-
 
 #### Project does not exist
 
-Roles are project specific. If you attempt to delete a role in a project which does not exist you will get the following response. 
+Roles are project specific. If you attempt to get a role in a project which does not exist you will get the following response. 
 
 ```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
-    "message": "There are validation errors deleting the role",
+    "message": "There are validation errors getting the role",
     "data": [
         {
             "field": "projectId",
@@ -48,12 +48,12 @@ Roles are project specific. If you attempt to delete a role in a project which d
 
 #### Role does not exist
 
-If you attempt to delete a role which does not exist you will get the following response. 
+If you attempt to get a role which does not exist you will get the following response. 
 
 ```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
-    "message": "There are validation errors deleting the role",
+    "message": "There are validation errors getting the role",
     "data": [
         {
             "field": "projectId",
@@ -64,14 +64,14 @@ If you attempt to delete a role which does not exist you will get the following 
 }
 ```
 
-#### Insufficient permissions to delete a role
+#### Insufficient permissions to get a role
 
-In order to delete a role you must be a member of the "System Administrators" user group. If you do not have permission to delete a role you will get the following response.
+In order to get a role you must be a member of the "System Administrators" user group. If you do not have permission to get a role you will get the following response.
 
 ```json
 {
     "logId": "00000000-0000-0000-0000-000000000000",
-    "message": "There are validation errors deleting the role",
+    "message": "There are validation errors getting the role",
     "data": [
         {
             "message": "Access denied"
