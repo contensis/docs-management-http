@@ -1,8 +1,8 @@
 ## Delete a role
 
-Deletes an role by its Id.
+Deletes a role by its Id.
 
-<span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/roles/**{roleId}**
+<span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**
 
 ### Parameters
 
@@ -14,8 +14,7 @@ Deletes an role by its Id.
 ### Example request
 
 ```http
-Accept: application/json
-DELETE: /api/management/projects/movieDb/roles/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c
+DELETE: /api/management/projects/movieDb/security/roles/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 ```
 
 ### Response message

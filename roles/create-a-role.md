@@ -2,7 +2,7 @@
 
 Creates a new role.
 
-<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/roles/
+<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/security/roles
 
 ### Parameters
 
@@ -13,7 +13,7 @@ Creates a new role.
 ### Example request
 
 ```json
-POST: /api/management/projects/movieDb/roles/
+POST: /api/management/projects/movieDb/security/roles/
 
 {
     "name": {
@@ -35,7 +35,7 @@ POST: /api/management/projects/movieDb/roles/
     },
     "assignments": {
         "users": [ "a.user" ],
-        "groups": [ "MovieEditors" ]
+        "groups": [ "Movie Editors" ]
     }
 }
 ```
@@ -55,7 +55,7 @@ POST: /api/management/projects/movieDb/roles/
 
 #### Project does not exist
 
-A project must exist to be able to create roles. If you attempt to create an role in a project which doesn't exist you will get the following response. 
+Roles are project specific. If you attempt to create a role in a project which does not exist you will get the following response. 
 
 ```json
 {
@@ -71,9 +71,9 @@ A project must exist to be able to create roles. If you attempt to create an rol
 }
 ```
 
-#### None System Admin
+#### Insufficient permissions to create a role
 
-In order to create a role you must be a system administrator, if you are not the following error will be returned
+In order to create a role you must be a member of the "System Administrators" user group. If you do not have permission to create a role you will get the following response.
 
 ```json
 {
@@ -90,7 +90,7 @@ In order to create a role you must be a system administrator, if you are not the
 
 #### Content type does not exist
 
-The content type must exist to be able to create an role. If you attempt to create an role for a content type which doesn't exist you will get the following response.
+The content type must exist to be able to create a role. If you attempt to create a role for a content type which does not exist you will get the following response.
 
 ```json
 {

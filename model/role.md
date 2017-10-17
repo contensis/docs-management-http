@@ -1,17 +1,17 @@
 # Roles
 
-An role definition in the Management API contains a list of permissions and the content types or entries those permissions are valid for. The role also contains a list of users and groups who will be given those permissions.
+Role definitions in the Management API contain permissions associated with content types and entries, with users and groups assigned to those permissions.
 
 ### Role
 
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
-| id | string | GUID | The entry identifier as a 128 bit GUID. |
+| id | string | GUID | The role identifier as a 128 bit GUID. |
 | name | object | [Localized value](/key-concepts/localization.md) | The name of the role. |
 | description | object | [Localized value](/key-concepts/localization.md) | The description of the role. |
 | enabled | boolean | | If true then this role is enabled, otherwise false. |
-| permissions | object | [Permissions](#permissions) | Permissions to be assigned by the role. |
-| assignments | object | [Assignments](#assignments) | Assignments to be given the roles permissions. |
+| permissions | object | [Permissions](#permissions) | Permissions associated with content types and entries. |
+| assignments | object | [Assignments](#assignments) | Assignments of users and user groups to the role. |
 
 ### Permissions
 
@@ -24,8 +24,8 @@ An role definition in the Management API contains a list of permissions and the 
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The content type identifier as a 128 bit GUID. |
-| languages | array | string | One or more languages to give permission for, use * for all languages. |
-| actions | array | string | One or more actions to give permission for, use * for all actions, or stateName.* for all permissions in a given state. |
+| languages | array | string | One or more languages to give permissions to. * denotes all languages. |
+| actions | array | string | One or more actions to give permission to. * denotes all actions. **{workflowStateName}**.* denotes all permissions applicable to the given workflow state. |
 
 ### Assignments
 | Name | Type | Format | Description |
@@ -35,7 +35,7 @@ An role definition in the Management API contains a list of permissions and the 
 
 ## Example
 
-This JSON example shows a role that gives permissions to the movie content type.
+This JSON example shows a role that gives authoring permissions for the user group "Movie Editors", and the user "a.user" to movie content type entries for the en-GB language code.
 
 ```json
 {
@@ -44,7 +44,7 @@ This JSON example shows a role that gives permissions to the movie content type.
         "en-GB": "Movie Editors"
     },
     "description": {
-        "en-GB": "Movie editors can edit movies, but not submit or approve them"
+        "en-GB": "Movie editors can edit movie entries, but not submit or approve them"
     },
     "enabled": true,
     "permissions": {
@@ -59,7 +59,7 @@ This JSON example shows a role that gives permissions to the movie content type.
     },
     "assignments": {
         "users": [ "a.user" ],
-        "groups": [ "MovieEditors" ]
+        "groups": [ "Movie Editors" ]
     }
 }
 ```
