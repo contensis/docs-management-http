@@ -70,5 +70,5 @@
 * [Link](/model/link.md)
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
-
+* [Role](/model/role.md)
 <!-- * [Content type](/model/content-type.md) -->
