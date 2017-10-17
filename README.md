@@ -13,11 +13,11 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 |||
 |-|-|
-| [Get a project](/key-concepts/projects.md#get-a-project) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/ |
-| [Create a project](/key-concepts/projects.md#create-a-project) | <span class="label label--post">POST</span> /api/management/projects/ |
-| [Update a project](/key-concepts/projects.md#update-a-project) | <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/ |
-| [List projects](/key-concepts/projects.md#list-projects) | <span class="label label--get">GET</span> /api/management/projects/ |
-| [Delete a project](/key-concepts/projects.md#delete-a-project) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/ |
+| [Get a project](/projects/get-a-project.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/ |
+| [Create a project](/projects/create-a-project.md) | <span class="label label--post">POST</span> /api/management/projects/ |
+| [Update a project](/projects/update-a-project.md) | <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/ |
+| [List projects](/projects/list-projects.md) | <span class="label label--get">GET</span> /api/management/projects/ |
+| [Delete a project](/projects/delete-a-project.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/ |
 
 
 <!-- ### Content Types
@@ -35,11 +35,11 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 |||
 |-|-|
-| [Get an entry](/key-concepts/entries.md#get-an-entry) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}** |
-| [Create an entry](/key-concepts/entries.md#create-an-entry) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/ |
-| [Update an entry variation](/key-concepts/entries.md#update-an-entry) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
-| [Publish an entry](/key-concepts/entries.md#publish-an-entry) | <span class="label label--post">POST</span> /api/management/workflow/ |
-| [List entries](/key-concepts/entries.md#list-entries) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/ |
-| [List entries by content type](/key-concepts/entries.md#list-entries-by-content-type) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
-| [Delete an entry](/key-concepts/entries.md#delete-an-entry) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
-| [Delete an entry variation](/key-concepts/entries.md#delete-an-entry-variation) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
+| [Get an entry](/entries/get-an-entry.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}** |
+| [Create an entry](/entries/create-an-entry.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/ |
+| [Update an entry variation](/entries/update-an-entry.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
+| [Publish an entry](/entries/publish-an-entry.md) | <span class="label label--post">POST</span> /api/management/workflow/ |
+| [List entries](/entries/list-entries.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/ |
+| [List entries by content type](/entries/list-entries-by-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
+| [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
+| [Delete an entry variation](/entries/delete-an-entry-variation.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
