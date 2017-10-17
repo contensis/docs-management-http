@@ -25,7 +25,7 @@ Role definitions in the Management API contain permissions associated with conte
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The content type identifier as a 128 bit GUID. |
 | languages | array | string | One or more languages to give permissions to. * denotes all languages. |
-| actions | array | string | One or more actions to give permission to. * denotes all actions. **{workflowStateName}**.* denotes all permissions applicable to the given workflow state. |
+| actions | array | string | One or more actions to give permission to. * denotes all actions.<br> **{workflowStateName}**.&#42; denotes all permissions applicable to the given workflow state. |
 
 ### Assignments
 | Name | Type | Format | Description |
