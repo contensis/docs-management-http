@@ -56,7 +56,7 @@
 * [Create a role](/roles/create-a-role.md)
 * [Update a role](/roles/update-a-role.md)
 * [List roles](/roles/list-roles.md)
-* [Delete a role](/entries/delete-a-role.md)
+* [Delete a role](/roles/delete-a-role.md)
 
 ## Models
 
