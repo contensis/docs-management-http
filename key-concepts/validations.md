@@ -597,7 +597,7 @@ Validates the maximum amount of elements an array type field can have.
 
 ### Applies to
 
-booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArray
+dateTimeArray, decimalArray, integerArray, objectArray, stringArray
 
 ### Definition
 
@@ -636,7 +636,7 @@ Validates the minimum amount of elements an array type field can have.
 
 ### Applies to
 
-booleanArray, dateTimeArray, decimalArray, integerArray, objectArray, stringArray
+dateTimeArray, decimalArray, integerArray, objectArray, stringArray
 
 ### Definition
 
