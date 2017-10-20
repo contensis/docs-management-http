@@ -58,6 +58,9 @@
 * [List roles](/roles/list-roles.md)
 * [Delete a role](/roles/delete-a-role.md)
 
+## Permissions
+* [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
+
 ## Models
 
 * [Project](/model/project.md)

@@ -52,3 +52,8 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Update a role](/roles/update-a-role.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** 
 | [List roles](/roles/list-roles.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/ |
 | [Delete a role](/roles/delete-a-role.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** 
+
+### Permissions
+|||
+|-|-|
+| [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/**{resourceType}**/**{resourceId?}**?userId=**{userId}** |
