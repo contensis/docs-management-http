@@ -51,7 +51,9 @@
 * [Delete an entry](/entries/delete-an-entry.md)
 * [Delete an entry variation](/entries/delete-an-entry-variation.md)
 
+<!--
 ## Roles
+
 * [Get a role](/roles/get-a-role.md)
 * [Create a role](/roles/create-a-role.md)
 * [Update a role](/roles/update-a-role.md)
@@ -59,8 +61,9 @@
 * [Delete a role](/roles/delete-a-role.md)
 
 ## Permissions
-* [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 
+* [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
+-->
 ## Models
 
 * [Project](/model/project.md)
@@ -73,5 +76,6 @@
 * [Link](/model/link.md)
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
-* [Role](/model/role.md)
-<!-- * [Content type](/model/content-type.md) -->
+
+<!--* [Role](/model/role.md)
+ * [Content type](/model/content-type.md) -->
