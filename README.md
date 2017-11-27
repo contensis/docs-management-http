@@ -57,3 +57,4 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 |||
 |-|-|
 | [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/**{resourceType}**/**{resourceId?}**?userId=**{userId}** |
+| [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/**{resourceType}**/**{resourceId?}**/actions/**{action}**?userId=**{userId}** |

@@ -60,6 +60,7 @@
 
 ## Permissions
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
+* [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
 
 ## Models
 
