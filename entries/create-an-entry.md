@@ -1,5 +1,6 @@
 ---
 description: Creating an entry using the HTTP management API by sending a POST request.
+keywords: Create entry, entry creation
 ---
 
 ## Create an entry
