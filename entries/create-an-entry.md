@@ -1,3 +1,7 @@
+---
+description: Creating an entry using the HTTP management API by sending a POST request.
+---
+
 ## Create an entry
 
 Creates a new entry resource.
