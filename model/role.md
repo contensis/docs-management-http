@@ -2,7 +2,7 @@
 
 Role definitions in the Management API contain permissions associated with content types and entries, with users and groups assigned to those permissions.
 
-### Role
+## Role
 
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
@@ -13,29 +13,32 @@ Role definitions in the Management API contain permissions associated with conte
 | permissions | object | [Permissions](#permissions) | Permissions associated with content types and entries. |
 | assignments | object | [Assignments](#assignments) | Assignments of users and user groups to the role. |
 
-### Permissions
+## Permissions
 
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | entries | array | [Permission](#permission) | An array of permissions for entries. |
 | contentTypes | array | [Permission](#permission) | An array of permissions for contentTypes. |
 
-### Permission
+## Permission
+
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The content type identifier as a 128 bit GUID. |
 | languages | array | string | One or more languages to give permissions to. * denotes all languages. |
-| actions | array | string | One or more actions to give permission to. * denotes all actions.<br> **{workflowStateName}**.&#42; denotes all permissions applicable to the given workflow state. |
+| actions | array | string | One or more actions to give permission to. * denotes all actions. <br /> **{workflowStateName}**.&#42; denotes all permissions applicable to the given workflow state. |
 
-### Assignments
+## Assignments
+
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | users | array | string | Zero or more user names. |
 | groups | array | string | Zero or more group names. |
+| apiKeys | array | string | Zero or more API client ids. |
 
 ## Example
 
-This JSON example shows a role that gives authoring permissions for the user group "Movie Editors", and the user "a.user" to movie content type entries for the en-GB language code.
+This JSON example shows a role that gives authoring permissions for the user group "Movie Editors", the user "a.user" and two Api Keys to movie content type entries for the en-GB language code.
 
 ```json
 {
@@ -59,7 +62,9 @@ This JSON example shows a role that gives authoring permissions for the user gro
     },
     "assignments": {
         "users": [ "a.user" ],
-        "groups": [ "Movie Editors" ]
+        "groups": [ "Movie Editors" ],
+        "apiKeys": [ "1d09002e-7aeb-44b1-810c-4dc4d4bddbeb",  
+            "a5765adf-69fc-4e39-9ad7-770a73aa961c" ]
     }
 }
 ```
