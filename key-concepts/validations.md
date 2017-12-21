@@ -1,3 +1,6 @@
+---
+description: Validations allow you to control the content which is entered within a field.  
+---
 # Validations
 
 Validations allow you to control the content which is entered within a field. Each validation has a set of properties which are described in more detail below. A common property across all validations is the message. Messages are optional on validations and if not specified, a default validation error message is returned from the API.
