@@ -32,6 +32,7 @@ Role definitions in the Management API contain permissions associated with conte
 | :------- | :--- | :----- | :---------- |
 | users | array | string | Zero or more user names. |
 | groups | array | string | Zero or more group names. |
+| apiKeys | array | string | Zero or more API key names. |
 
 ## Example
 
@@ -59,7 +60,8 @@ This JSON example shows a role that gives authoring permissions for the user gro
     },
     "assignments": {
         "users": [ "a.user" ],
-        "groups": [ "Movie Editors" ]
+        "groups": [ "Movie Editors" ],
+        "apiKeys": [ "Movie Import" ]
     }
 }
 ```

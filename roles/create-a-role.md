@@ -35,7 +35,8 @@ POST: /api/management/projects/movieDb/security/roles/
     },
     "assignments": {
         "users": [ "a.user" ],
-        "groups": [ "Movie Editors" ]
+        "groups": [ "Movie Editors" ],
+        "apiKeys": [ "Movie Import" ]
     }
 }
 ```

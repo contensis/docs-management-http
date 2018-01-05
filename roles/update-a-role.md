@@ -36,7 +36,8 @@ PUT: /api/management/projects/movieDb/security/roles/71b48d24-7f65-457d-bd51-cba
     },
     "assignments": {
         "users": [ "a.user" ],
-        "groups": [ "Movie Editors" ]
+        "groups": [ "Movie Editors" ],
+        "apiKeys": [ "Movie Import" ]
     }
 }
 ```
