@@ -37,7 +37,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Get an entry](/entries/get-an-entry.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}** |
 | [Create an entry](/entries/create-an-entry.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/ |
 | [Update an entry variation](/entries/update-an-entry.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
-| [Publish an entry](/entries/publish-an-entry.md) | <span class="label label--post">POST</span> /api/management/workflow/ |
+| [Publish an entry](/entries/publish-an-entry.md) | <span class="label label--put">PUT</span> /api/management/workflow/ |
 | [List entries](/entries/list-entries.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/ |
 | [List entries by content type](/entries/list-entries-by-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
 | [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
