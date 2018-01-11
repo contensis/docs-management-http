@@ -52,6 +52,7 @@
 * [Delete an entry variation](/entries/delete-an-entry-variation.md)
 
 ## Roles
+
 * [Get a role](/roles/get-a-role.md)
 * [Create a role](/roles/create-a-role.md)
 * [Update a role](/roles/update-a-role.md)
@@ -59,6 +60,7 @@
 * [Delete a role](/roles/delete-a-role.md)
 
 ## Permissions
+
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 * [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
 
@@ -75,4 +77,10 @@
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
 * [Role](/model/role.md)
+* [Paged list](/model/paged-list.md)
+
 <!-- * [Content type](/model/content-type.md) -->
+
+
+<!--* [Role](/model/role.md)
+ * [Content type](/model/content-type.md) -->
