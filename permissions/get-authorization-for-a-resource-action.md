@@ -18,7 +18,7 @@ Gets an authorization confirmation for the requested user, resource and action.
 ### Example request
 
 ```http
-GET: /api/management/projects/movieDb/security/permissions/entries/a65a9d9d-ee64-4c25-a80c-ab5aee00fb9d/actions/create?userId=a.user
+GET: /api/management/projects/movieDb/security/permissions/entries/a65a9d9d-ee64-4c25-a80c-ab5aee00fb9d/actions/sys.create/?userId=a.user
 ```
 
 ### Response message

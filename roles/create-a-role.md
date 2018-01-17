@@ -28,7 +28,7 @@ POST: /api/management/projects/movieDb/security/roles/
             {
                 "id": "movie",
                 "languages": ["en-GB"],
-                "actions": ["authoring.*", "awaitingApproval.revoke"]
+                "actions": ["sys.update", "awaitingApproval.revoke"]
             }
         ],
         "contentTypes": [ ]

@@ -32,7 +32,7 @@ GET: /api/management/projects/movieDb/security/permissions/entries/a65a9d9d-ee64
 
 ```json
 {
-    "actions": ["create", "delete", "authoring.submit", "authoring.update", "submitted.revoke"]
+    "actions": ["sys.create", "sys.delete", "authoring.submit", "authoring.update", "submitted.revoke"]
 }
 ```
 
