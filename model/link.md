@@ -1,3 +1,6 @@
+---
+description: The link object represents a reference to another entry or asset.
+---
 # Link
 
 The link object represents a reference to another entry or asset.
