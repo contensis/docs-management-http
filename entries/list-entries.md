@@ -1,6 +1,6 @@
 ## List entries
 
-Lists entries
+Lists entries.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/
 
