@@ -1,3 +1,6 @@
+---
+description: Deletes an entry by its Id.
+---
 ## Delete an entry
 
 Deletes an entry by its Id.
