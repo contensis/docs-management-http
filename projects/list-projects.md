@@ -1,3 +1,6 @@
+---
+description: Returns a list of the project resources for a Contensis instance.
+---
 ## List projects
 
 Returns a list of the project resources for a Contensis instance.
