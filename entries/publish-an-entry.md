@@ -1,3 +1,6 @@
+---
+description: Publishes an entry.
+---
 ## Publish an entry
 
 Publishes an entry.
