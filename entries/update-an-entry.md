@@ -1,3 +1,6 @@
+---
+description: Updates an entry resource.
+---
 ## Update an entry
 
 Updates an entry resource.
