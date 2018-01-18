@@ -1,5 +1,4 @@
----
-description: Localization for an entry is identified by a language code which is formed using a ISO 639-1 language code, or a combination of a ISO 639-1 language code and a ISO 3166-1 country code.---
+---description: Localization for an entry is identified by a language code which is formed using a ISO 639-1 language code, or a combination of a ISO 639-1 language code and a ISO 3166-1 country code.---
 
 # Localization
 
