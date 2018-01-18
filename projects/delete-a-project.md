@@ -1,3 +1,6 @@
+---
+description: Deletes a project resource.
+---
 ## Delete a project
 
 Deletes a project resource.
