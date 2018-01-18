@@ -1,3 +1,6 @@
+---
+description: Creates a new project resource.
+---
 ## Create a project
 
 Creates a new project resource.
