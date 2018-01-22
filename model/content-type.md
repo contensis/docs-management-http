@@ -1,3 +1,6 @@
+---
+description: A content type determines the schema of an entry.
+---
 # Content type
 
 A content type determines the schema of an [entry](/model/entry.md). Entries are constructed and validated using the information defined in the fields collection.

@@ -1,3 +1,6 @@
+---
+description: Role definitions in the Management API contain permissions associated with content types and entries, with users and groups assigned to those permissions.
+---
 # Roles
 
 Role definitions in the Management API contain permissions associated with content types and entries, with users and groups assigned to those permissions.

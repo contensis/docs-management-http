@@ -1,6 +1,9 @@
+---
+description: Lists entries by content type.
+---
 ## List entries by content type
 
-Lists entries by content type
+Lists entries by content type.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries
 

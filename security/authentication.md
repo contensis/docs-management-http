@@ -1,3 +1,7 @@
+---
+description: To access any resource from the Management API, a client needs to authenticate with the Zengenti OAuth 2.0 Identity Provider.
+---
+
 # Authentication
 
 To access any resource from the Management API, a client needs to authenticate with the Zengenti OAuth 2.0 Identity Provider, which is hosted with the Contensis application.

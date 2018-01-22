@@ -1,3 +1,6 @@
+---
+description: Updates an existing project resource.
+---
 ## Update a project
 
 Updates an existing project resource.

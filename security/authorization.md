@@ -1,3 +1,6 @@
+---
+description: On a successful authentication response the access_token value must be set as the Authorization HTTP header for all REST requests.
+---
 # Authorization
 
 ## Bearer token

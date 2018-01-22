@@ -1,3 +1,6 @@
+---
+description: Projects offer a way of grouping related content types, entries and assets.
+---
 # Projects
 
 Projects offer a way of grouping related content types, entries and assets. Typically a project would represent a single application such as a website, intranet or mobile application.

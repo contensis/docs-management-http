@@ -1,3 +1,6 @@
+---
+description: Deletes an entry variation by its id.
+---
 ## Delete an entry variation
 
 Deletes an entry variation by its id.

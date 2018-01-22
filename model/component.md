@@ -1,3 +1,6 @@
+---
+description: A component determines a reusable schema added to content types which entries are then created from.
+---
 # Component
 
 A component determines a reusable schema added to [content types](/model/content-type.md) which [entries](/model/entry.md) are then created from. Components contain a list of fields just like content types, and allow for a standardized schema for modelling content.

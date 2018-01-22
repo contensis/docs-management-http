@@ -1,3 +1,6 @@
+---
+description: OAuth 2.0 scopes allow a developer to specify which resources their application can access.
+---
 # Scopes
 
 OAuth 2.0 scopes allow a developer to specify which resources their application can access. These are included as a space-separated list value, in the scope parameter when invoking an [authentication](/security/authentication.md) request.

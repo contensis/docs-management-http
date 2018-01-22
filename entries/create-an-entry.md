@@ -1,3 +1,6 @@
+---
+description: Creates a new entry resource.
+---
 ## Create an entry
 
 Creates a new entry resource.
