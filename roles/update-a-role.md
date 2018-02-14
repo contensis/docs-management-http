@@ -125,3 +125,21 @@ The content type must exist to be able to update a role. If you attempt to updat
     "type": "Validation"
 }
 ```
+
+#### Language unsupported by the content type
+
+Language assignments for a content type id must be supported by the content type. If you attempt to update a role with a language which is not supported by the content type you will get the following response.
+
+```json
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There are validation errors creating the role",
+    "data": [
+        {
+            "field": "Role.Permissions.Entries[index]",
+            "message": "The languages 'cy', 'fr' specified in the role are not supported by the content type."
+        }
+    ],
+    "type": "Validation"
+}
+```
