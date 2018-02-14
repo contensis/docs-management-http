@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The Management API allows you to create and manage entries within Contensis. 
+The Management API allows you to create and manage entries within Contensis.
 Our primary aim with this version of the API is to enable you to easily import/integrate content from other systems.
 
-The API is a RESTful service to ensure maximum compatibility, delivering content as JSON and resource files (assets) as text or binary files. We currently provide a .NET client API wrapper to simplify using the API.
+The API is a RESTful service to ensure maximum compatibility, delivering content as JSON and resource files (assets) as text or binary files. The life-cycle of  [content is controlled by workflow](/key-concepts/workflow.md) which can be controlled by invoking permissiod events. We currently provide a .NET client API wrapper to simplify using the API.
 
 ## Key concepts
 
@@ -42,6 +42,8 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [List entries by content type](/entries/list-entries-by-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
 | [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 | [Delete an entry variation](/entries/delete-an-entry-variation.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
+| [Invoke a workflow event](/entries/invoking-worklow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/workflow/events/
+
 
 ### Roles
 

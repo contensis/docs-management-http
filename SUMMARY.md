@@ -12,6 +12,7 @@ description: HTTP Delivery API summary.
 * [Errors](/key-concepts/errors.md)
 * [Localization](/key-concepts/localization.md)
 * [Validations](/key-concepts/validations.md)
+* [Workflow](/key-concepts/workflow.md)
 
 ## Security
 
@@ -53,6 +54,7 @@ description: HTTP Delivery API summary.
 * [List entries by content type](/entries/list-entries-by-content-type.md)
 * [Delete an entry](/entries/delete-an-entry.md)
 * [Delete an entry variation](/entries/delete-an-entry-variation.md)
+* [Invoking workflow](/entries/invoking-workflow.md)
 
 ## Roles
 
@@ -72,7 +74,7 @@ description: HTTP Delivery API summary.
 * [Project](/model/project.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)
-* [Composed Fields](/model/composed.md)
+* [Composed fields](/model/composed.md)
 * [Component](/model/component.md)
 * [DateRange](/model/date-range.md)
 * [Image](/model/image.md)
@@ -81,6 +83,7 @@ description: HTTP Delivery API summary.
 * [Quote](/model/quote.md)
 * [Role](/model/role.md)
 * [Paged list](/model/paged-list.md)
+* [Workflow trigger](/model/workflow-trigger.md)
 
 <!-- * [Content type](/model/content-type.md) -->
 
