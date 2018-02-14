@@ -65,7 +65,7 @@ description: HTTP Delivery API summary.
 * [Delete a role](/roles/delete-a-role.md)
 
 ## Permissions
-
+* [Overview](/permissions/overview.md)
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 * [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
 
