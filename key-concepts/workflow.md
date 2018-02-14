@@ -48,6 +48,8 @@ These are the available events for the supported workflows
 
 It is possible to only specify the `workflowEventId` i.e. 'approve' or 'submit' and the Management API client will automatically prefix the current state of the entry, but this is less explicit and open to invalid event invocations.
 
+**If a workflow event is invoked that is not valid for the current state, then a `WorkflowException` will be raised detailing the invalid action.**
+
 It is important to note certain states have 'sysUpdate' and 'sysDelete' events, which can't be invoked directly through a workflow event invocation, but can be invoked using the entry POST and DELETE operations. When an entry is in the Published state, invoking a entry POST update (which in-turn invokes sysUpdate) will automatically move the state back to Authoring.
 
 ## Event permissioning
