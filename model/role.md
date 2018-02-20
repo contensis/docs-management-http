@@ -56,7 +56,7 @@ This JSON example shows a role that gives authoring permissions for the user gro
             {
                 "id": "movie",
                 "languages": ["en-GB"],
-                "actions": ["sys.update", "authoring.*", "awaitingApproval.revoke"]
+                "actions": ["sys.update", "draft.*", "awaitingApproval.revoke"]
             }
         ],
         "contentTypes": [ ]

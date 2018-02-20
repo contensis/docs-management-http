@@ -49,7 +49,6 @@ description: HTTP Delivery API summary.
 * [Get an entry](/entries/get-an-entry.md)
 * [Create an entry](/entries/create-an-entry.md)
 * [Update an entry](/entries/update-an-entry.md)
-* [Publish an entry](/entries/publish-an-entry.md)
 * [List entries](/entries/list-entries.md)
 * [List entries by content type](/entries/list-entries-by-content-type.md)
 * [Delete an entry](/entries/delete-an-entry.md)

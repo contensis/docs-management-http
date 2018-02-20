@@ -19,7 +19,7 @@ This example shows a workflow trigger.
 {
     "language": "en-GB",
     "version": "2.3",
-    "event": "authoring.submit",
+    "event": "draft.submit",
     "data": {
         "message": "Have updated the final paragrah"
     }

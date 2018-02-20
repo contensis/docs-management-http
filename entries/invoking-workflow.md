@@ -20,7 +20,7 @@ POST: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b
 {
     "language": "en-GB",
     "version": "2.3",
-    "event": "authoring.submit",
+    "event": "draft.submit",
     "data": {
         "message": "Have updated the final paragrah"
     }

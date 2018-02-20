@@ -29,7 +29,7 @@ PUT: /api/management/projects/movieDb/security/roles/71b48d24-7f65-457d-bd51-cba
             {
                 "id": "movie",
                 "languages": ["*"],
-                "actions": ["authoring.*", "awaitingApproval.revoke"]
+                "actions": ["draft.*", "awaitingApproval.revoke"]
             }
         ],
         "contentTypes": [ ]
