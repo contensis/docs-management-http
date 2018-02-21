@@ -42,7 +42,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [List entries by content type](/entries/list-entries-by-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
 | [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 | [Delete an entry variation](/entries/delete-an-entry-variation.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
-| [Invoke a workflow event](/entries/invoking-worklow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/workflow/events/
+| [Invoke a workflow event](/entries/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/workflow/events/
 
 
 ### Roles
