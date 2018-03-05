@@ -1,3 +1,6 @@
+---
+description: The workflow trigger model is used within workflow event invocation requests.
+---
 # Workflow trigger
 
 The workflow trigger model is used within workflow event invocation requests.
