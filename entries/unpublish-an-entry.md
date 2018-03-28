@@ -3,7 +3,7 @@ description: Entries can be unpublished using the following workflow event invoc
 ---
 # Unpublishing entries
 
-Unpublishing an entry stops the entry from being returned in the Delivery API, removing it from your website. the unpublished entry will still be available in preview.
+Unpublishing an entry stops the entry from being returned in the Delivery API, removing it from your website.
 
 An entry can be unpublished by invoking the sysUnpublish workflow event.
 
