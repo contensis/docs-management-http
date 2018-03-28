@@ -24,7 +24,7 @@ This example shows a workflow trigger.
     "version": "2.3",
     "event": "draft.submit",
     "data": {
-        "message": "Have updated the final paragrah"
+        "message": "Have updated the final paragraph"
     }
 }
 ```

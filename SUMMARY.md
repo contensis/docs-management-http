@@ -54,6 +54,7 @@ description: HTTP Delivery API summary.
 * [Delete an entry](/entries/delete-an-entry.md)
 * [Delete an entry variation](/entries/delete-an-entry-variation.md)
 * [Invoking workflow](/entries/invoking-workflow.md)
+  * [Unpublish an entry](/entries/unpublish-an-entry.md)
 
 ## Roles
 
@@ -64,6 +65,7 @@ description: HTTP Delivery API summary.
 * [Delete a role](/roles/delete-a-role.md)
 
 ## Permissions
+
 * [Overview](/permissions/overview.md)
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 * [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
