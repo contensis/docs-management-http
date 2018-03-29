@@ -40,6 +40,7 @@ POST: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 403 | BadRequest | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 409 | Conflict | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ## Unpublish all entry variations
@@ -73,4 +74,5 @@ POST: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 403 | BadRequest | [Error](/key-concepts/errors.md) |
 | 404 | NotFound | [Error](/key-concepts/errors.md) |
+| 409 | Conflict | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
