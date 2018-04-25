@@ -3,9 +3,10 @@ description: Deletes an entry by its Id.
 ---
 ## Delete an entry
 
-Deletes an entry by its Id.
+Deletes an entry or specific variations by  Id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
+<span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**?language=**{comma seperated list of variations to delete}**
 
 ### Parameters
 
@@ -14,12 +15,19 @@ Deletes an entry by its Id.
 | projectId | path | string |  | The project identifier. |
 | entryId | path | string | GUID | The entry identifier. |
 
-### Example request
+### Example requests
 
 ```http
 Accept: application/json
 DELETE: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 ```
+
+```http
+Accept: application/json
+DELETE: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c?language=en-GB,fr
+```
+
+Please note you must be authorised to delete all the language variations or the whole request will fail.
 
 ### Response message
 

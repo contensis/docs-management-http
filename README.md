@@ -40,7 +40,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [List entries](/entries/list-entries.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/ |
 | [List entries by content type](/entries/list-entries-by-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
 | [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
-| [Delete an entry variation](/entries/delete-an-entry-variation.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
+| [Delete an entry variation](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**?language=**comma seperated list of languages**
 | [Invoke a workflow event](/entries/invoking-workflow.md) <br> [Unpublish an entry](/entries/unpublish-an-entry.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/workflow/events/
 
 
