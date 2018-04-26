@@ -6,7 +6,7 @@ description: Deletes an entry by its Id.
 Deletes an entry or specific variations by  Id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
-<span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**?language=**{comma seperated list of variations to delete}**
+<span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**?language=**{comma separated list of variations to delete}**
 
 ### Parameters
 
