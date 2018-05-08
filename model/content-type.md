@@ -10,7 +10,7 @@ A content type determines the schema of an [entry](/model/entry.md). Entries are
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | | A unique content type identifier. |
-| projectId | string |  | The project identifier. |
+| projectId | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to a content type. |
 | description | object | [Localized value](/key-concepts/localization.md) | The description text given to a content type .|
 | entryTitleField | string |  | The id of the field which should be used as the title in entry listings. |

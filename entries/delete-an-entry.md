@@ -1,18 +1,18 @@
 ---
 description: Deletes an entry by its Id.
 ---
-## Delete an entry
+# Delete an entry
 
 Deletes an entry or specific variations by  Id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**?language=**{comma separated list of variations to delete}**
 
-### Parameters
+## Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | entryId | path | string | GUID | The entry identifier. |
 
 ### Example requests

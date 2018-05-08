@@ -17,7 +17,7 @@ A single entry language variation can be unpublished by specifying the language.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
 | entryId   | path | string |  | The entry identifier |
 | trigger | body | object | [WorkflowTrigger](/model/workflow-trigger.md) | Details to invoke the workflow event |
 
@@ -53,7 +53,7 @@ All entry language variations can be unpublished, this is done in the same way a
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
 | entryId   | path | string |  | The entry identifier |
 | trigger | body | object | [WorkflowTrigger](/model/workflow-trigger.md) | Details to invoke the workflow event |
 

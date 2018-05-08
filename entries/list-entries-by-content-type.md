@@ -1,17 +1,17 @@
 ---
 description: Lists entries by content type.
 ---
-## List entries by content type
+# List entries by content type
 
 Lists entries by content type.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries
 
-### Parameters
+## Parameters
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | entryId | path | string | GUID | The entry identifier. |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
 | pageIndex | query | number | integer | The index of page. |

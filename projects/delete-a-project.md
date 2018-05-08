@@ -1,13 +1,13 @@
 ---
 description: Deletes a project resource.
 ---
-## Delete a project
+# Delete a project
 
 Deletes a project resource.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**
 
-### Example request
+## Example request
 
 ```http
 DELETE: /api/management/projects/movieDb/

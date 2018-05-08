@@ -25,7 +25,7 @@ These are the standard properties that all entries have. The language property i
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID. |
-| projectId | string | | The API identifier of the project the entry belongs to. |
+| projectId | string | | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | contentTypeId | string | | The API identifier of the content type that the entry is based on. |
 | dataFormat | string | | Either *entry* or *asset*. |
 | language | string | [Language code](/localization.md) | The language code of the entry variation. |
