@@ -64,6 +64,7 @@ POST: /api/management/projects/movieDb/contenttypes/
         "en-GB": "A movie type"
     },
     "entryTitleField": "title",
+    "entryDescriptionField": "overview",
     "fields": [
         {
             "id": "title",
@@ -186,6 +187,7 @@ PUT: /api/management/projects/movieDb/contenttypes/movie
         "en-GB": "A movie type"
     },
     "entryTitleField": "title",
+    "entryDescriptionField": "overview",
     "fields": [
         {
             "id": "title",

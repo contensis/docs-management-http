@@ -33,6 +33,7 @@ The paged list properties provide the information required to implement paging.
       "releaseDate": "1985-01-11T00:00:00",
       "actors": [],
       "entryTitle": "The Terminator",
+      "entryDescription": "<p>In the post-apocalyptic future, reigning tyrannical supercomputers teleport a cyborg assassin known as the \"Terminator\" back to 1984 to kill Sarah Connor, whose unborn son is destined to lead insurgents against 21st century mechanical hegemony. Meanwhile, the human-resistance movement dispatches a lone warrior to safeguard Sarah. Can he stop the virtually indestructible killing machine?</p>",
       "sys": {
         "id": "b678c784-0bb0-46ff-8837-9e0e79b8ba21",
         "uri": "/api/management/projects/website/entries/b678c784-0bb0-46ff-8837-9e0e79b8ba21",
