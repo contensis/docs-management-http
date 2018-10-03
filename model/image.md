@@ -7,10 +7,11 @@ An image type is a container of an image asset with an associated caption.
 
 ## Properties
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| asset | object | [Asset](/model/link.md) | The asset that is linked to from the entry. |
-| caption | string |  | The image caption, defined in the entry. |
+| Name            | Type   | Format                                                 | Description |
+| :-------------- | :------| :----------------------------------------------------- | :---------- |
+| asset           | object | [Asset](/model/link.md)                                | The asset that is linked to from the entry. |
+| caption         | string |                                                        | The image caption, defined in the entry. |
+| transformations | object | [ImageTransformations](/model/image-transformations.md)| The transformations that will be applied to the image. |
 
 > **Note** The caption property allows instance specific text to be associated with a linked image asset.
 
@@ -25,6 +26,16 @@ An image type is a container of an image asset with an associated caption.
             "language": "en-GB"
         }
     },
-    "caption": "Fight club is a great film!"
+    "caption": "Fight club is a great film!",
+    "transformations": [
+      {
+        {"w": 100},
+        {"h": 200},
+        {"flip": "v"},
+        {"r": 0},
+        {"crop": "500,300,center"},
+        {"q": 100}
+      }
+    ]
 }
 ```
