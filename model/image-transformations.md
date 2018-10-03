@@ -33,14 +33,12 @@ The order of the transformations should remain as documented here.
     },
     "caption": "Interstellar Movie Poster",
     "transformations": [
-      {
         {"w": 100},
         {"h": 200},
         {"flip": "v"},
         {"r": 0},
         {"crop": "500,300,center"},
         {"q": 100}
-      }
     ]
 }
 ```

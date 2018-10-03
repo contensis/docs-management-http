@@ -28,14 +28,12 @@ An image type is a container of an image asset with an associated caption.
     },
     "caption": "Fight club is a great film!",
     "transformations": [
-      {
         {"w": 100},
         {"h": 200},
         {"flip": "v"},
         {"r": 0},
         {"crop": "500,300,center"},
         {"q": 100}
-      }
     ]
 }
 ```
