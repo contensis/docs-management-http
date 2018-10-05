@@ -78,7 +78,6 @@ description: HTTP Delivery API summary.
 * [Component](/model/component.md)
 * [DateRange](/model/date-range.md)
 * [Image](/model/image.md)
-* [Image Transformations](/model/image-transformations.md)
 * [Link](/model/link.md)
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
