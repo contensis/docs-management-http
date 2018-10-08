@@ -5,7 +5,7 @@ description: Get a node.
 
 Get a node by Id.
 
-<span class="label label--get">GET</span> /api/management/projects/{projectId}/nodes/
+<span class="label label--get">GET</span> /api/management/projects/{projectId}/nodes/{nodeId}/
 
 ### Example request
 
