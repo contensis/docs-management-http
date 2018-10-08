@@ -1,9 +1,7 @@
 ---
 description: Get root node.
 ---
-## Get a node
-
-Get root node.
+## Get the root node
 
 <span class="label label--get">GET</span> /api/management/projects/{projectId}/nodes/
 
