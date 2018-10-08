@@ -59,3 +59,91 @@ A node must have a parent id. If you attempt to create a node without a parent i
     ],
     "type": "Validation"
 }
+```
+
+#### Parent child limit
+
+A parent node cannot have more than 2000 children. If you attempt to create a node which breaches this limit you will get the following response:
+
+```json
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There were validation errors creating the node",
+    "data": [
+        {
+            "field": "",
+            "message": "A parent must not have more than 2000 children"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+#### Depth limit
+
+The maximum depth of a node is 10 levels. If you attempt to create a node which breaches this limit you will get the following response:
+
+```json
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There were validation errors creating the node",
+    "data": [
+        {
+            "field": "",
+            "message": "The maximum depth for a node is 10 levels deep"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+#### Name
+
+A node must have at least one name for a lnaguage. If you attempt to create a node without a name you will get the following response:
+
+```json
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There were validation errors creating the node",
+    "data": [
+        {
+            "field": "",
+            "message": "A name is required for at least one language"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+A node name cannot be longer than 50 characters. If you attempt to create a node with a name which breaches this you will get the following response:
+
+```json
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There were validation errors creating the node",
+    "data": [
+        {
+            "field": "",
+            "message": "The node name cannot be longer than 50 characters"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
+A node name must be unique for a language on a given parent node. If you attempt to create a node which breaks this rule you will get the following response:
+
+```json
+{
+    "logId": "00000000-0000-0000-0000-000000000000",
+    "message": "There were validation errors creating the node",
+    "data": [
+        {
+            "field": "",
+            "message": "The node name repeatedName exists for the language en-GB in parent f3322e4f-72b5-4064-be88-fcfed6c82635 in the tree 1126b642-409b-4372-bb17-0bdb7f641a5d"
+        }
+    ],
+    "type": "Validation"
+}
+```
+
