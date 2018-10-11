@@ -1,7 +1,7 @@
 ---
 description: Updates a node.
 ---
-## Create a node
+## Update a node
 
 Updates a node.
 
@@ -99,7 +99,7 @@ The maximum depth of a node is 10 levels. If you attempt to create a node which 
 
 #### Name
 
-A node must have at least one name for a lnaguage. If you attempt to create a node without a name you will get the following response:
+A node must have at least one name for a language. If you attempt to create a node without a name you will get the following response:
 
 ```json
 {
