@@ -49,10 +49,10 @@ Content-Type: image/jpeg
 ```json
 [
     {
-        "fileId": "25bd73bb-cbb0-454f-a762-2bee08a68cbe.jpg";
+        "fileId": "25bd73bb-cbb0-454f-a762-2bee08a68cbe.jpg"
     },
     {
-        "fileId": "97d70ad2-017f-46ff-8d9e-f8d054652d9c.jpg";
+        "fileId": "97d70ad2-017f-46ff-8d9e-f8d054652d9c.jpg"
     }
 ]
 ```
