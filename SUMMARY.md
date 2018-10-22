@@ -55,6 +55,11 @@ description: HTTP Delivery API summary.
 * [Delete an entry variation](/entries/delete-an-entry-variation.md)
 * [Invoking workflow](/entries/invoking-workflow.md)
 
+## Assets
+
+* [Uploading asset files](/assets/upload-asset-file.md)
+* [Managing assets](/assets/managing-assets.md)
+
 ## Roles
 
 * [Get a role](/roles/get-a-role.md)
@@ -83,6 +88,7 @@ description: HTTP Delivery API summary.
 * [Role](/model/role.md)
 * [Paged list](/model/paged-list.md)
 * [Workflow trigger](/model/workflow-trigger.md)
+* [AssetFile](/model/assetfile.md)
 
 <!-- * [Content type](/model/content-type.md) -->
 
