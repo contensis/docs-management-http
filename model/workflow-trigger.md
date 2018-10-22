@@ -1,3 +1,6 @@
+---
+description: The workflow trigger model is used within workflow event invocation requests.
+---
 # Workflow trigger
 
 The workflow trigger model is used within workflow event invocation requests.
@@ -21,7 +24,7 @@ This example shows a workflow trigger.
     "version": "2.3",
     "event": "draft.submit",
     "data": {
-        "message": "Have updated the final paragrah"
+        "message": "Have updated the final paragraph"
     }
 }
 ```

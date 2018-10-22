@@ -1,17 +1,17 @@
 ---
 description: Creates a new entry resource.
 ---
-## Create an entry
+# Create an entry
 
 Creates a new entry resource.
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/
 
-### Parameters
+## Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| Name      | Parameter type | Type   | Format | Description                                                                                            |
+| :-------- | :------------- | :----- | :----- | :----------------------------------------------------------------------------------------------------- |
+| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
 
 ### Example request
 
@@ -59,34 +59,33 @@ POST: /api/management/projects/movieDb/entries/
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 201 | Created | [Entry](/model/entry.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+| :--------------- | :------------------ | :------------------------------- |
+| 201              | Created             | [Entry](/model/entry.md)         |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 422              | ValidationError     | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Validations
 
 #### Project does not exist
 
-A project must exist to be able to create entries. If you attempt to create an entry in a project which doesn't exist you will get the following response. 
+A project must exist to be able to create entries. If you attempt to create an entry in a project which doesn't exist you will get the following response.
 
 ```json
 {
-    "logId": "00000000-0000-0000-0000-000000000000",
-    "message": "There are validation errors creating the entry",
-    "data": [
-        {
-            "field": "projectId",
-            "message": "The project does not exist"
-        }
-    ],
-    "type": "Validation"
+  "logId": "00000000-0000-0000-0000-000000000000",
+  "message": "There are validation errors creating the entry",
+  "data": [
+    {
+      "field": "projectId",
+      "message": "The project does not exist"
+    }
+  ],
+  "type": "Validation"
 }
 ```
-
 
 #### Content type does not exist
 
@@ -94,14 +93,14 @@ The published content type must exist to be able to create an entry. If you atte
 
 ```json
 {
-    "logId": "00000000-0000-0000-0000-000000000000",
-    "message": "There are validation errors creating the entry",
-    "data": [
-        {
-            "field": "contentType",
-            "message": "The content type 'movie' does not exist"
-        }
-    ],
-    "type": "Validation"
+  "logId": "00000000-0000-0000-0000-000000000000",
+  "message": "There are validation errors creating the entry",
+  "data": [
+    {
+      "field": "contentType",
+      "message": "The content type 'movie' does not exist"
+    }
+  ],
+  "type": "Validation"
 }
 ```

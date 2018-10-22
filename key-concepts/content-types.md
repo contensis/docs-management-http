@@ -10,7 +10,7 @@ Gets an existing content type by the content type Id.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | contentTypeId | path | string |  | The content type identifier. |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
 | version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |
@@ -47,7 +47,7 @@ Creates a new content type resource.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 
 ### Example request
 
@@ -64,6 +64,7 @@ POST: /api/management/projects/movieDb/contenttypes/
         "en-GB": "A movie type"
     },
     "entryTitleField": "title",
+    "entryDescriptionField": "overview",
     "fields": [
         {
             "id": "title",
@@ -168,7 +169,7 @@ Creates a new content type resource.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | contentTypeId | path | string |  | The content type identifier. |
 
 ### Example request
@@ -186,6 +187,7 @@ PUT: /api/management/projects/movieDb/contenttypes/movie
         "en-GB": "A movie type"
     },
     "entryTitleField": "title",
+    "entryDescriptionField": "overview",
     "fields": [
         {
             "id": "title",
@@ -329,7 +331,7 @@ Gets the content types for a project.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
 | dataFormat | query | string |  | The specific dataFormat, e.g. *entry*, *asset*. The default is all. |
 

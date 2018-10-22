@@ -8,7 +8,7 @@ Gets a permission set for the requested user and resource. Requesting a permissi
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | resourceType | path | string |  | The type of resource to retrieve permissions for. Contenttypes or entries. |
 | resourceId | path | GUID | | Optional id of the resource to retrieve permissions for.  |
 | userId | query | string | | The id of the user to retrieve permissions for.  |

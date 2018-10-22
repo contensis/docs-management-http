@@ -10,10 +10,11 @@ A content type determines the schema of an [entry](/model/entry.md). Entries are
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | | A unique content type identifier. |
-| projectId | string |  | The project identifier. |
+| projectId | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to a content type. |
 | description | object | [Localized value](/key-concepts/localization.md) | The description text given to a content type .|
 | entryTitleField | string |  | The id of the field which should be used as the title in entry listings. |
+| entryDescriptionField | string |  | The id of the field which should be used as the description in entry listings. |
 | fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry. |
 | enabled | boolean |  |  |
 | defaultLanguage | string | [Language code](/key-concepts/localization.md) |  |
@@ -57,6 +58,7 @@ A localized value is a object that has values that are keyed by [language codes]
     "en-GB": "A movie type"
   },
   "entryTitleField": "title",
+  "entryDescriptionField": "overview",
   "fields": [
     {
       "id": "title",

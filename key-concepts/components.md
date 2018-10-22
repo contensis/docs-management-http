@@ -15,7 +15,7 @@ Gets an existing component by the component Id.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | componentId | path | string |  | The component identifier. |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
 | version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |
@@ -50,7 +50,7 @@ Creates a new component resource.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 
 ### Example request
 
@@ -184,7 +184,7 @@ Updates an existing component resource.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | componentId | path | string |  | The component identifier. |
 
 ### Example request
@@ -315,7 +315,7 @@ Deletes a component from a specific project.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | componentId | path | string |  | The component identifier. |
 
 ### Example request

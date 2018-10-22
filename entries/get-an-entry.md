@@ -15,7 +15,7 @@ Gets an existing entry by its id.
 
 | Name | Parameter type | Type | Format | Description |
 |:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | entryId | path | string | GUID | The entry identifier. |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
 | version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |

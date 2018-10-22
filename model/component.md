@@ -10,7 +10,7 @@ A component determines a reusable schema added to [content types](/model/content
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | | A unique component identifier. |
-| projectId | string |  | The project identifier. |
+| projectId | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to a component. |
 | description | object | [Localized value](/key-concepts/localization.md) | The description text given to a component. |
 | fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry. |

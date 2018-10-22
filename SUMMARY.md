@@ -52,8 +52,8 @@ description: HTTP Delivery API summary.
 * [List entries](/entries/list-entries.md)
 * [List entries by content type](/entries/list-entries-by-content-type.md)
 * [Delete an entry](/entries/delete-an-entry.md)
-* [Delete an entry variation](/entries/delete-an-entry-variation.md)
 * [Invoking workflow](/entries/invoking-workflow.md)
+  * [Unpublish an entry](/entries/unpublish-an-entry.md)
 
 ## Assets
 
@@ -69,6 +69,7 @@ description: HTTP Delivery API summary.
 * [Delete a role](/roles/delete-a-role.md)
 
 ## Permissions
+
 * [Overview](/permissions/overview.md)
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 * [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
@@ -82,6 +83,7 @@ description: HTTP Delivery API summary.
 * [Component](/model/component.md)
 * [DateRange](/model/date-range.md)
 * [Image](/model/image.md)
+* [ImageTransformations](/model/image-transformations.md)
 * [Link](/model/link.md)
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
