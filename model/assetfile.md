@@ -9,7 +9,7 @@ An AssetFile type is used for the creation or update of an asset. The type is al
 
 | Name | Type | Format | Description |
 | :--- | :--- | :----- | :---------- |
-| fileId | string | GUID | The file reference returned from an [asset file upload](/entries/upload-asset-file.md) |
+| fileId | string | GUID | The file reference returned from an [asset file upload](/assets/upload-asset-file.md) |
 | filename | string || An optional parameter to override the name of the file |
 | parentNodePath | string | Forward-slash separated | The path to the parent node under which the asset should be created |
 

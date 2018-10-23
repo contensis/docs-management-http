@@ -10,7 +10,7 @@ The [AssetFile](/model/assetfile.md) type needs to used in a field called "sysAs
 
 ### Example request
 
-The JSON below is example of an entry that represents an asset. This can be used to create an asset in the same way as [creating an entry](/entries/create-as-antry.md) as assets are entries with additional properties.
+The JSON below is example of an entry that represents an asset. This can be used to create an asset in the same way as [creating an entry](/entries/create-an-entry.md) as assets are entries with additional properties.
 
 ```json
 {
