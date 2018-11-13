@@ -1,23 +1,19 @@
 ---
-description: The transformation object represents a list of transformations that will be applied to the image using the Image API.
+description: The transformation object represents the transformations that will be applied to the image using the Image API.
 ---
 # Image Transformations
 
-The transformation object represents a list of transformations that will be applied to the image using the Image API.
+The transformation object represents the transformations that will be applied to the image using the Image API.
 
 ## Properties
 
-| Name    | Type   | Format | Description                                                                  |
-|:--------|:-------|:-------|:---------------------------------------------------------------------------- |
-| size    | object |        | The image height and width resize transformations.                           |
-| flip    | string |        | The orientation flip name to apply.                                          |
-| rotate  | int    |        | The image rotation in degrees.                                               |
-| crop    | object |        | The image crop details specifying width and height, and x and y coordinates. |
-| quality | int    |        | The quality in percentage.                                                   |
-
-## Remarks
-
-The order of the transformations should remain as documented here.
+| Name    | Type   | Description                                                                  |
+|:--------|:-------|:---------------------------------------------------------------------------- |
+| size    | object | The image height and width resize transformations.                           |
+| flip    | string | The orientation flip name to apply.                                          |
+| rotate  | int    | The image rotation in degrees.                                               |
+| crop    | object | The image crop details specifying width and height, and x and y coordinates. |
+| quality | int    | The quality in percentage.                                                   |
 
 ## Example
 
