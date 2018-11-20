@@ -7,9 +7,9 @@ description: Get root node.
 
 ### Example request
 
-json
+```json
 GET: /api/management/projects/website/nodes/
-
+```
 
 ### Response messages
 

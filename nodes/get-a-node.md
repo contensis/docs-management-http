@@ -9,9 +9,9 @@ Get a node by Id.
 
 ### Example request
 
-json
+```json
 GET: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
-
+```
 
 ### Response messages
 
