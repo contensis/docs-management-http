@@ -55,6 +55,11 @@ description: HTTP Delivery API summary.
 * [Invoking workflow](/entries/invoking-workflow.md)
   * [Unpublish an entry](/entries/unpublish-an-entry.md)
 
+<!-- ## Assets
+
+* [Uploading asset files](/assets/upload-asset-file.md)
+* [Managing assets](/assets/managing-assets.md) -->
+
 ## Roles
 
 * [Get a role](/roles/get-a-role.md)
@@ -86,8 +91,9 @@ description: HTTP Delivery API summary.
 * [Paged list](/model/paged-list.md)
 * [Workflow trigger](/model/workflow-trigger.md)
 
-<!-- * [Content type](/model/content-type.md) -->
+<!-- * [AssetFile](/model/assetfile.md) -->
 
+<!-- * [Content type](/model/content-type.md) -->
 
 <!--* [Role](/model/role.md)
  * [Content type](/model/content-type.md) -->
