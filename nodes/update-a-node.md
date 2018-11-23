@@ -5,12 +5,12 @@ description: Updates a node.
 
 Updates a node.
 
-<span class="label label--post">PUT</span> /api/management/projects/{projectId}/nodes/{parentNodeId}/children
+<span class="label label--post">PUT</span> /api/management/projects/{projectId}/nodes/{nodeId}
 
 ### Example request
 
 ```json
-PUT: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c82635/children
+PUT: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
 
 
 {
