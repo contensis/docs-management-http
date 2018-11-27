@@ -87,6 +87,7 @@ description: HTTP Delivery API summary.
 ## Models
 
 * [Project](/model/project.md)
+* [Node](/model/node.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)
 * [Composed fields](/model/composed.md)
