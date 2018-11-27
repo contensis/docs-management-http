@@ -1,7 +1,5 @@
 ---
-description: A node represents a location within the navigational structure of a website. The linking of nodes as parent-child relationships forms the hierarchical structure of a website, with a node having a single parent and (optionally) multiple child nodes.
-
-A single entry can be assigned to a node, separating the responsibility of navigation management from content editing.
+description: A node represents a location within the navigational structure of a website.A single entry can be assigned to a node, separating the responsibility of navigation management from content editing. The linking of nodes as parent-child relationships forms the hierarchical structure of a website, with a node having a single parent and (optionally) multiple child nodes.
 ---
 
 # Node
