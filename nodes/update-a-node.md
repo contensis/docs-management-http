@@ -5,7 +5,7 @@ description: Updates a node.
 
 Updates a node.
 
-<span class="label label--post">PUT</span> /api/management/projects/{projectId}/nodes/{nodeId}
+<span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**
 
 ### Example request
 

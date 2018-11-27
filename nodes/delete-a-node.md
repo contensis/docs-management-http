@@ -3,13 +3,13 @@ description: Deletes a node.
 ---
 ## Delete a node
 
-Deletes a node by Id.
+Deletes a node by ID.
 
-<span class="label label--get">DELETE</span> /api/management/projects/{projectId}/nodes/{nodeId}/
+<span class="label label--get">DELETE</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**/
 
 ### Example request
 
-```json
+```http
 DELETE: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
 ```
 

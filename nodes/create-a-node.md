@@ -5,7 +5,7 @@ description: Creates a new node.
 
 Creates a new node.
 
-<span class="label label--post">POST</span> /api/management/projects/{projectId}/nodes/{parentNodeId}/children
+<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children
 
 ### Example request
 

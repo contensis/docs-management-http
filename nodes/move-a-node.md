@@ -7,7 +7,7 @@ Moves a node.
 
 This is a special case of [updating a node.](update-a-node.md) By changing the parent id of a node and updating the node and all of its children will be moved so that they are now descendents of the parent node, with the same heirarchical structure.
 
-<span class="label label--post">PUT</span> /api/management/projects/{projectId}/nodes/{nodeId}
+<span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**
 
 ### Example request
 

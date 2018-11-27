@@ -3,13 +3,13 @@ description: Gets the node's children.
 ---
 ## Get node's children
 
-Creates a new node.
+Gets the children of a specific node.
 
-<span class="label label--get">GET</span> /api/management/projects/{projectId}/nodes/{parentNodeId}/children
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children
 
 ### Example request
 
-```json
+```http
 GET: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c82635/children
 ```
 

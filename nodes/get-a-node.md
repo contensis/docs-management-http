@@ -3,13 +3,13 @@ description: Get a node.
 ---
 ## Get a node
 
-Get a node by Id.
+Get a node by ID.
 
-<span class="label label--get">GET</span> /api/management/projects/{projectId}/nodes/{nodeId}/
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**/
 
 ### Example request
 
-```json
+```http
 GET: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
 ```
 

@@ -3,11 +3,13 @@ description: Get root node.
 ---
 ## Get the root node
 
-<span class="label label--get">GET</span> /api/management/projects/{projectId}/nodes/
+Gets the root node of the specified project. 
+
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/
 
 ### Example request
 
-```json
+```http
 GET: /api/management/projects/website/nodes/
 ```
 

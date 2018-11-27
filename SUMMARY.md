@@ -32,7 +32,7 @@ description: HTTP Delivery API summary.
 
 * [Get root node](/nodes/get-root-node.md)
 * [Get a node](/nodes/get-a-node.md)
-* [Get a nodes children](/nodes/get-nodes-children.md)
+* [Get a node's children](/nodes/get-nodes-children.md)
 * [Create a node](/nodes/create-a-node.md)
 * [Update a node](/nodes/update-a-node.md)
 * [Move a node](/nodes/move-a-node.md)
