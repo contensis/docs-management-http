@@ -5,12 +5,12 @@ description: Get root node.
 
 Gets the root node of the specified project. 
 
-<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/root
 
 ### Example request
 
 ```http
-GET: /api/management/projects/website/nodes/
+GET: /api/management/projects/website/nodes/root
 ```
 
 ### Response messages
