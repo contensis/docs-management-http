@@ -3,7 +3,7 @@ description: An entry definition in the Management API contains a mixture of sta
 ---
 # Entries
 
-An entry definition in the Management API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. [Find out more about entries on ZenHub](https://zenhub.zengenti.com/Contensis/10.0/kb/content-types-and-entries/entries/entries-overview.aspx)
+An entry definition in the Management API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. [Find out more about entries on ZenHub](https://zenhub.zengenti.com/Contensis/11.1/kb/content-types-and-entries/entries/entries-overview.aspx)
 
 ## Get an entry
 
