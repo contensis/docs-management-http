@@ -18,12 +18,12 @@ The JSON below is example of an entry that represents an asset. This can be used
 
     "sysAssetFile": {
         "fileId": "25bd73bb-cbb0-454f-a762-2bee08a68cbe.jpg",
-        "parentNodePath": "/uploads/movie-posters",
+        "parentNodePath": "/uploads/movie-posters"
     },
 
     "sys": {
         "projectId": "movieDb",
-        "dataFormat": "asset",
+        "dataFormat": "asset"
     }
 }
 ```
@@ -42,7 +42,7 @@ In the example below a new "fileId" has been specified in the "sysAssetFile" fie
     "Description": "Batman Returns release poster",
 
     "sysAssetFile": {
-        "fileId": "97d70ad2-017f-46ff-8d9e-f8d054652d9c.jpg",
+        "fileId": "97d70ad2-017f-46ff-8d9e-f8d054652d9c.jpg"
     },
 
     "sys": {

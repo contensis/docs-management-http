@@ -65,10 +65,10 @@ description: HTTP Delivery API summary.
 * [Invoking workflow](/entries/invoking-workflow.md)
   * [Unpublish an entry](/entries/unpublish-an-entry.md)
 
-<!-- ## Assets
+## Assets
 
 * [Uploading asset files](/assets/upload-asset-file.md)
-* [Managing assets](/assets/managing-assets.md) -->
+* [Managing assets](/assets/managing-assets.md)
 
 ## Roles
 
