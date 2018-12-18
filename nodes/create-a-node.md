@@ -5,7 +5,17 @@ description: Creates a new node.
 
 Creates a new node.
 
-<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children
+<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children 
+
+| Name | Type | Format | Description |
+| :- | :- | :- | :- |
+| id | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional: If no id is provided, one will be created for you. |
+| parentId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional: If no parent id is provided, the node will be added as a child of the root node. |
+| title | object | [Localized value](/key-concepts/localization.md) | [Required](/key-concepts/validations.md#required): At least one localised title must be provided to create the node. |
+| name | object | [Localized value](/key-concepts/localization.md) | Optional: If no name is provided, one will be created from the relevant title. If a name is provided, the value must be a valid slug format. |
+| entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional. |
+| availableLanguages | [stringArray](/key-concepts/data-types.md~stringArray) |  | Optional. |
+
 
 ### Example request
 
@@ -16,7 +26,10 @@ POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c8263
 {
 	"id": "d6bdea41-729c-4a07-85bf-a392aa0afc2b",
 	"parentId": "f3322e4f-72b5-4064-be88-fcfed6c82635",
-	"projectId": "website",
+	"title": {
+		"en-GB": "Tiger Excaped From Zoo",
+		"fr-FR": "Tigre échappé du zoo"
+	},
 	"name": {
 		"en-GB": "tiger-escaped-from-zoo",
 		"fr-FR": "tigre-s-est-echappe-du-zoo"
@@ -25,8 +38,23 @@ POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c8263
         "en-GB",
         "fr-FR"
     ],
-	"entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6",
-	"hasChildren": false
+	"entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6"
+}
+```
+
+### Minimum request
+
+A node can be created by posting only the title:
+
+```json
+POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c82635/children
+
+
+{
+	"title": {
+		"en-GB": "Tiger Excaped From Zoo",
+		"fr-FR": "Tigre échappé du zoo"
+	}
 }
 ```
 

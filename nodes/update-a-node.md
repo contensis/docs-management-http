@@ -7,6 +7,13 @@ Updates a node.
 
 <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**
 
+| Name | Type | Format | Description |
+| :- | :- | :- | :- |
+| title | object | [Localized value](/key-concepts/localization.md) | Optional. |
+| name | object | [Localized value](/key-concepts/localization.md) | Optional. |
+| entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional. |
+| availableLanguages | [stringArray](/key-concepts/data-types.md~stringArray) |  | Optional. |
+
 ### Example request
 
 ```json
@@ -14,9 +21,10 @@ PUT: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
 
 
 {
-	"id": "d6bdea41-729c-4a07-85bf-a392aa0afc2b",
-	"parentId": "f3322e4f-72b5-4064-be88-fcfed6c82635",
-	"projectId": "website",
+    "title": {
+		"en-GB": "Tiger Excaped From Zoo",
+		"fr-FR": "Tigre échappé du zoo"
+	},
 	"name": {
 		"en-GB": "tiger-escaped-from-zoo",
 		"fr-FR": "tigre-s-est-echappe-du-zoo"
@@ -25,8 +33,7 @@ PUT: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
         "en-GB",
         "fr-FR"
     ],
-	"entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6",
-	"hasChildren": false
+	"entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6"
 }
 ```
 
