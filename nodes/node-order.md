@@ -14,7 +14,6 @@ description: Set the node order
 | parentNodeId | path | string |  | The container node for the children which are being ordered. |
 | language | query | string |  | [Optional] The target language that the order is being applied. If no language is specified then the default language order is set. |
 
-
 <span class="label label--get">GET</span> /api/management/projects/{projectId}/nodes/{parentNodeId}/children/order
 
 ### Remarks
