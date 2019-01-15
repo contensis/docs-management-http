@@ -16,7 +16,7 @@ A single entry can be assigned to a node, separating the responsibility of navig
 | parentId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | The identifier of the parent node as a 128 bit GUID. |
 | projectId | string |  | The friendly name given to the project. |
 | title | object | [Localized value](/key-concepts/localization.md) | The localised title of the node. |
-| name | object | [Localized value](/key-concepts/localization.md) | The localised name of the node in slug format. Automatically created from the relevant title variation if not provided. Must be in slug format if provided as a value. |
+| slug | object | [Localized value](/key-concepts/localization.md) | The localised name of the node in slug format. Automatically created from the relevant title variation if not provided. Must be in slug format if provided as a value. |
 | entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | The identifier of the referenced entry as a 128 bit GUID. |
 | availableLanguages | [stringArray](/key-concepts/data-types.md~stringArray) |  | An array of all the languages supported by the node. |
 | hasChildren | boolean | | 'True' if the node has any descendants; 'false' otherwise. |
@@ -31,11 +31,11 @@ A single entry can be assigned to a node, separating the responsibility of navig
 	"title": {
 		"en-GB": "Kelly's Heroes"
 	},
-	"name": {
+	"slug": {
 		"en-GB": "kellys-heroes"
 	},
 	"entryId": "88b9941c-59bb-4954-9a8e-8c8ac3a77f45",
-	"availableLanguages": ["en-GB", "fr-FR"],
+	"restrictedToLanguages": ["en-GB", "fr-FR"],
 	"hasChildren": false
 }
 ```
