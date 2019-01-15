@@ -37,6 +37,7 @@ description: HTTP Delivery API summary.
 * [Update a node](/nodes/update-a-node.md)
 * [Move a node](/nodes/move-a-node.md)
 * [Delete a node](/nodes/delete-a-node.md)
+* [Order nodes](/nodes/order-nodes.md)
 
 <!-- ## Content Types
 * [Get a content type](/key-concepts/content-types.md#get-a-content-type)
