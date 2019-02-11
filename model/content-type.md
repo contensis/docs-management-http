@@ -22,6 +22,7 @@ A content type determines the schema of an [entry](/model/entry.md). Entries are
 | workflowId | string |  | The workflow that derived entries will follow.  |
 | dataFormat | string |  | Either *entry* or *asset*. |
 | previewUrl | string |  | The url that an example of an entry based on the content type can be viewed. |
+| defaultRendererId | GUID |  | The ID for the default renderer for the content type. Null if there is no default renderer. |
 | version | object | [Version](/model/version.md) | Version information about the content type. |
 
 ## Field
@@ -162,6 +163,7 @@ A localized value is a object that has values that are keyed by [language codes]
   "workflowId": "ContensisMultilingual",
   "dataFormat": "entry",
   "previewUrl": "http://www.mymoviewebsite.com/movies/terminator",
+  "defaultRendererId": "F1A7ABD5-9241-4FBD-AD1C-E1F46B6F6D44",
   "version": {
         "createdBy": "s.derrickson",
         "created": "2016-10-12T09:29:18.5144641+01:00",
