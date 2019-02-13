@@ -23,6 +23,7 @@ A content type determines the schema of an [entry](/model/entry.md). Entries are
 | dataFormat | string |  | Either *entry* or *asset*. |
 | previewUrl | string |  | The url that an example of an entry based on the content type can be viewed. |
 | defaultRendererId | GUID |  | The ID for the default renderer for the content type. Null if there is no default renderer. |
+| defaultParentNodeId | GUID |  | The ID for the default parent node for the content type. Null if there is no default parent node. |
 | version | object | [Version](/model/version.md) | Version information about the content type. |
 
 ## Field
@@ -164,6 +165,7 @@ A localized value is a object that has values that are keyed by [language codes]
   "dataFormat": "entry",
   "previewUrl": "http://www.mymoviewebsite.com/movies/terminator",
   "defaultRendererId": "F1A7ABD5-9241-4FBD-AD1C-E1F46B6F6D44",
+  "defaultParentNodeId": "3C7361CD-58A0-46CD-A414-F6D105BD8454",
   "version": {
         "createdBy": "s.derrickson",
         "created": "2016-10-12T09:29:18.5144641+01:00",
