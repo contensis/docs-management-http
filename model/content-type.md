@@ -16,6 +16,7 @@ A content type determines the schema of an [entry](/model/entry.md). Entries are
 | entryTitleField | string |  | The id of the field which should be used as the title in entry listings. |
 | entryDescriptionField | string |  | The id of the field which should be used as the description in entry listings. |
 | fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry. |
+| groups | object [...] | [Content type group](#content-type-group) | A collection of groups that enable related fields to be grouped together in the UI. |
 | enabled | boolean |  |  |
 | defaultLanguage | string | [Language code](/key-concepts/localization.md) |  |
 | supportedLanguages | string [...] | [Language code](/key-concepts/localization.md) |  |
@@ -42,6 +43,7 @@ The field object is the definition of a field within an entry. The field also co
 | default | object | [Localized value](/key-concepts/localization.md) | The default value for the field if no value is provided by an editor. |
 | validations | object |  | The validations that will be performed on the field when the entry is either created or updated. |
 | editor | object | Editor | Configuration for the Contensis entry editor. |
+| groupId | string |  | The identifier of the group (defined in the content type groups property) that the field belongs to. Enables related fields to be grouped together in the UI. |
 
 ## Localized value
 
@@ -81,7 +83,8 @@ A localized value is a object that has values that are keyed by [language codes]
           "placeholderText": {
             "en-GB": "Enter the full title of the movie appropriate to the region"
           }
-        }
+        },
+        "groupId": "summary"
       }
     },
     {
@@ -94,7 +97,8 @@ A localized value is a object that has values that are keyed by [language codes]
       "description": {},
       "default": {},
       "validations": null,
-      "editor": null
+      "editor": null,
+      "groupId": null
     },
     {
       "id": "overview",
@@ -106,7 +110,8 @@ A localized value is a object that has values that are keyed by [language codes]
       "description": {},
       "default": {},
       "validations": null,
-      "editor": null
+      "editor": null,
+      "groupId": "additionalInfo"
     },
     {
       "id": "releaseDate",
@@ -124,7 +129,8 @@ A localized value is a object that has values that are keyed by [language codes]
           "en-GB": "The release date of the movie"
         },
         "properties": {}
-      }
+      },
+      "groupId": "summary"
     },
     {
       "id": "actors",
@@ -150,8 +156,23 @@ A localized value is a object that has values that are keyed by [language codes]
             "en-GB": "Add the main actors"
           }
         }
-      }
+      },
+      "groupId": "additionalInfo"
     }
+  ],
+  "groups": [
+      {
+          "id": "summary",
+          "name": {
+              "en-GB": "Main summary fields"
+          }
+      },
+      {
+          "id": "additionalInfo",
+          "name": {
+              "en-GB": "Additional Information"
+          }
+      }
   ],
   "enabled": true,
   "defaultLanguage": "en-GB",
