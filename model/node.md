@@ -20,6 +20,7 @@ A single entry can be assigned to a node, separating the responsibility of navig
 | entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | The identifier of the referenced entry as a 128 bit GUID. |
 | restrictedToLanguages | stringArray |  | An array of all the languages supported by the node. |
 | hasChildren | boolean | | 'True' if the node has any descendants; 'false' otherwise. |
+| isCanonical | boolean | | 'True' if the node is canonical; 'false' otherwise. |
 
 ## Example
 
@@ -36,6 +37,7 @@ A single entry can be assigned to a node, separating the responsibility of navig
 	},
 	"entryId": "88b9941c-59bb-4954-9a8e-8c8ac3a77f45",
 	"restrictedToLanguages": ["en-GB", "fr-FR"],
-	"hasChildren": false
+	"hasChildren": false,
+	"isCanonical": true
 }
 ```
