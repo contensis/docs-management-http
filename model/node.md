@@ -19,8 +19,8 @@ A single entry can be assigned to a node, separating the responsibility of navig
 | slug | object | [Localized value](/key-concepts/localization.md) | The localised name of the node in slug format. Automatically created from the relevant title variation if not provided. Must be in slug format if provided as a value. |
 | entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | The identifier of the referenced entry as a 128 bit GUID. |
 | restrictedToLanguages | stringArray |  | An array of all the languages supported by the node. |
-| hasChildren | boolean | | 'True' if the node has any descendants; 'false' otherwise. |
-| isCanonical | boolean | | 'True' if the node is canonical; 'false' otherwise. |
+| hasChildren | boolean | | 'true' if the node has any descendants; 'false' otherwise. |
+| isCanonical | boolean | | 'true' if the node represents the canonical path for the associated entry; 'false' otherwise. |
 
 ## Example
 
