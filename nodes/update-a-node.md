@@ -10,7 +10,7 @@ Updates a node.
 | Name | Type | Format | Description |
 | :- | :- | :- | :- |
 | title | object | [Localized value](/key-concepts/localization.md) | Optional. |
-| name | object | [Localized value](/key-concepts/localization.md) | Optional. |
+| slug | object | [Localized value](/key-concepts/localization.md) | Optional. |
 | entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional. |
 | availableLanguages | [stringArray](/key-concepts/data-types.md~stringArray) |  | Optional. |
 
@@ -25,7 +25,7 @@ PUT: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
 		"en-GB": "Tiger Excaped From Zoo",
 		"fr-FR": "Tigre échappé du zoo"
 	},
-	"name": {
+	"slug": {
 		"en-GB": "tiger-escaped-from-zoo",
 		"fr-FR": "tigre-s-est-echappe-du-zoo"
 	},
@@ -104,9 +104,9 @@ The maximum depth of a node is 10 levels. If you attempt to create a node which 
 }
 ```
 
-#### Name
+#### Slug
 
-A node must have at least one name for a language. If you attempt to create a node without a name you will get the following response:
+A node must have at least one slug for a language. If you attempt to create a node without a slug you will get the following response:
 
 ```json
 {
@@ -115,7 +115,7 @@ A node must have at least one name for a language. If you attempt to create a no
     "data": [
         {
             "field": "",
-            "message": "A name is required for at least one language"
+            "message": "A slug is required for at least one language"
         }
     ],
     "type": "Validation"
