@@ -12,7 +12,7 @@ Creates a new node.
 | id | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional: If no id is provided, one will be created for you. |
 | parentId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional: If no parent id is provided, the node will be added as a child of the root node. |
 | title | object | [Localized value](/key-concepts/localization.md) | [Required](/key-concepts/validations.md#required): At least one localised title must be provided to create the node. |
-| name | object | [Localized value](/key-concepts/localization.md) | Optional: If no name is provided, one will be created from the relevant title. If a name is provided, the value must be a valid slug format. |
+| slug | object | [Localized value](/key-concepts/localization.md) | Optional: If no name is provided, one will be created from the relevant title. If a slug is provided, the value must be a valid slug format. |
 | entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional. |
 | availableLanguages | [stringArray](/key-concepts/data-types.md~stringArray) |  | Optional. |
 
@@ -30,7 +30,7 @@ POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c8263
 		"en-GB": "Tiger Excaped From Zoo",
 		"fr-FR": "Tigre échappé du zoo"
 	},
-	"name": {
+	"slug": {
 		"en-GB": "tiger-escaped-from-zoo",
 		"fr-FR": "tigre-s-est-echappe-du-zoo"
 	},
@@ -125,9 +125,9 @@ The maximum depth of a node is 10 levels. If you attempt to create a node which 
 }
 ```
 
-#### Name
+#### Slug
 
-A node must have at least one name for a lnaguage. If you attempt to create a node without a name you will get the following response:
+A node must have at least one slug for a lnaguage. If you attempt to create a node without a slug you will get the following response:
 
 ```json
 {
@@ -136,14 +136,14 @@ A node must have at least one name for a lnaguage. If you attempt to create a no
     "data": [
         {
             "field": "",
-            "message": "A name is required for at least one language"
+            "message": "A slug is required for at least one language"
         }
     ],
     "type": "Validation"
 }
 ```
 
-A node name cannot be longer than 50 characters. If you attempt to create a node with a name which breaches this you will get the following response:
+A node slug cannot be longer than 50 characters. If you attempt to create a node with a slug which breaches this you will get the following response:
 
 ```json
 {
@@ -152,14 +152,14 @@ A node name cannot be longer than 50 characters. If you attempt to create a node
     "data": [
         {
             "field": "",
-            "message": "The node name cannot be longer than 50 characters"
+            "message": "The node slug cannot be longer than 50 characters"
         }
     ],
     "type": "Validation"
 }
 ```
 
-A node name must be unique for a language on a given parent node. If you attempt to create a node which breaks this rule you will get the following response:
+A node slug must be unique for a language on a given parent node. If you attempt to create a node which breaks this rule you will get the following response:
 
 ```json
 {
@@ -168,7 +168,7 @@ A node name must be unique for a language on a given parent node. If you attempt
     "data": [
         {
             "field": "",
-            "message": "The node name repeatedName exists for the language en-GB in parent f3322e4f-72b5-4064-be88-fcfed6c82635 in the tree 1126b642-409b-4372-bb17-0bdb7f641a5d"
+            "message": "The node slug repeatedSlug exists for the language en-GB in parent f3322e4f-72b5-4064-be88-fcfed6c82635 in the tree 1126b642-409b-4372-bb17-0bdb7f641a5d"
         }
     ],
     "type": "Validation"

@@ -122,7 +122,7 @@ A node must have at least one name for a language. If you attempt to create a no
 }
 ```
 
-A node name cannot be longer than 50 characters. If you attempt to create a node with a name which breaches this you will get the following response:
+A node slug cannot be longer than 50 characters. If you attempt to create a node with a slug which breaches this you will get the following response:
 
 ```json
 {
@@ -131,14 +131,14 @@ A node name cannot be longer than 50 characters. If you attempt to create a node
     "data": [
         {
             "field": "",
-            "message": "The node name cannot be longer than 50 characters"
+            "message": "The node slug cannot be longer than 50 characters"
         }
     ],
     "type": "Validation"
 }
 ```
 
-A node name must be unique for a language on a given parent node. If you attempt to create a node which breaks this rule you will get the following response:
+A node slug must be unique for a language on a given parent node. If you attempt to create a node which breaks this rule you will get the following response:
 
 ```json
 {
@@ -147,7 +147,7 @@ A node name must be unique for a language on a given parent node. If you attempt
     "data": [
         {
             "field": "",
-            "message": "The node name repeatedName exists for the language en-GB in parent f3322e4f-72b5-4064-be88-fcfed6c82635 in the tree 1126b642-409b-4372-bb17-0bdb7f641a5d"
+            "message": "The node slug repeatedSlug exists for the language en-GB in parent f3322e4f-72b5-4064-be88-fcfed6c82635 in the tree 1126b642-409b-4372-bb17-0bdb7f641a5d"
         }
     ],
     "type": "Validation"
