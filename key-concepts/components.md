@@ -264,7 +264,7 @@ PUT: /api/management/projects/movieDb/components/movieRole
 
 Publishes a component making it available for use in content types.
 
-<span class="label label--get">PUT</span> /api/management/workflow
+<span class="label label--get">POST</span> /api/management/workflow
 
 ## Parameters
 
@@ -273,7 +273,7 @@ None.
 ### Example request
 
 ```json
-PUT: /api/management/workflow
+POST: /api/management/workflow
 
 {  
    "projectId":"website",

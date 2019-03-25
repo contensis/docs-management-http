@@ -288,7 +288,7 @@ If the *defaultLanguage* value is not included in the *supportedLanguages* array
 
 Publishes a content type making it available for creating entries.
 
-<span class="label label--get">PUT</span> /api/management/workflow
+<span class="label label--get">POST</span> /api/management/workflow
 
 ## Parameters
 
@@ -297,7 +297,7 @@ None.
 ### Example request
 
 ```json
-PUT: /api/management/workflow
+POST: /api/management/workflow
 
 {  
    "projectId":"movieDb",
