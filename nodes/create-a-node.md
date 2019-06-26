@@ -1,64 +1,60 @@
 ---
 description: Creates a new node.
 ---
-## Create a node
+# Create a node
 
-Creates a new node.
+Creates a new child node under a specified parent node .
 
-<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children 
+<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children
 
-| Name | Type | Format | Description |
-| :- | :- | :- | :- |
-| id | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional: If no id is provided, one will be created for you. |
-| parentId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional: If no parent id is provided, the node will be added as a child of the root node. |
-| title | object | [Localized value](/key-concepts/localization.md) | [Required](/key-concepts/validations.md#required): At least one localised title must be provided to create the node. |
-| slug | object | [Localized value](/key-concepts/localization.md) | Optional: If no name is provided, one will be created from the relevant title. If a slug is provided, the value must be a valid slug format. |
-| entryId | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | Optional. |
-| availableLanguages | [stringArray](/key-concepts/data-types.md~stringArray) |  | Optional. |
+## Parameters
 
+| Name | Parameter type | Type | Format | Description |
+| :- | :- | :- | :- | :- |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| parentNodeId | path | string | [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid) | The parent node identifier which the new node will be created as a child |
+| node | body | object | [Node](/model/node.md) | The node object to created |
 
-### Example request
+## Example request
 
 ```json
 POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c82635/children
 
-
 {
-	"id": "d6bdea41-729c-4a07-85bf-a392aa0afc2b",
-	"parentId": "f3322e4f-72b5-4064-be88-fcfed6c82635",
-	"title": {
-		"en-GB": "Tiger Excaped From Zoo",
-		"fr-FR": "Tigre échappé du zoo"
-	},
-	"slug": {
-		"en-GB": "tiger-escaped-from-zoo",
-		"fr-FR": "tigre-s-est-echappe-du-zoo"
-	},
-    "availableLanguages": [
+    "id": "d6bdea41-729c-4a07-85bf-a392aa0afc2b",
+    "parentId": "f3322e4f-72b5-4064-be88-fcfed6c82635",
+    "displayName": {
+        "en-GB": "Tiger Escaped From Zoo",
+        "fr-FR": "Tigre échappé du zoo"
+    },
+    "slug": {
+        "en-GB": "tiger-escaped-from-zoo",
+    "fr-FR": "tigre-s-est-echappe-du-zoo"
+    },
+    "restrictedToLanguages": [
         "en-GB",
         "fr-FR"
     ],
-	"entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6"
+    "entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6"
 }
 ```
 
-### Minimum request
+## Minimum request
 
 A node can be created by posting only the title:
 
 ```json
 POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c82635/children
 
-
 {
-	"title": {
-		"en-GB": "Tiger Excaped From Zoo",
-		"fr-FR": "Tigre échappé du zoo"
-	}
+    "parentId": "f3322e4f-72b5-4064-be88-fcfed6c82635",
+    "displayName": {
+        "en-GB": "Tiger Escaped From Zoo"
+    }
 }
 ```
 
-### Response messages
+## Response messages
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
@@ -69,9 +65,9 @@ POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c8263
 | 422 | ValidationError | [Error](/key-concepts/errors.md) |
 | 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
-### Validations
+## Validations
 
-#### Parent id
+### Parent id
 
 A node must have a parent id. If you attempt to create a node without a parent id you will get the following response:
 
@@ -89,7 +85,7 @@ A node must have a parent id. If you attempt to create a node without a parent i
 }
 ```
 
-#### Parent child limit
+### Parent child limit
 
 A parent node cannot have more than 2000 children. If you attempt to create a node which breaches this limit you will get the following response:
 
@@ -107,7 +103,7 @@ A parent node cannot have more than 2000 children. If you attempt to create a no
 }
 ```
 
-#### Depth limit
+### Depth limit
 
 The maximum depth of a node is 10 levels. If you attempt to create a node which breaches this limit you will get the following response:
 
@@ -125,9 +121,9 @@ The maximum depth of a node is 10 levels. If you attempt to create a node which 
 }
 ```
 
-#### Slug
+### Slug
 
-A node must have at least one slug for a lnaguage. If you attempt to create a node without a slug you will get the following response:
+A node must have at least one slug for a language. If you attempt to create a node without a slug you will get the following response:
 
 ```json
 {

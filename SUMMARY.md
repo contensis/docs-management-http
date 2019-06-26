@@ -25,18 +25,6 @@
 * [List projects](/projects/list-projects.md)
 * [Delete a project](/projects/delete-a-project.md)
 
-## Nodes
-
-* [Get root node](/nodes/get-root-node.md)
-* [Get a node](/nodes/get-a-node.md)
-* [Get nodes by entry id](/nodes/get-nodes-by-entryid.md)
-* [Get a node's children](/nodes/get-nodes-children.md)
-* [Create a node](/nodes/create-a-node.md)
-* [Update a node](/nodes/update-a-node.md)
-* [Move a node](/nodes/move-a-node.md)
-* [Delete a node](/nodes/delete-a-node.md)
-* [Order nodes](/nodes/order-nodes.md)
-
 <!-- ## Content Types
 * [Get a content type](/key-concepts/content-types.md#get-a-content-type)
 * [Create a content type](/key-concepts/content-types.md#create-a-content-type)
@@ -68,6 +56,18 @@
 
 * [Uploading asset files](/assets/upload-asset-file.md)
 * [Managing assets](/assets/managing-assets.md)
+
+## Nodes
+
+* [Get root node](/nodes/get-root-node.md)
+* [Get a node](/nodes/get-a-node.md)
+* [Get nodes by entry id](/nodes/get-nodes-by-entryid.md)
+* [Get a node's children](/nodes/get-nodes-children.md)
+* [Create a node](/nodes/create-a-node.md)
+* [Update a node](/nodes/update-a-node.md)
+* [Move a node](/nodes/move-a-node.md)
+* [Delete a node](/nodes/delete-a-node.md)
+* [Order nodes](/nodes/order-nodes.md)
 
 ## Roles
 

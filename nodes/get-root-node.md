@@ -1,19 +1,23 @@
 ---
 description: Get root node.
 ---
-## Get the root node
+# Get the root node
 
-Gets the root node of the specified project. 
+Gets the root node of the specified project.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/root
 
-### Example request
+| Name | Parameter type | Type | Format | Description |
+| :- | :- | :- | :- | :- |
+| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
+
+## Example request
 
 ```http
 GET: /api/management/projects/website/nodes/root
 ```
 
-### Response messages
+## Response messages
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
