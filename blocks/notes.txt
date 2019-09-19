@@ -1,0 +1,38 @@
+- Push a deployment version
+- Release a deployment version - Makes it a major number
+- Make a deployment version the latest live version
+- List deployments and their versions by type (Render endpoint, job, service, etc)
+- Get a deployment version and it's endpoints - needed for the request handler
+- Mark a deployment version as broken - does this auto fallback to the previous released version?
+- Rollback a deployment version
+
+
+https://docs.google.com/document/d/1HZBT0Euq_YtNPDoF6uCEs7lxne6S_fetSiqAAy7KMJs/edit#heading=h.yfoh7gilb84m
+
+https://restful-api-design.readthedocs.io/en/latest/methods.html
+
+
+- Understand the version history and which ones are available and their statuses - 
+
+
+# Get me all deployments which shows me the id
+
+/api/management/projects/website/deployments
+
+
+# Get me the versions of a deployment, allowing filtering. Return
+/api/management/projects/website/deployments/blogs/versionStatus=released|live|all(default)
+
+
+# Get a deployment version
+/api/management/projects/website/deployments/blogs/?version=2.0
+
+
+# Perform actions
+/api/management/projects/website/deployments/blogs/actions?version=1.9
+{
+    "type": "release|rollback",
+    "data":{
+        "rollbackto": "1.2.1"
+    }
+}

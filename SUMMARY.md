@@ -83,6 +83,14 @@
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 * [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
 
+## Blocks
+
+* [Push a block](/blocks/push-a-block.md)
+* [Get a block](/blocks/get-a-block.md)
+* [List blocks](/blocks/list-blocks.md)
+* [Get block versions](/blocks/get-block-versions.md)
+* [Invoke block action](/blocks/invoke-block-actions.md)
+
 ## Models
 
 * [Project](/model/project.md)
@@ -100,6 +108,8 @@
 * [Role](/model/role.md)
 * [Paged list](/model/paged-list.md)
 * [Workflow trigger](/model/workflow-trigger.md)
+* [Block](/model/block.md)
+* [Block action](/model/block-action.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
 
