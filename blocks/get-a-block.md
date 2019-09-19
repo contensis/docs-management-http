@@ -13,6 +13,8 @@ description:
 | projectId     | path           | string |                                           | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
 | versionStatus | query          | string |                                           | The version status of the block. "latest" or "deployed"                                                |
 | version       | query          | string | [versionNo](/model/version.md#versionNo)  | The specific version requested.                                                                        |
+| branch        | query          | string |                                           | The branch name, defaults to master
+
 
 ### Example request
 

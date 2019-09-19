@@ -21,15 +21,25 @@ TODO
 | status                | string    |        | The status of the block                          |
 
 
-## Block statuses
+## Block statuses -- TODO - Separate these from the running status
 
 | Name           | Description                                                    | Alternatives
 |:---------------|:---------------------------------------------------------------| ------------------------|
 | Live           | The block is currently the live deployed version               | Deployed, Production |
 | Available      | The block is currently running and is available for previewing | Active, Preview, Ready |
 | Preparing      | The block is currently being prepared ready for use            | Discovering, Mounting, Interrogating, Probing, Scanning, Processing |
-| Dead           | The block is a minor version that has been superseded          | Down, Offline, Unavailable, Exited, Terminated |
+| Dead           | The block is a minor version that has been superseded          | Down, Offline, Unavailable, Exited, Terminated, Stopped |
 | Broken         | The block has been marked as broken and cannot be run          | |
+
+
+## Block running statuses
+
+We want a running status
+- Running (Expect it to be running and it is)
+- Faulted (It stopped due to an error)
+- Starting (Expect it to be running and it will be soon)
+- Stopping (Expect it to be stopped and it will be soon)
+- Stopped (Its not meant to be running. Deliberately stopped)
 
 
 ## Remarks

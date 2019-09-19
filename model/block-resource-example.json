@@ -1,0 +1,38 @@
+/api/management/projects/website/blocks/blog/master/versions/latest|1.0
+{ 
+    "id": "blogs",
+    "projectId": "website",
+    "branches": [
+        {
+            "id": "master",
+            "versions":[                
+                {
+                    "versionNo": "1.1",
+                    "runningState": "Running",
+                    
+                },
+                {
+                    "versionNo": "1.0",
+                    "status": "Live"
+                }
+            ]
+        },
+        {
+            "id": "feature-redesign-2019",
+            "versions":[
+                {
+                    "versionNo": "0.3",
+                    "status": "Available"
+                },
+                {
+                    "versionNo": "0.2",
+                    "status": "Superseded"
+                },
+                {
+                    "versionNo": "0.1",
+                    "status": "Superseded"
+                }
+            ]
+        }
+    ]
+}
