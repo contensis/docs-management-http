@@ -10,7 +10,8 @@
       "fontsettings",
       "-highlight",
       "prism",
-      "scripts"
+      "scripts",
+      "heading-anchors"
     ],
     "pluginsConfig": {
       "fontsettings": {
@@ -25,6 +26,11 @@
         "lang": {
           "json": "json"
         }
+      },
+      "heading-anchors":{
+        "icon": "#",
+        "placement": "right",
+        "visible": "always"
       },
       "scripts": {
         "files": [
