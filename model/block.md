@@ -7,95 +7,66 @@ TODO
 
 ## Properties
 
-| Name                  | Type      | Format | Description                                      |
-|:----------------------|:----------|:-------|:-------------------------------------------------|
-| id                    | string    |        | The block identifier, camel-cased                |
-| projectId             | string    |        | The project identifier                           |
-| staticPaths           | string[]  |        | The static path root                             |
-| image.uri             | string    |        | The image repository uri                         |
-| image.tag             | string    |        | The image tag name                               |
-| source.branch         | string    |        | The source control branch name                   |
-| source.commit.id      | string    |        | The source control commit identifier             |
-| source.commit.message | string    |        | The source control commit message                |
-| source.commit.uri     | string    |        | The source control commit uri                    |
-| status                | string    |        | The status of the block                          |
+| Name                           | Type      | Format                                   | Description                            |
+|:-------------------------------|:----------|:-----------------------------------------|:---------------------------------------|
+| id                             | string    |                                          | The block identifier                   |
+| projectId                      | string    |                                          | The project identifier                 |
+| branches.id                    | string    |                                          | The id of the branch                   |
+| branches.versions.versionNo    | string    | [versionNo](/model/version.md#versionNo) | The block version number               |
+| branches.versions.runningState | string    |                                          | The running state of the block version |
 
+## Running states
 
-## Block statuses -- TODO - Separate these from the running status
+## Block running states
 
-| Name           | Description                                                    | Alternatives
-|:---------------|:---------------------------------------------------------------| ------------------------|
-| Live           | The block is currently the live deployed version               | Deployed, Production |
-| Available      | The block is currently running and is available for previewing | Active, Preview, Ready |
-| Preparing      | The block is currently being prepared ready for use            | Discovering, Mounting, Interrogating, Probing, Scanning, Processing |
-| Dead           | The block is a minor version that has been superseded          | Down, Offline, Unavailable, Exited, Terminated, Stopped |
-| Broken         | The block has been marked as broken and cannot be run          | |
-
-
-## Block running statuses
-
-We want a running status
-- Running (Expect it to be running and it is)
-- Faulted (It stopped due to an error)
-- Starting (Expect it to be running and it will be soon)
-- Stopping (Expect it to be stopped and it will be soon)
-- Stopped (Its not meant to be running. Deliberately stopped)
-
+| Name     | Description                                                         |
+|:---------|:--------------------------------------------------------------------| 
+| Faulted  | The block has stopped due to an error                               |
+| Running  | The block is expected to be running and currently is                |
+| Starting | The block is expected to be running and is currently starting       |
+| Stopped  | The block is not expected to be running and is deliberately stopped |
+| Stopping | The block is expected to be stopped and is currently stopping       |
 
 ## Remarks
 
 
-## Example
-
-?version=latest|release|live
-?includeEndpoints=true
-
-
+## Example response
 ```json
-{
-    "id": "blogs",
-    "projectId": "website",
-    "endpoints":[
-        
-    ],
-    "staticPaths": [
-        "static",
-        "image-gallery"
-    ],
-    "image":{
-        "uri": "gitlab.zengenti.com:4567/container-examples/razor-pages/master/razor-example",
-        "tag": "81e13d08"
-    },
-    "source": {
-        "branch": "master",
-        "commit": {
-            "id": "81e13d08",
-            "message": "Added marquee tag",
-            "uri": "https://gitlab.zengenti.com/container-examples/razor-pages/commit/81e13d08fb8fd33e37b64b1e95e1668e5256b38b",
-        }        
-    },
-    "sys": {
-        "version": {
-            "pushedBy": "s.derrickson",
-            "pushed": "2016-10-12T09:29:18.5144641+01:00",
-            "releasedBy": "b.cumberbatch",
-            "released": "2016-10-13T10:15:12.1973648+01:00",
-            "markedBrokenBy": "b.cumberbatch",
-            "markedBroken": "2016-10-13T10:15:12.1973648+01:00",
-            "versionNo": "2.0"
-        } 
-    },
-    "status": "Live"
+{ 
+    "id": "movie-listing",
+    "projectId": "movieDb",
+    "branches": [
+        {
+            "id": "master",
+            "versions":[                
+                {
+                    "versionNo": "1.1",
+                    "runningState": "Running",
+                    
+                },
+                {
+                    "versionNo": "1.0",
+                    "runningState": "Running"
+                }
+            ]
+        },
+        {
+            "id": "feature-redesign-2019",
+            "versions":[
+                {
+                    "versionNo": "0.3",
+                    "runningState": "Starting"
+                },
+                {
+                    "versionNo": "0.2",
+                    "runningState": "Stopped"
+                },
+                {
+                    "versionNo": "0.1",
+                    "runningState": "Faulted"
+                }
+            ]
+        }
+    ]
 }
-```
-
-## Response
-
-```json
-{
-    "id": "1ce750c4-6f5c-4e26-b166-7273985c5697",
-    "path": "/blogs"
-
-}
-
 ```
