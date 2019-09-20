@@ -18,7 +18,7 @@ POST: /api/management/projects/movieDb/blocks/
 {
     "id": "movie-listing",
     "projectId": "movieDb",
-    "image":{
+    "image": {
         "uri": "moviedb/movie-listing",
         "tag": "81e13d08"
     },
@@ -37,7 +37,7 @@ POST: /api/management/projects/movieDb/blocks/
 
 | HTTP status code | Reason              | Response model                       |
 | :--------------- | :------------------ | :------------------------------------|
-| 202              | Accepted            | [Block](/model/block.md)             |
+| 202              | Accepted            | [Block version](/model/block-version.md) |
 | 401              | Unauthorized        | [Error](/key-concepts/errors.md)     |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)     |
 | 422              | ValidationError     | [Error](/key-concepts/errors.md)     |

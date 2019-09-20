@@ -15,8 +15,6 @@ TODO
 | branches.versions.versionNo    | string    | [versionNo](/model/version.md#versionNo) | The block version number               |
 | branches.versions.runningState | string    |                                          | The running state of the block version |
 
-## Running states
-
 ## Block running states
 
 | Name     | Description                                                         |
@@ -47,7 +45,16 @@ TODO
                 {
                     "versionNo": "1.0",
                     "runningState": "Running"
+                },
+                {
+                    "versionNo": "0.2",
+                    "runningState": "Stopped"
+                },
+                {
+                    "versionNo": "0.1",
+                    "runningState": "Stopped"
                 }
+
             ]
         },
         {

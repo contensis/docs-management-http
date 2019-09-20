@@ -4,7 +4,7 @@ description:
 # List blocks
 
 
-<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/blocks?versionStatus=latest|deployed
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/blocks
 
 ## Parameters
 

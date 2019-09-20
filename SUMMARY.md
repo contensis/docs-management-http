@@ -22,6 +22,7 @@
 * [Scopes](security/scopes.md)
 
 ***
+
 * Projects
 
 * [Get a project](/projects/get-a-project.md)
@@ -85,8 +86,9 @@
 
 * [Push a block](/blocks/push-a-block.md)
 * [Get a block](/blocks/get-a-block.md)
+* [Get a block version](/blocks/get-block-version.md)
 * [List blocks](/blocks/list-blocks.md)
-* [Get block versions](/blocks/get-block-versions.md)
+* [List block versions](/blocks/list-block-versions.md)
 * [Invoke block action](/blocks/invoke-block-action.md)
 
 ***

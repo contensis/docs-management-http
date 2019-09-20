@@ -21,15 +21,17 @@ TODO
 | status                | string    |        | The status of the block                          |
 
 
-## Block statuses -- TODO - Separate these from the running status
+## TODO: Does status become versionStatus, which are documented in the table below?
 
-| Name           | Description                                                    | Alternatives
-|:---------------|:---------------------------------------------------------------| ------------------------|
-| Live           | The block is currently the live deployed version               | Deployed, Production |
-| Available      | The block is currently running and is available for previewing | Active, Preview, Ready |
-| Preparing      | The block is currently being prepared ready for use            | Discovering, Mounting, Interrogating, Probing, Scanning, Processing |
-| Dead           | The block is a minor version that has been superseded          | Down, Offline, Unavailable, Exited, Terminated, Stopped |
-| Broken         | The block has been marked as broken and cannot be run          | |
+
+## Block version status
+
+| Name        | Description                                                               |
+|:------------|:--------------------------------------------------------------------------| 
+| Discovering | The block has been pushed and it's manifest is currently being discovered |
+| Superseded  | The block version has been superseded by another                          |
+| Broken      | The block version has been marked as broken                               |
+| Live        | The block version is live and available for requests                      |
 
 ## Remarks
 
