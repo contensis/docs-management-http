@@ -16,7 +16,7 @@ description:
 ```json
 POST: /api/management/projects/movieDb/blocks/
 {
-    "id": "movie-listing",
+    "id": "movieListing",
     "projectId": "movieDb",
     "image": {
         "uri": "moviedb/movie-listing",
@@ -24,7 +24,7 @@ POST: /api/management/projects/movieDb/blocks/
     },
     "source": {
         "branch": "master",
-        "commits": {
+        "commit": {
             "id": "81e13d08",
             "message": "Implemented movie listing",
             "uri": "https://github.com/moviedb/movie-listing/commit/81e13d08fb8fd33e37b64b1e95e1668e5256b38b",
@@ -35,12 +35,12 @@ POST: /api/management/projects/movieDb/blocks/
 
 ### Response message
 
-| HTTP status code | Reason              | Response model                       |
-| :--------------- | :------------------ | :------------------------------------|
+| HTTP status code | Reason              | Response model                           |
+| :--------------- | :------------------ | :--------------------------------------- |
 | 202              | Accepted            | [Block version](/model/block-version.md) |
-| 401              | Unauthorized        | [Error](/key-concepts/errors.md)     |
-| 404              | NotFound            | [Error](/key-concepts/errors.md)     |
-| 422              | ValidationError     | [Error](/key-concepts/errors.md)     |
-| 500              | InternalServerError | [Error](/key-concepts/errors.md)     |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md)         |
+| 404              | NotFound            | [Error](/key-concepts/errors.md)         |
+| 422              | ValidationError     | [Error](/key-concepts/errors.md)         |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md)         |
 
 ### Validations

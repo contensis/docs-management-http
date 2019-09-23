@@ -39,8 +39,7 @@ TODO
             "versions":[                
                 {
                     "versionNo": "1.1",
-                    "runningState": "Running",
-                    
+                    "runningState": "Running",                    
                 },
                 {
                     "versionNo": "1.0",

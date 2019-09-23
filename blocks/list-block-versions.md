@@ -32,8 +32,7 @@ GET: /api/management/projects/movieDb/blocks/movie-listing/master/versions
             "versions":[                
                 {
                     "versionNo": "1.1",
-                    "runningState": "Running",
-                    
+                    "runningState": "Running",                    
                 },
                 {
                     "versionNo": "1.0",
