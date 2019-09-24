@@ -7,28 +7,19 @@ TODO
 
 ## Properties
 
-| Name                           | Type      | Format                                   | Description                            |
-|:-------------------------------|:----------|:-----------------------------------------|:---------------------------------------|
-| id                             | string    |                                          | The block identifier                   |
-| projectId                      | string    |                                          | The project identifier                 |
-| branches.id                    | string    |                                          | The id of the branch                   |
-| branches.versions.versionNo    | string    | [versionNo](/model/version.md#versionNo) | The block version number               |
-| branches.versions.runningState | string    |                                          | The running state of the block version |
-
-## Block running states
-
-| Name     | Description                                                         |
-|:---------|:--------------------------------------------------------------------| 
-| Faulted  | The block has stopped due to an error                               |
-| Running  | The block is expected to be running and currently is                |
-| Starting | The block is expected to be running and is currently starting       |
-| Stopped  | The block is not expected to be running and is deliberately stopped |
-| Stopping | The block is expected to be stopped and is currently stopping       |
-
-## Remarks
-
+| Name                                | Type   | Format                                            | Description                                |
+|:------------------------------------|:-------|:--------------------------------------------------|:-------------------------------------------|
+| id                                  | string |                                                   | The block identifier                       |
+| projectId                           | string |                                                   | The project identifier                     |
+| branches.id                         | string |                                                   | The id of the branch                       |
+| branches.versions.versionNo         | string | [versionNo](/model/version.md#versionNo)          | The block version number                   |
+| branches.versions.status.broken     | boolean|                                                   | Whether the block has been marked as broken|
+| branches.versions.status.deployment | string | [Deployment status](/blocks/deployment-status.md) | The block deployment status                |
+| branches.versions.status.running    | string | [Running status](/blocks/running-status.md)       | The block running status                   |
+| branches.versions.status.workflow   | string | [Workflow status](/blocks/workflow-status.md)     | The block workflow status                  |
 
 ## Example response
+
 ```json
 { 
     "id": "movie-listing",
@@ -36,22 +27,42 @@ TODO
     "branches": [
         {
             "id": "master",
-            "versions":[                
+            "versions": [                
                 {
                     "versionNo": "1.1",
-                    "runningState": "Running",                    
+                    "status": {
+                        "broken": false, 
+                        "deployment": "Deployed",      
+                        "running": "Pending",
+                        "workflow": "Draft",
+                    }
                 },
                 {
                     "versionNo": "1.0",
-                    "runningState": "Running"
+                    "status": {
+                        "broken": false, 
+                        "deployment": "Deployed",      
+                        "running": "Available",
+                        "workflow": "Released",
+                    }    
                 },
                 {
                     "versionNo": "0.2",
-                    "runningState": "Stopped"
+                    "status": {
+                        "broken": false, 
+                        "deployment": "Deprecated",      
+                        "running": "Stopped",
+                        "workflow": "Draft",
+                    }    
                 },
                 {
                     "versionNo": "0.1",
-                    "runningState": "Stopped"
+                    "status": {
+                        "broken": true, 
+                        "deployment": "Deprecated",      
+                        "running": "Stopped",
+                        "workflow": "Draft",
+                    }  
                 }
 
             ]
@@ -61,15 +72,30 @@ TODO
             "versions":[
                 {
                     "versionNo": "0.3",
-                    "runningState": "Starting"
+                    "status": {
+                        "broken": false, 
+                        "deployment": "Deployed",      
+                        "running": "None",
+                        "workflow": "Created",
+                    }  
                 },
                 {
                     "versionNo": "0.2",
-                    "runningState": "Stopped"
+                    "status": {
+                        "broken": false, 
+                        "deployment": "Deprecated",      
+                        "running": "Stopped",
+                        "workflow": "Draft",
+                    } 
                 },
                 {
                     "versionNo": "0.1",
-                    "runningState": "Faulted"
+                    "status": {
+                        "broken": false, 
+                        "deployment": "Deprecated",      
+                        "running": "Stopped",
+                        "workflow": "Draft",
+                    } 
                 }
             ]
         }
