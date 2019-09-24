@@ -88,7 +88,6 @@
 * [Get a block](/blocks/get-a-block.md)
 * [Get a block version](/blocks/get-block-version.md)
 * [List blocks](/blocks/list-blocks.md)
-* [List block versions](/blocks/list-block-versions.md)
 * [Invoke block action](/blocks/invoke-block-action.md)
 * [Block statuses](/blocks/block-statuses.md)
     * [Deployment status](/blocks/deployment-status.md)

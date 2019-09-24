@@ -3,7 +3,7 @@ description:
 ---
 # Get a block version
 
-<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/blocks/**{blockId}**/**{branchId}**/versions/{version}
+<span class="label label--get">GET</span> /api/management/projects/**{projectId}**/blocks/**{blockId}**/**{branchId}**/versions/**{version}**
 
 ## Parameters
 
@@ -12,13 +12,13 @@ description:
 | projectId     | path           | string |                         | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
 | blockId       | path           | string |                         | The block identifier                                                                                   |
 | branchId      | path           | string |                         | The branch identifier                                                                                  |
-| version       | path           | string | 'latest' or VersionNo   | The version number of a block version, or 'latest'                                                     |
+| version       | path           | string | 'live' or VersionNo   | The version number of a block version, or 'latest'                                                     |
 
 ### Example request
 
 ```http
 Accept: application/json
-GET: /api/management/projects/movieDb/blocks/movie-listing/master/versions/2.0
+GET: /api/management/projects/movieDb/blocks/movielisting/master/versions/2.0
 ```
 
 ### Response message
