@@ -1,8 +1,10 @@
-## HTTP Management API
+# Summary
 
 * [Introduction](/README.md)
 
-## Key concepts
+***
+
+* Key concepts
 
 * [DataFormats](/key-concepts/data-formats.md)
 * [DataTypes](/key-concepts/data-types.md)
@@ -11,13 +13,17 @@
 * [Validations](/key-concepts/validations.md)
 * [Workflow](/key-concepts/workflow.md)
 
-## Security
+***
+
+* Security
 
 * [Authentication](security/authentication.md)
 * [Authorization](security/authorization.md)
 * [Scopes](security/scopes.md)
 
-## Projects
+***
+
+* Projects
 
 * [Get a project](/projects/get-a-project.md)
 * [Create a project](/projects/create-a-project.md)
@@ -25,7 +31,8 @@
 * [List projects](/projects/list-projects.md)
 * [Delete a project](/projects/delete-a-project.md)
 
-<!-- ## Content Types
+***
+<!-- # Content Types
 * [Get a content type](/key-concepts/content-types.md#get-a-content-type)
 * [Create a content type](/key-concepts/content-types.md#create-a-content-type)
 * [Update a content type](/key-concepts/content-types.md#update-a-content-type)
@@ -34,14 +41,14 @@
 * [Delete a content type](/key-concepts/content-types.md#delete-a-content-type)
 * [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type) -->
 
-<!-- ## ## Components
+<!-- # # Components
 * [Get a component](/key-concepts/components.md#get-a-component)
 * [Create a component](/key-concepts/components.md#create-a-component)
 * [Update a component](/key-concepts/components.md#update-a-component)
 * [Publish a component](/key-concepts/components.md#publish-a-component)
 * [Delete a component](/key-concepts/components.md#delete-a-component) -->
 
-## Entries
+* Entries
 
 * [Get an entry](/entries/get-an-entry.md)
 * [Create an entry](/entries/create-an-entry.md)
@@ -52,12 +59,16 @@
 * [Invoking workflow](/entries/invoking-workflow.md)
   * [Unpublish an entry](/entries/unpublish-an-entry.md)
 
-## Assets
+***
+
+* Assets
 
 * [Uploading asset files](/assets/upload-asset-file.md)
 * [Managing assets](/assets/managing-assets.md)
 
-## Nodes
+***
+
+* Nodes
 
 * [Get root node](/nodes/get-root-node.md)
 * [Get a node](/nodes/get-a-node.md)
@@ -69,7 +80,9 @@
 * [Delete a node](/nodes/delete-a-node.md)
 * [Order nodes](/nodes/order-nodes.md)
 
-## Roles
+***
+
+* Roles
 
 * [Get a role](/roles/get-a-role.md)
 * [Create a role](/roles/create-a-role.md)
@@ -77,13 +90,17 @@
 * [List roles](/roles/list-roles.md)
 * [Delete a role](/roles/delete-a-role.md)
 
-## Permissions
+***
+
+* Permissions
 
 * [Overview](/permissions/overview.md)
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 * [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
 
-## Models
+***
+
+* Models
 
 * [Project](/model/project.md)
 * [Node](/model/node.md)
@@ -100,6 +117,9 @@
 * [Role](/model/role.md)
 * [Paged list](/model/paged-list.md)
 * [Workflow trigger](/model/workflow-trigger.md)
+* [Block](/model/block.md)
+* [Block version](/model/block-version.md)
+* [Block action](/model/block-action.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
 
