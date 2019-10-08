@@ -11,12 +11,12 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 ### Projects
 
-|||
-|-|-|
-| [Get a project](/projects/get-a-project.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/ |
-| [Create a project](/projects/create-a-project.md) | <span class="label label--post">POST</span> /api/management/projects/ |
-| [Update a project](/projects/update-a-project.md) | <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/ |
-| [List projects](/projects/list-projects.md) | <span class="label label--get">GET</span> /api/management/projects/ |
+|                                                   |                                                                                           |
+|---------------------------------------------------|-------------------------------------------------------------------------------------------|
+| [Get a project](/projects/get-a-project.md)       | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/       |
+| [Create a project](/projects/create-a-project.md) | <span class="label label--post">POST</span> /api/management/projects/                     |
+| [Update a project](/projects/update-a-project.md) | <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/      |
+| [List projects](/projects/list-projects.md)       | <span class="label label--get">GET</span> /api/management/projects/                       |
 | [Delete a project](/projects/delete-a-project.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/ |
 
 <!-- ### Content Types
@@ -36,23 +36,36 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 |-|-|
 | [Get an entry](/entries/get-an-entry.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/**{entryId}** |
 | [Create an entry](/entries/create-an-entry.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/ |
-| [Update an entry variation](/entries/update-an-entry.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
+| [Update an entry variation](/entries/update-an-entry.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/entries/**{entryId}** |
 | [List entries](/entries/list-entries.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/entries/ |
 | [List entries by content type](/entries/list-entries-by-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
-| [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
-| [Delete an entry variation](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**?language=**comma separated list of languages**
-| [Invoke a workflow event](/entries/invoking-workflow.md) <br> [Unpublish an entry](/entries/unpublish-an-entry.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/workflow/events/
+| [Delete an entry](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}** |
+| [Delete an entry variation](/entries/delete-an-entry.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**?language=**comma separated list of languages** |
+| [Invoke a workflow event](/entries/invoking-workflow.md) <br> [Unpublish an entry](/entries/unpublish-an-entry.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/workflow/events/ |
 
+### Nodes
+
+|                                                         |                                                                                                                            |
+|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| [Get the root node](/nodes/get-root-node.md)            | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/root/                             |
+| [Get a node](/nodes/get-a-node.md)                      | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**                      |
+| [Get nodes by entry id](/nodes/get-nodes-by-entryid.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/?entryId=**{entryId}**            |
+| [Get a node's children](/nodes/get-nodes-children.md)   | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children       |
+| [Create a node](/nodes/create-a-node.md)                | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children     |
+| [Update a node](/nodes/update-a-node.md)                | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**/                     |
+| [Move a node](/nodes/move-a-node.md)                    | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**/                     |
+| [Delete a node](/nodes/delete-a-node.md)                | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/nodes/**{nodeId}**/               |
+| [Order nodes](/nodes/order-nodes.md)                    | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children/order |
 
 ### Roles
 
-|||
-|-|-|
-| [Get a role](/roles/get-a-role.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** |
-| [Create a role](/roles/create-a-role.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/security/roles/ |
-| [Update a role](/roles/update-a-role.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** 
-| [List roles](/roles/list-roles.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/ |
-| [Delete a role](/roles/delete-a-role.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** 
+|                                          |                                                                                                                      |
+|------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [Get a role](/roles/get-a-role.md)       | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**       |
+| [Create a role](/roles/create-a-role.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/security/roles/                 |
+| [Update a role](/roles/update-a-role.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**       |
+| [List roles](/roles/list-roles.md)       | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/                   |
+| [Delete a role](/roles/delete-a-role.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}** |
 
 ### Permissions
 |||
