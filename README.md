@@ -5,7 +5,7 @@
 The Management API allows you to create and manage entries within Contensis.
 Our primary aim with this version of the API is to enable you to easily import/integrate content from other systems.
 
-The API is a RESTful service to ensure maximum compatibility, delivering content as JSON and resource files (assets) as text or binary files. The life-cycle of  [content is controlled by workflow](/key-concepts/workflow.md) which can be controlled by invoking permissiod events. We currently provide a .NET client API wrapper to simplify using the API.
+The API is a RESTful service to ensure maximum compatibility, delivering content as JSON and resource files (assets) as text or binary files. The life-cycle of  [content is controlled by workflow](/key-concepts/workflow.md) which can be controlled by invoking permissiod events. We currently provide a [.NET](https://developer.zengenti.com/contensis/api/management/dotnet/) client API wrapper to simplify using the API.
 
 ## Key concepts
 
