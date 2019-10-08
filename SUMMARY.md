@@ -117,9 +117,6 @@
 * [Role](/model/role.md)
 * [Paged list](/model/paged-list.md)
 * [Workflow trigger](/model/workflow-trigger.md)
-* [Block](/model/block.md)
-* [Block version](/model/block-version.md)
-* [Block action](/model/block-action.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
 
