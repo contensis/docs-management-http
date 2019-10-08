@@ -6,10 +6,10 @@ Gets a role by its Id.
 
 ### Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
-| roleId | path | string | GUID | The role identifier. |
+| Name      | Parameter type | Type   | Format | Description                                                                                             |
+|:----------|:---------------|:-------|:-------|:--------------------------------------------------------------------------------------------------------|
+| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| roleId    | path           | string | GUID   | The role identifier.                                                                                    |
 
 ### Example request
 
@@ -19,12 +19,12 @@ GET: /api/management/projects/movieDb/security/roles/71f73a9b-2a13-4d63-bcc1-e8e
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Role](/model/role.md) |
-| 403 | Forbidden | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Success             | [Role](/model/role.md)           |
+| 403              | Forbidden           | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Validations
 

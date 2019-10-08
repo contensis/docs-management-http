@@ -6,10 +6,10 @@ Updates an existing role.
 
 ### Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
-| roleId | path | GUID |  | The role identifier. |
+| Name      | Parameter type | Type   | Format | Description                                                                                             |
+|:----------|:---------------|:-------|:-------|:--------------------------------------------------------------------------------------------------------|
+| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| roleId    | path           | GUID   |        | The role identifier.                                                                                    |
 
 ### Example request
 
@@ -44,14 +44,14 @@ PUT: /api/management/projects/movieDb/security/roles/71b48d24-7f65-457d-bd51-cba
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Role](/model/role.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 403 | Forbidden | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Success             | [Role](/model/role.md)           |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 403              | Forbidden           | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 422              | ValidationError     | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Validations
 

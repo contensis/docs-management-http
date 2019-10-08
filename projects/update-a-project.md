@@ -26,13 +26,13 @@ PUT: /api/management/projects/movieDb
 
 ### Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Project](/model/project.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Success             | [Project](/model/project.md)     |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 422              | ValidationError     | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Remarks
 

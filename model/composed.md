@@ -10,10 +10,10 @@ For example, an *allowed field* could be defined with a type of *Heading* and na
 
 ## Properties
 
-| Name | Type | Format | Description |
-| :--- | :--- | :----- | :---------- |
-| type | string || The field name given to a field type defined in the content type. |
-| value | *Any* | *Any* | The value of the field, which can be of any type. |
+| Name  | Type   | Format | Description                                                       |
+|-------|--------|--------|-------------------------------------------------------------------|
+| type  | string |        | The field name given to a field type defined in the content type. |
+| value | *Any*  | *Any*  | The value of the field, which can be of any type.                 |
 
 ## Example
 

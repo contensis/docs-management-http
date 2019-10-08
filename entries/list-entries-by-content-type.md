@@ -27,9 +27,9 @@ GET: /api/management/projects/movieDb/contenttypes/movie/entries/
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [PagedList&lt;Entry&gt;](/model/entry.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                            |
+|:-----------------|:--------------------|:------------------------------------------|
+| 200              | Success             | [PagedList&lt;Entry&gt;](/model/entry.md) |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md)          |
+| 404              | NotFound            | [Error](/key-concepts/errors.md)          |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md)          |

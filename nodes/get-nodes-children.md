@@ -22,9 +22,9 @@ GET: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c82635
 
 ## Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Node [...]](/model/node.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Success             | [Node [...]](/model/node.md)     |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |

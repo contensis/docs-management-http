@@ -7,16 +7,16 @@ TODO
 
 ## Properties
 
-| Name                                | Type   | Format                                            | Description                                |
-|:------------------------------------|:-------|:--------------------------------------------------|:-------------------------------------------|
-| id                                  | string |                                                   | The block identifier                       |
-| projectId                           | string |                                                   | The project identifier                     |
-| branches.id                         | string |                                                   | The id of the branch                       |
-| branches.versions.versionNo         | string | [versionNo](/model/version.md#versionNo)          | The block version number                   |
-| branches.versions.status.broken     | boolean|                                                   | Whether the block has been marked as broken|
-| branches.versions.status.deployment | string | [Deployment status](/blocks/deployment-status.md) | The block deployment status                |
-| branches.versions.status.running    | string | [Running status](/blocks/running-status.md)       | The block running status                   |
-| branches.versions.status.workflow   | string | [Workflow status](/blocks/workflow-status.md)     | The block workflow status                  |
+| Name                                | Type    | Format                                            | Description                                 |
+|:------------------------------------|:--------|:--------------------------------------------------|:--------------------------------------------|
+| id                                  | string  |                                                   | The block identifier                        |
+| projectId                           | string  |                                                   | The project identifier                      |
+| branches.id                         | string  |                                                   | The id of the branch                        |
+| branches.versions.versionNo         | string  | [versionNo](/model/version.md#versionNo)          | The block version number                    |
+| branches.versions.status.broken     | boolean |                                                   | Whether the block has been marked as broken |
+| branches.versions.status.deployment | string  | [Deployment status](/blocks/deployment-status.md) | The block deployment status                 |
+| branches.versions.status.running    | string  | [Running status](/blocks/running-status.md)       | The block running status                    |
+| branches.versions.status.workflow   | string  | [Workflow status](/blocks/workflow-status.md)     | The block workflow status                   |
 
 ## Example response
 

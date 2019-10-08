@@ -56,14 +56,14 @@ POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c8263
 
 ## Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 201 | Created | [Node](/model/node.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 409 | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason                | Response model                   |
+|:-----------------|:----------------------|:---------------------------------|
+| 201              | Created               | [Node](/model/node.md)           |
+| 401              | Unauthorized          | [Error](/key-concepts/errors.md) |
+| 404              | NotFound              | [Error](/key-concepts/errors.md) |
+| 409              | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
+| 422              | ValidationError       | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError   | [Error](/key-concepts/errors.md) |
 
 ## Validations
 

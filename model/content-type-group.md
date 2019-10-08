@@ -7,10 +7,10 @@ The content type group object enables related fields to be grouped together in t
 
 ## Properties
 
-| Name | Type | Format | Description |
-| :------- | :--- | :-- | :---------- |
-| id | string | | A group identifier which is unique within the content type. |
-| name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to the content type group. |
+| Name | Type   | Format                                           | Description                                                 |
+|------|--------|--------------------------------------------------|-------------------------------------------------------------|
+| id   | string |                                                  | A group identifier which is unique within the content type. |
+| name | object | [Localized value](/key-concepts/localization.md) | The friendly name given to the content type group.          |
 
 ## Example
 

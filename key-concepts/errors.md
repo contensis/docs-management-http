@@ -11,12 +11,12 @@ The Management API returns error details in a generic format so that it can be e
 
 Below are the current status codes returned from the Management API.
 
-| Status code | Error code | Description |
-| ----------- | -------------- | ----------- |
-| 400 | BadRequest |  The request could not be understood or was missing required parameters. |
-| 403 | AccessDenied | The action is not authorised for the current user. |
-| 404 | NotFound | The resource was not found. |
-| 500 | ServerError | An error occurred on the server. Something went wrong processing the request. |
+| Status code | Error code   | Description                                                                   |
+|-------------|--------------|-------------------------------------------------------------------------------|
+| 400         | BadRequest   | The request could not be understood or was missing required parameters.       |
+| 403         | AccessDenied | The action is not authorised for the current user.                            |
+| 404         | NotFound     | The resource was not found.                                                   |
+| 500         | ServerError  | An error occurred on the server. Something went wrong processing the request. |
 
 
 ## Error response

@@ -26,14 +26,14 @@ POST: /api/management/projects/
 
 ### Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 201 | Created | [Project](/model/project.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 409 | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason                | Response model                   |
+|:-----------------|:----------------------|:---------------------------------|
+| 201              | Created               | [Project](/model/project.md)     |
+| 401              | Unauthorized          | [Error](/key-concepts/errors.md) |
+| 404              | NotFound              | [Error](/key-concepts/errors.md) |
+| 409              | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
+| 422              | ValidationError       | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError   | [Error](/key-concepts/errors.md) |
 
 ### Validations
 

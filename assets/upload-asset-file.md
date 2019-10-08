@@ -9,9 +9,9 @@ A file is required to be uploaded to the asset resource endpoint before an asset
 
 ### Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier. |
+| Name      | Parameter type | Type   | Format | Description             |
+|:----------|:---------------|:-------|:-------|:------------------------|
+| projectId | path           | string |        | The project identifier. |
 
 ### Example request
 
@@ -38,11 +38,11 @@ Content-Type: image/jpeg
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 201 | Created | Array of file id objects |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 201              | Created             | Array of file id objects         |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Example
 

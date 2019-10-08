@@ -6,9 +6,9 @@ Creates a new role.
 
 ### Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| Name      | Parameter type | Type   | Format | Description                                                                                             |
+|:----------|:---------------|:-------|:-------|:--------------------------------------------------------------------------------------------------------|
+| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 
 ### Example request
 

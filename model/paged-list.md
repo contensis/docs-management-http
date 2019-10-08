@@ -7,13 +7,13 @@ A paged list is a structure that is used to describe paging details for listing 
 
 ## Properties
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| pageIndex | number | int | The index of the result set to return |
-| pageSize | number | int | The size of the result set to return |
-| totalCount | number | int | The total number of results available |
-| pageCount | number | int | The calculated page count based on the totalCount and pageSize |
-| items | object [...] |  | A container for the items being returned |
+| Name       | Type         | Format | Description                                                    |
+|------------|--------------|--------|----------------------------------------------------------------|
+| pageIndex  | number       | int    | The index of the result set to return                          |
+| pageSize   | number       | int    | The size of the result set to return                           |
+| totalCount | number       | int    | The total number of results available                          |
+| pageCount  | number       | int    | The calculated page count based on the totalCount and pageSize |
+| items      | object [...] |        | A container for the items being returned                       |
 
 ## Example
 

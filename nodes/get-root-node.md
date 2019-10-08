@@ -19,9 +19,9 @@ GET: /api/management/projects/website/nodes/root
 
 ## Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Node](/model/node.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Success             | [Node](/model/node.md)           |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |

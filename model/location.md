@@ -7,10 +7,10 @@ The location object represents a geographical coordinate that specifies the posi
 
 ## Properties
 
-| Name | Type | Format | Description |
-| :------- | :--- | :-- | :---------- |
-| lat | number | | The north-south position. |
-| lon | number | | The east-west position. |
+| Name | Type   | Format | Description               |
+|------|--------|--------|---------------------------|
+| lat  | number |        | The north-south position. |
+| lon  | number |        | The east-west position.   |
 
 ## Example
 

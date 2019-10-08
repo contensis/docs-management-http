@@ -10,10 +10,10 @@ Deletes an entry or specific variations by  Id.
 
 ## Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
-| entryId | path | string | GUID | The entry identifier. |
+| Name      | Parameter type | Type   | Format | Description                                                                                             |
+|:----------|:---------------|:-------|:-------|:--------------------------------------------------------------------------------------------------------|
+| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| entryId   | path           | string | GUID   | The entry identifier.                                                                                   |
 
 ### Example requests
 
@@ -31,9 +31,9 @@ Please note you must be authorised to delete all the language variations or the 
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Entry](/model/entry.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Success             | [Entry](/model/entry.md)         |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |

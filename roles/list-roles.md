@@ -5,11 +5,11 @@ List roles by project Id.
 
 ### Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
-| pageIndex | query | number | integer | The index of the page |
-| pageSize | query | number | integer | The number of results per page. The default is 25. |
+| Name      | Parameter type | Type   | Format  | Description                                                                                             |
+|:----------|:---------------|:-------|:--------|:--------------------------------------------------------------------------------------------------------|
+| projectId | path           | string |         | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| pageIndex | query          | number | integer | The index of the page                                                                                   |
+| pageSize  | query          | number | integer | The number of results per page. The default is 25.                                                      |
 
 ### Example request
 
@@ -20,13 +20,13 @@ GET: /api/management/projects/movieDb/security/roles?pageIndex=1&pageSize=5
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [PagedList&lt;Role&gt;](/model/role.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 403 | Forbidden | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                          |
+|:-----------------|:--------------------|:----------------------------------------|
+| 200              | Success             | [PagedList&lt;Role&gt;](/model/role.md) |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md)        |
+| 403              | Forbidden           | [Error](/key-concepts/errors.md)        |
+| 404              | NotFound            | [Error](/key-concepts/errors.md)        |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md)        |
 
 ### Validations
 

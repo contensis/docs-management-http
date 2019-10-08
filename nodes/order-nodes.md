@@ -45,14 +45,14 @@ PUT: /api/management/projects/website/nodes/62722a79-4507-4969-b65e-f6c769ce1336
 
 ### Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 204 | No Content |  |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 404 | Parent node not found | [Error](/key-concepts/errors.md) |
-| 422 | Language invalid| [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason                | Response model                   |
+|:-----------------|:----------------------|:---------------------------------|
+| 204              | No Content            |                                  |
+| 401              | Unauthorized          | [Error](/key-concepts/errors.md) |
+| 404              | Project not found     | [Error](/key-concepts/errors.md) |
+| 404              | Parent node not found | [Error](/key-concepts/errors.md) |
+| 422              | Language invalid      | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError   | [Error](/key-concepts/errors.md) |
 
 ---
 
@@ -80,11 +80,11 @@ DELETE: /api/management/projects/website/nodes/62722a79-4507-4969-b65e-f6c769ce1
 
 ### Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 204 | No Content |  |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 404 | Parent node not found | [Error](/key-concepts/errors.md) |
-| 422 | Language invalid| [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason                | Response model                   |
+|:-----------------|:----------------------|:---------------------------------|
+| 204              | No Content            |                                  |
+| 401              | Unauthorized          | [Error](/key-concepts/errors.md) |
+| 404              | Project not found     | [Error](/key-concepts/errors.md) |
+| 404              | Parent node not found | [Error](/key-concepts/errors.md) |
+| 422              | Language invalid      | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError   | [Error](/key-concepts/errors.md) |

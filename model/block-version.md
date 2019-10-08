@@ -7,21 +7,21 @@ TODO
 
 ## Properties
 
-| Name                  | Type      | Format | Description                                      |
-|:----------------------|:----------|:-------|:-------------------------------------------------|
-| id                    | string    |        | The block identifier, camel-cased                |
-| projectId             | string    |        | The project identifier                           |
-| staticPaths           | string[]  |        | The static path root                             |
-| image.uri             | string    |        | The image repository uri                         |
-| image.tag             | string    |        | The image tag name                               |
-| source.branch         | string    |        | The source control branch name                   |
-| source.commit.id      | string    |        | The source control commit identifier             |
-| source.commit.message | string    |        | The source control commit message                |
-| source.commit.uri     | string    |        | The source control commit uri                    |
-| status.broken         | boolean   |        | Whether the block has been marked as broken      |
-| status.deployment     | string    | [Deployment status](/blocks/deployment-status.md) | The block deployment status |
-| status.running        | string    | [Running status](/blocks/running-status.md) | The block running status |
-| status.workflow       | string    | [Workflow status](/blocks/workflow-status.md) | The block workflow status |
+| Name                  | Type     | Format                                            | Description                                 |
+|:----------------------|:---------|:--------------------------------------------------|:--------------------------------------------|
+| id                    | string   |                                                   | The block identifier, camel-cased           |
+| projectId             | string   |                                                   | The project identifier                      |
+| staticPaths           | string[] |                                                   | The static path root                        |
+| image.uri             | string   |                                                   | The image repository uri                    |
+| image.tag             | string   |                                                   | The image tag name                          |
+| source.branch         | string   |                                                   | The source control branch name              |
+| source.commit.id      | string   |                                                   | The source control commit identifier        |
+| source.commit.message | string   |                                                   | The source control commit message           |
+| source.commit.uri     | string   |                                                   | The source control commit uri               |
+| status.broken         | boolean  |                                                   | Whether the block has been marked as broken |
+| status.deployment     | string   | [Deployment status](/blocks/deployment-status.md) | The block deployment status                 |
+| status.running        | string   | [Running status](/blocks/running-status.md)       | The block running status                    |
+| status.workflow       | string   | [Workflow status](/blocks/workflow-status.md)     | The block workflow status                   |
 
 ## Remarks
 

@@ -35,14 +35,14 @@ PUT: /api/management/projects/website/nodes/d6bdea41-729c-4a07-85bf-a392aa0afc2b
 
 ## Response messages
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | OK | [Node](/model/node.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 409 | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason                | Response model                   |
+|:-----------------|:----------------------|:---------------------------------|
+| 200              | OK                    | [Node](/model/node.md)           |
+| 401              | Unauthorized          | [Error](/key-concepts/errors.md) |
+| 404              | NotFound              | [Error](/key-concepts/errors.md) |
+| 409              | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
+| 422              | ValidationError       | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError   | [Error](/key-concepts/errors.md) |
 
 ## Validations
 

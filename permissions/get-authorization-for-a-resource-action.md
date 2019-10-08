@@ -23,11 +23,11 @@ GET: /api/management/projects/movieDb/security/permissions/entries/a65a9d9d-ee64
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | The action is authorized | Authorized true |
-| 404 | Not authorized for action | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason                    | Response model                   |
+|:-----------------|:--------------------------|:---------------------------------|
+| 200              | The action is authorized  | Authorized true                  |
+| 404              | Not authorized for action | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError       | [Error](/key-concepts/errors.md) |
 
 ### Example response
 

@@ -28,12 +28,12 @@ GET: /api/management/projects/movieDb/components/movieRole/
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Component](/model/content-type.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                      |
+|:-----------------|:--------------------|:------------------------------------|
+| 200              | Success             | [Component](/model/content-type.md) |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md)    |
+| 404              | NotFound            | [Error](/key-concepts/errors.md)    |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md)    |
 
 ### Remarks
 
@@ -124,14 +124,14 @@ POST: /api/management/projects/movieDb/components/
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 201 | Created | [Content Type](/model/content-type.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 409 | Conflict | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                         |
+|:-----------------|:--------------------|:---------------------------------------|
+| 201              | Created             | [Content Type](/model/content-type.md) |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md)       |
+| 404              | NotFound            | [Error](/key-concepts/errors.md)       |
+| 409              | Conflict            | [Error](/key-concepts/errors.md)       |
+| 422              | ValidationError     | [Error](/key-concepts/errors.md)       |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md)       |
 
 ### Validations
 
@@ -182,10 +182,10 @@ Updates an existing component resource.
 
 ### Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
-| componentId | path | string |  | The component identifier. |
+| Name        | Parameter type | Type   | Format | Description                                                                                             |
+|:------------|:---------------|:-------|:-------|:--------------------------------------------------------------------------------------------------------|
+| projectId   | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| componentId | path           | string |        | The component identifier.                                                                               |
 
 ### Example request
 
@@ -250,14 +250,14 @@ PUT: /api/management/projects/movieDb/components/movieRole
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Updated | [Component](/model/component.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 409 | NotLatestVersion | [Error](/key-concepts/errors.md) |
-| 422 | ValidationError | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Updated             | [Component](/model/component.md) |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 409              | NotLatestVersion    | [Error](/key-concepts/errors.md) |
+| 422              | ValidationError     | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 ## Publish a component
@@ -291,13 +291,13 @@ POST: /api/management/workflow
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Component [...]](/model/component.md) |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 403 | BadRequest | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                         |
+|:-----------------|:--------------------|:---------------------------------------|
+| 200              | Success             | [Component [...]](/model/component.md) |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md)       |
+| 403              | BadRequest          | [Error](/key-concepts/errors.md)       |
+| 404              | NotFound            | [Error](/key-concepts/errors.md)       |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md)       |
 
 
 ### See also
@@ -313,10 +313,10 @@ Deletes a component from a specific project.
 
 ### Parameters
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
-| componentId | path | string |  | The component identifier. |
+| Name        | Parameter type | Type   | Format | Description                                                                                             |
+|:------------|:---------------|:-------|:-------|:--------------------------------------------------------------------------------------------------------|
+| projectId   | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
+| componentId | path           | string |        | The component identifier.                                                                               |
 
 ### Example request
 
@@ -326,12 +326,12 @@ DELETE: /api/management/projects/movieDb/components/movieRole
 
 ### Response message
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success |  |
-| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | NotFound | [Error](/key-concepts/errors.md) |
-| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+| HTTP status code | Reason              | Response model                   |
+|:-----------------|:--------------------|:---------------------------------|
+| 200              | Success             |                                  |
+| 401              | Unauthorized        | [Error](/key-concepts/errors.md) |
+| 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
 ### Validations
 

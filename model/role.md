@@ -7,23 +7,24 @@ Role definitions in the Management API contain permissions associated with conte
 
 ### Role
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| id | string | GUID | The role identifier as a 128 bit GUID. |
-| name | object | [Localized value](/key-concepts/localization.md) | The name of the role. |
-| description | object | [Localized value](/key-concepts/localization.md) | The description of the role. |
-| enabled | boolean | | If true then this role is enabled, otherwise false. |
-| permissions | object | [Permissions](#permissions) | Permissions associated with content types and entries. |
-| assignments | object | [Assignments](#assignments) | Assignments of users and user groups to the role. |
+| Name        | Type    | Format                                           | Description                                            |
+|-------------|---------|--------------------------------------------------|--------------------------------------------------------|
+| id          | string  | GUID                                             | The role identifier as a 128 bit GUID.                 |
+| name        | object  | [Localized value](/key-concepts/localization.md) | The name of the role.                                  |
+| description | object  | [Localized value](/key-concepts/localization.md) | The description of the role.                           |
+| enabled     | boolean |                                                  | If true then this role is enabled, otherwise false.    |
+| permissions | object  | [Permissions](#permissions)                      | Permissions associated with content types and entries. |
+| assignments | object  | [Assignments](#assignments)                      | Assignments of users and user groups to the role.      |
 
 ### Permissions
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| entries | array | [Permission](#permission) | An array of permissions for entries. |
+| Name         | Type  | Format                    | Description                               |
+|--------------|-------|---------------------------|-------------------------------------------|
+| entries      | array | [Permission](#permission) | An array of permissions for entries.      |
 | contentTypes | array | [Permission](#permission) | An array of permissions for contentTypes. |
 
 ### Permission
+
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The content type identifier as a 128 bit GUID. |
@@ -31,10 +32,11 @@ Role definitions in the Management API contain permissions associated with conte
 | actions | array | string | One or more actions to give permission to. * denotes all actions.<br> **{workflowStateName}**.&#42; denotes all permissions applicable to the given workflow state. |
 
 ### Assignments
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| users | array | string | Zero or more user names. |
-| groups | array | string | Zero or more group names. |
+
+| Name    | Type  | Format | Description                 |
+|---------|-------|--------|-----------------------------|
+| users   | array | string | Zero or more user names.    |
+| groups  | array | string | Zero or more group names.   |
 | apiKeys | array | string | Zero or more API key names. |
 
 ## Example
