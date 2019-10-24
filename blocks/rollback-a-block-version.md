@@ -1,5 +1,5 @@
 ---
-description: .
+description: Rolling back a live block version removes it from production use and automatically replaces it with the previously released major version.
 ---
 # Rollback a block version
 
@@ -16,7 +16,7 @@ Rolling back a live block version removes it from production use and automatical
 
 ## Remarks
 
-Only actively live versions of a block version can be rolled back.
+Only actively live versions of a block can be rolled back.
 
 ## Example
 

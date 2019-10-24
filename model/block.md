@@ -3,7 +3,7 @@ description: The block resource provides an overview of the versions of a block
 ---
 # Block
 
-The block resource provides details about each pushed version of a block. Block versions relate to a GIT branch, with the default branch being the 'master' branch.
+The block resource provides details about each pushed version of a block. Block versions relate to a Git source code branch, with the default branch being the 'master' branch.
 
 ## Properties
 

@@ -5,7 +5,7 @@ description: Pushing a block resource will either create the first block and blo
 
 Pushing a block resource will either create the first block and block version resources or will create a new block version with an incremented version number that has a matching id. A pushed block includes the source control details for the last commit, including the branch name and commit id, to help identify the change set for the block version. The location and tag for the docker image are also required for discovery and hosting.
 
-Pushing a new block version automatically sets the [Deployment status as Deployed](/blocks/block-statuses.md#deployment-status) and updates the previous minor version's [Deployment status as Deprecated](/blocks/block-statuses.md#deployment-status).
+Pushing a new block version automatically sets the [Deployment status](/blocks/block-statuses.md#deployment-status) as *Deployed* and updates the previous minor version's [Deployment status](/blocks/block-statuses.md#deployment-status) as *Deprecated*.
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/blocks/
 

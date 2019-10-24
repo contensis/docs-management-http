@@ -1,15 +1,11 @@
 ---
-description: .
+description: Marking a block version as broken ensures that it cannot be released to be used in production.
 ---
 # Mark a block version as broken
 
+Marking a block version as broken ensures that it cannot be [released](/blocks/release-a-block-version.md) to be used in production. If a released version that is currently live is marked as broken, then it is [rolled back](/blocks/rollback-a-block-version.md). 
+
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/blocks/**{blockId}**/actions
-
-
-
-
-<!--[workflow status](/blocks/block-statuses#workflow-status.md)-->
-
 
 ## Properties
 

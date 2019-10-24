@@ -91,7 +91,7 @@
 * [Release a block version](/blocks/release-a-block-version.md)
 * [Publish a block version](/blocks/publish-a-block-version.md)
 * [Rollback a block version](/blocks/rollback-a-block-version.md)
-* [Mark block version as broken](/blocks/mark-block-version-broken.md)
+* [Mark a block version as broken](/blocks/mark-block-version-broken.md)
 * [Block statuses](/blocks/block-statuses.md)
 
 ***
@@ -133,7 +133,6 @@
 * [Workflow trigger](/model/workflow-trigger.md)
 * [Block](/model/block.md)
 * [Block version](/model/block-version.md)
-* [Block action](/model/block-action.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
 

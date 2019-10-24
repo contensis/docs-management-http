@@ -12,13 +12,13 @@ A block version represents an incrementally pushed instance of a block.
 | id                     | string   |                                                                  | The block identifier as a camel-cased unique string                 |
 | projectId              | string   |                                                                  | The project identifier, e.g. website                                |
 | status.broken          | boolean  |                                                                  | Whether the block has been marked as broken                         |
-| status.deployment      | string   | [Deployment status](/blocks/block-statuses#deployment-status.md) | The block version deployment status                                 |
-| status.running         | string   | [Running status](/blocks/block-statuses#running-status.md)       | The block version running status                                    |
-| status.workflow        | string   | [Workflow status](/blocks/block-statuses#workflow-status.md)     | The block version workflow status                                   |
+| status.deployment      | string   | [Deployment status](/blocks/block-statuses.md#deployment-status) | The block version deployment status                                 |
+| status.running         | string   | [Running status](/blocks/block-statuses.md#running-status)       | The block version running status                                    |
+| status.workflow        | string   | [Workflow status](/blocks/block-statuses.md#workflow-status)     | The block version workflow status                                   |
 | endpoints              | object[] |                                                                  | The endpoints exposed by this block version                         |
 | endpoints[].id         | string   |                                                                  | The endpoint identifier                                             |
 | endpoints[].path       | string   | URI path                                                         | The path to the invocable endpoint                                  |
-| endpoints[].type       | string   | pagelet or layout                                                | The type of endpoint, either pagelet or layout                      |
+| endpoints[].type       | string   | *pagelet* or *layout*                                            | The type of endpoint, either *pagelet* or *layout*                  |
 | staticPaths            | string[] |                                                                  | The static path root                                                |
 | image                  | object   |                                                                  | The docker image repository details                                 |
 | image.uri              | string   |                                                                  | The image repository uri                                            |
@@ -94,8 +94,8 @@ A block version represents an incrementally pushed instance of a block.
         "pushed": "2016-10-12T09:29:18.5144641+01:00",
         "releasedBy": "b.cumberbatch",
         "released": "2016-10-13T10:15:12.1973648+01:00",
-        "markedBrokenBy": "b.cumberbatch",
-        "markedBroken": "2016-10-13T10:15:12.1973648+01:00",
+        "markedBrokenBy": null,
+        "markedBroken": null,
         "versionNo": "2.0"
     }
 }
