@@ -1,27 +1,40 @@
 ---
-description: .
+description: 
 ---
 # Block version
 
-TODO
+A block version represents an incrementally pushed instance of a block. 
 
 ## Properties
 
-| Name                  | Type     | Format                                            | Description                                 |
-|:----------------------|:---------|:--------------------------------------------------|:--------------------------------------------|
-| id                    | string   |                                                   | The block identifier, camel-cased           |
-| projectId             | string   |                                                   | The project identifier                      |
-| staticPaths           | string[] |                                                   | The static path root                        |
-| image.uri             | string   |                                                   | The image repository uri                    |
-| image.tag             | string   |                                                   | The image tag name                          |
-| source.branch         | string   |                                                   | The source control branch name              |
-| source.commit.id      | string   |                                                   | The source control commit identifier        |
-| source.commit.message | string   |                                                   | The source control commit message           |
-| source.commit.uri     | string   |                                                   | The source control commit uri               |
-| status.broken         | boolean  |                                                   | Whether the block has been marked as broken |
-| status.deployment     | string   | [Deployment status](/blocks/deployment-status.md) | The block deployment status                 |
-| status.running        | string   | [Running status](/blocks/running-status.md)       | The block running status                    |
-| status.workflow       | string   | [Workflow status](/blocks/workflow-status.md)     | The block workflow status                   |
+| Name                   | Type     | Format                                                           | Description                                                         |
+|:-----------------------|:---------|:-----------------------------------------------------------------|:--------------------------------------------------------------------|
+| id                     | string   |                                                                  | The block identifier as a camel-cased unique string                 |
+| projectId              | string   |                                                                  | The project identifier, e.g. website                                |
+| status.broken          | boolean  |                                                                  | Whether the block has been marked as broken                         |
+| status.deployment      | string   | [Deployment status](/blocks/block-statuses#deployment-status.md) | The block version deployment status                                 |
+| status.running         | string   | [Running status](/blocks/block-statuses#running-status.md)       | The block version running status                                    |
+| status.workflow        | string   | [Workflow status](/blocks/block-statuses#workflow-status.md)     | The block version workflow status                                   |
+| endpoints              | object[] |                                                                  | The endpoints exposed by this block version                         |
+| endpoints[].id         | string   |                                                                  | The endpoint identifier                                             |
+| endpoints[].path       | string   | URI path                                                         | The path to the invocable endpoint                                  |
+| endpoints[].type       | string   | pagelet or layout                                                | The type of endpoint, either pagelet or layout                      |
+| staticPaths            | string[] |                                                                  | The static path root                                                |
+| image                  | object   |                                                                  | The docker image repository details                                 |
+| image.uri              | string   |                                                                  | The image repository uri                                            |
+| image.tag              | string   |                                                                  | The image tag name                                                  |
+| source                 | object   |                                                                  | The source control commit details                                   |
+| source.branch          | string   |                                                                  | The source control branch name                                      |
+| source.commit.id       | string   |                                                                  | The source control commit identifier                                |
+| source.commit.message  | string   |                                                                  | The source control commit message                                   |
+| source.commit.uri      | string   |                                                                  | The source control commit uri                                       |
+| version                | object   |                                                                  | The block version version info                                      |
+| version.pushedBy       | string   |                                                                  | The username of the person who pushed the block version             |
+| version.pushed         | object   | datetime                                                         | The date/time of the pushed action                                  |
+| version.releasedBy     | object   |                                                                  | The username of the person who released the block version           |
+| version.released       | object   | datetime                                                         | The date/time of the release action                                 |
+| version.markedBrokenBy | object   |                                                                  | The username of the person who declared the block version as broken |
+| version.markedBroken   | object   | datetime                                                         | The date/time of the marled as broken action                        |
 
 ## Remarks
 

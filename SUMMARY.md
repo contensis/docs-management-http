@@ -88,11 +88,12 @@
 * [Get a block](/blocks/get-a-block.md)
 * [Get a block version](/blocks/get-block-version.md)
 * [List blocks](/blocks/list-blocks.md)
-* [Invoke block action](/blocks/invoke-block-action.md)
+* [Release a block version](/blocks/release-a-block-version.md)
+* [Publish a block version](/blocks/publish-a-block-version.md)
+* [Rollback a block version](/blocks/rollback-a-block-version.md)
+* [Mark block version as broken](/blocks/mark-block-version-broken.md)
 * [Block statuses](/blocks/block-statuses.md)
-    * [Deployment status](/blocks/deployment-status.md)
-    * [Running status](/blocks/running-status.md)
-    * [Workflow status](/blocks/workflow-status.md)
+
 ***
 
 * Roles

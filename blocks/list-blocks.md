@@ -1,14 +1,17 @@
 ---
-description: 
+description: Gets the blocks for a project.
 ---
 # List blocks
+
+Gets the blocks as a paged list for a project.
+
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/blocks
 
 ## Parameters
 
-| Name             | Parameter type | Type    | Format                                            | Description                                                                                            |
-| :--------        | :------------- | :------ | :------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| projectId        | path           | string  |                                                   | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
+| Name      | Parameter type | Type   | Format | Description                                                                                            |
+|-----------|----------------|--------|--------|--------------------------------------------------------------------------------------------------------|
+| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
 
 ### Example request
 
@@ -20,7 +23,7 @@ GET: /api/management/projects/movieDb/blocks
 ### Response message
 
 | HTTP status code | Reason              | Response model                            |
-| :--------------- | :------------------ | :---------------------------------------- |
+|------------------|---------------------|-------------------------------------------|
 | 200              | Success             | [PagedList&lt;Block&gt;](/model/block.md) |
 | 401              | Unauthorized        | [Error](/key-concepts/errors.md)          |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)          |
