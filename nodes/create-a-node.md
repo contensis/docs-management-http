@@ -35,7 +35,8 @@ POST: /api/management/projects/website/nodes/f3322e4f-72b5-4064-be88-fcfed6c8263
         "en-GB",
         "fr-FR"
     ],
-    "entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6"
+    "entryId": "9272ac06-1b3a-4e68-ac1b-a05828b0f7d6",
+    "includeInMenu": true
 }
 ```
 
