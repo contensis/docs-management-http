@@ -19,16 +19,17 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [List projects](/projects/list-projects.md)       | <span class="label label--get">GET</span> /api/management/projects/                       |
 | [Delete a project](/projects/delete-a-project.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/ |
 
-<!-- ### Content Types
+### Content Types
 
 |||
 |-|-|
-| [Get a content type](/key-concepts/content-types.md#get-a-content-type) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
-| [Create a content type](/key-concepts/content-types.md#create-a-content-type) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/ |
-| [Update a content type](/key-concepts/content-types.md#update-a-content-type) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
-| [Publish a content type](/key-concepts/content-types.md#publish-a-content-type) | <span class="label label--post">POST</span> /api/management/workflow/ |
-| [List content types](/key-concepts/content-types.md#list-content-types) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/ |
-| [Delete a content type](/key-concepts/content-types.md#delete-a-content-type) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/ | -->
+| [Get a content type](/content-types/get-a-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
+| [Create a content type](/content-types/create-a-content-type.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/ |
+| [Update a content type](/content-types/update-a-content-type.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
+| [List content types](/content-types/list-content-types.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/ |
+| [Delete a content type](/content-types/delete-a-content-type.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
+| [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
+| [Publish a content type](/content-types/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/workflow/events/ |
 
 ### Entries
 

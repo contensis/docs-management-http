@@ -6,8 +6,8 @@
 
 * Key concepts
 
-* [DataFormats](/key-concepts/data-formats.md)
-* [DataTypes](/key-concepts/data-types.md)
+* [Data Formats](/key-concepts/data-formats.md)
+* [Data Types](/key-concepts/data-types.md)
 * [Errors](/key-concepts/errors.md)
 * [Localization](/key-concepts/localization.md)
 * [Validations](/key-concepts/validations.md)
@@ -32,14 +32,14 @@
 * [Delete a project](/projects/delete-a-project.md)
 
 ***
-<!-- # Content Types
-* [Get a content type](/key-concepts/content-types.md#get-a-content-type)
-* [Create a content type](/key-concepts/content-types.md#create-a-content-type)
-* [Update a content type](/key-concepts/content-types.md#update-a-content-type)
-* [Publish a content type](/key-concepts/content-types.md#publish-a-content-type)
-* [List content types](/key-concepts/content-types.md#list-content-types)
-* [Delete a content type](/key-concepts/content-types.md#delete-a-content-type)
-* [Add a component to a content type](/key-concepts/content-types.md#add-a-component-to-a-content-type) -->
+* Content Types
+* [Get a content type](/content-types/get-a-content-type.md)
+* [Create a content type](/content-types/create-a-content-type.md)
+* [Update a content type](/content-types/update-a-content-type.md)
+* [List content types](/content-types/list-content-types.md)
+* [Delete a content type](/content-types/delete-a-content-type.md)
+* [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md)
+* [Publish a content type](/content-types/invoking-workflow.md)
 
 <!-- # # Components
 * [Get a component](/key-concepts/components.md#get-a-component)
@@ -118,6 +118,8 @@
 
 * [Project](/model/project.md)
 * [Node](/model/node.md)
+* [Content type](/model/content-type.md)
+* [Content type group](/model/content-type-group.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)
 * [Composed fields](/model/composed.md)
@@ -135,8 +137,3 @@
 * [Block version](/model/block-version.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
-
-<!-- * [Content type](/model/content-type.md) -->
-
-<!--* [Role](/model/role.md)
- * [Content type](/model/content-type.md) -->
