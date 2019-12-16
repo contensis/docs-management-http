@@ -31,26 +31,29 @@
 * [Delete a project](/projects/delete-a-project.md)
 
 ***
-* Content Types
+
+* Content types
 
 * [Get a content type](/content-types/get-a-content-type.md)
 * [Create a content type](/content-types/create-a-content-type.md)
 * [Update a content type](/content-types/update-a-content-type.md)
 * [List content types](/content-types/list-content-types.md)
 * [Delete a content type](/content-types/delete-a-content-type.md)
-    * [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md)
 * [Publish a content type](/content-types/invoking-workflow.md)
-* [Field validations](/key-concepts/validations.md)
+* [Field validations](/content-types/field-validations.md)
 
 ***
+
 * Components
+
 * [Get a component](/components/get-a-component.md)
 * [Create a component](/components/create-a-component.md)
 * [Update a component](/components/update-a-component.md)
 * [List components](/components/list-components.md)
 * [Delete a component](/components/delete-a-component.md)
 * [Publish a component](/components/invoking-workflow.md)
-* [Field validations](/key-concepts/validations.md)git 
+* [Add a component to a content type](/components/add-a-component-to-a-content-type.md)
+* [Field validations](/content-types/field-validations.md)git 
 
 ***
 * Entries
