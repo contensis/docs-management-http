@@ -10,7 +10,6 @@
 * [Data Types](/key-concepts/data-types.md)
 * [Errors](/key-concepts/errors.md)
 * [Localization](/key-concepts/localization.md)
-* [Validations](/key-concepts/validations.md)
 * [Workflow](/key-concepts/workflow.md)
 
 ***
@@ -33,6 +32,7 @@
 
 ***
 * Content Types
+
 * [Get a content type](/content-types/get-a-content-type.md)
 * [Create a content type](/content-types/create-a-content-type.md)
 * [Update a content type](/content-types/update-a-content-type.md)
@@ -40,6 +40,7 @@
 * [Delete a content type](/content-types/delete-a-content-type.md)
 * [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md)
 * [Publish a content type](/content-types/invoking-workflow.md)
+* [Field validations](/key-concepts/validations.md)
 
 <!-- # # Components
 * [Get a component](/key-concepts/components.md#get-a-component)

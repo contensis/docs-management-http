@@ -31,6 +31,167 @@ When publishing an entry, in addition to the above content validations, required
 * [Required](#required)
 * [RequiredFields](#requiredfields)
 
+## Allowed validations for field types
+
+<table width="100%">
+    <tr>
+        <th>DataType</th>
+        <th>DataFormat</th>
+        <th>Validations</th>
+    </tr>
+    <tr>
+        <td rowspan="3">string</td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#maxlength">MaxLength</a><br />
+            <a href="#minlength">MinLength</a><br />
+            <a href="#regex">RegEx</a><br />
+            <a href="#allowedvalues">AllowedValues</a>
+        </td>
+    </tr>
+    <tr>
+        <td>taxonomy</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#taxonomyroot">TaxonomyRoot</a>
+        </td>
+    </tr>
+    <tr>
+        <td>markup</td>
+        <td>
+            <a href="#required">Required</a>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">stringArray</td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#maxlength">MaxLength</a><br />
+            <a href="#minlength">MinLength</a><br />
+            <a href="#regex">RegEx</a><br />
+            <a href="#allowedvalues">AllowedValues</a><br />
+            <a href="#maxcount">MaxCount</a><br />
+            <a href="#mincount">MinCount</a>
+        </td>
+    </tr>
+    <tr>
+        <td>taxonomy</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#taxonomyroot">TaxonomyRoot</a><br />
+            <a href="#maxcount">MaxCount</a><br />
+            <a href="#mincount">MinCount</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            integer
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#max">Max</a><br />
+            <a href="#min">Min</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            integerArray
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#max">Max</a><br />
+            <a href="#min">Min</a><br />
+            <a href="#maxcount">MaxCount</a><br />
+            <a href="#mincount">MinCount</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            decimal
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#max">Max</a><br />
+            <a href="#min">Min</a><br />
+            <a href="#decimalplaces">DecimalPlaces</a><br />
+            <a href="#maxcount">MaxCount</a><br />
+            <a href="#mincount">MinCount</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            decimalArray
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#max">Max</a><br />
+            <a href="#min">Min</a><br />
+            <a href="#decimalplaces">DecimalPlaces</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            datetime
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#max">Max</a><br />
+            <a href="#min">Min</a><br />
+            <a href="#pastdatetime">PastDateTime</a>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="3">object</td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+        </td>
+    </tr>
+    <tr>
+        <td>image, quote</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#requiredfields">RequiredFields</a>
+        </td>
+    </tr>
+    <tr>
+        <td>entry, asset</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#requiredfields">RequiredFields</a>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="3">objectArray</td>
+        <td>&nbsp;</td>
+        <td>
+            <a href="#required">Required</a><br />
+        </td>
+    </tr>
+    <tr>
+        <td>field (composer)</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#allowedcontenttypes">AllowedContentTypes</a>
+        </td>
+    </tr>
+    <tr>
+        <td>entry, asset</td>
+        <td>
+            <a href="#required">Required</a><br />
+            <a href="#requiredfields">RequiredFields</a><br />
+            <a href="#maxcount">MaxCount</a><br />
+            <a href="#mincount">MinCount</a>
+        </td>
+    </tr>
+</table>                                                                                                                              | -->
 
 ## Required
 
@@ -51,22 +212,6 @@ All fields.
             "en-GB": "A value is required"
         }
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"A value is required"
-      }
-   ],
-   "type":"Validation"
 }
 ```
 
@@ -93,22 +238,6 @@ string, stringArray
 }
 ```
 
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"Maximum length of 50"
-      }
-   ],
-   "type":"Validation"
-}
-```
-
 ## MinLength
 
 ### Description
@@ -129,22 +258,6 @@ string, stringArray
             "en-GB": "Minimum length of 10"
         }
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"Minimum length of 50"
-      }
-   ],
-   "type":"Validation"
 }
 ```
 
@@ -171,22 +284,6 @@ integer, integerArray, decimal, decimalArray, dateTime, dateTimeArray
 }
 ```
 
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The value is too low. A minimum of 5 is required"
-      }
-   ],
-   "type":"Validation"
-}
-```
-
 ## Max
 
 ### Description
@@ -210,22 +307,6 @@ integer, integerArray, decimal, decimalArray, dateTime, dateTimeArray
 }
 ```
 
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The value is too high. A maximum of 100 is allowed"
-      }
-   ],
-   "type":"Validation"
-}
-```
-
 ## Regex
 
 ### Description
@@ -246,22 +327,6 @@ string, stringArray
             "en-GB": "The value does not match the regex"
         }
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The value does not match the regex"
-      }
-   ],
-   "type":"Validation"
 }
 ```
 
@@ -295,22 +360,6 @@ string, stringArray
             "fr-FR": "La valeur sélectionnée n'est pas autorisée."
         }
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The selected value is not allowed"
-      }
-   ],
-   "type":"Validation"
 }
 ```
 
@@ -350,26 +399,6 @@ quote, image
             }
         ]
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-        {  
-            "field":"fieldId",
-            "message":"A source is required"
-        },
-        {  
-         "field":"fieldId",
-         "message":"A caption is required"
-        }
-   ],
-   "type":"Validation"
 }
 ```
 
@@ -418,22 +447,6 @@ composer
 }
 ```
 
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-      {  
-         "field":"fieldId",
-         "message":"The field type is not allowed"
-      }
-   ],
-   "type":"Validation"
-}
-```
-
 ## TaxonomyRoot
 
 ### Description
@@ -454,22 +467,6 @@ taxonomy, taxonomyArray
             "en-GB": "The taxonomy code is not in the allowed root"
         }
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-        {  
-            "field":"fieldId",
-            "message":"The taxonomy code is not in the allowed root"
-        }
-   ],
-   "type":"Validation"
 }
 ```
 
@@ -499,22 +496,6 @@ entry, entryArray, asset, assetArray
 }
 ```
 
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-        {  
-            "field":"fieldId",
-            "message":"The asset type is not allowed"
-        }
-   ],
-   "type":"Validation"
-}
-```
-
 ## PastDateTime
 
 ### Description
@@ -534,22 +515,6 @@ dateTime, dateTimeArray
             "en-GB": "The date must be in the past"
         }
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-        {  
-            "field":"fieldId",
-            "message":"The date must be in the past"
-        }
-   ],
-   "type":"Validation"
 }
 ```
 
@@ -576,22 +541,6 @@ decimal, decimalArray
 }
 ```
 
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-        {  
-            "field":"fieldId",
-            "message":"The value must be to 3 decimal places"
-        }
-   ],
-   "type":"Validation"
-}
-```
-
 ## MaxCount
 
 ### Description
@@ -615,22 +564,6 @@ dateTimeArray, decimalArray, integerArray, objectArray, stringArray
 }
 ```
 
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-        {  
-            "field":"fieldId",
-            "message":"The value cannot contain more ts 3 elements"
-        }
-   ],
-   "type":"Validation"
-}
-```
-
 ## MinCount
 
 ### Description
@@ -651,21 +584,5 @@ dateTimeArray, decimalArray, integerArray, objectArray, stringArray
             "en-GB": "The value cannot contain less ts 3 elements"
         }
     }
-}
-```
-
-### Example response
-
-```json
-{  
-   "logId":"64d3dd41-9c6d-4ecd-a275-628bb4f9bc21",
-   "message":"There are validation errors creating the entry",
-   "data":[  
-        {  
-            "field":"fieldId",
-            "message":"The value cannot contain less ts 3 elements"
-        }
-   ],
-   "type":"Validation"
 }
 ```
