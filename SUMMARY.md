@@ -38,17 +38,20 @@
 * [Update a content type](/content-types/update-a-content-type.md)
 * [List content types](/content-types/list-content-types.md)
 * [Delete a content type](/content-types/delete-a-content-type.md)
-* [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md)
+    * [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md)
 * [Publish a content type](/content-types/invoking-workflow.md)
 * [Field validations](/key-concepts/validations.md)
 
-<!-- # # Components
-* [Get a component](/key-concepts/components.md#get-a-component)
-* [Create a component](/key-concepts/components.md#create-a-component)
-* [Update a component](/key-concepts/components.md#update-a-component)
-* [Publish a component](/key-concepts/components.md#publish-a-component)
-* [Delete a component](/key-concepts/components.md#delete-a-component) -->
+***
+* Components
+* [Get a component](/components/get-a-component.md)
+* [Create a component](/components/create-a-component.md)
+* [Update a component](/components/update-a-component.md)
+* [List components](/components/list-components.md)
+* [Delete a component](/components/delete-a-component.md)
+* [Publish a component](/components/invoking-workflow.md)
 
+***
 * Entries
 
 * [Get an entry](/entries/get-an-entry.md)

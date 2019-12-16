@@ -11,8 +11,8 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 ### Projects
 
-|                                                   |                                                                                           |
-|---------------------------------------------------|-------------------------------------------------------------------------------------------|
+|||
+|-|-|
 | [Get a project](/projects/get-a-project.md)       | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/       |
 | [Create a project](/projects/create-a-project.md) | <span class="label label--post">POST</span> /api/management/projects/                     |
 | [Update a project](/projects/update-a-project.md) | <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/      |
@@ -20,7 +20,6 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Delete a project](/projects/delete-a-project.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/ |
 
 ### Content Types
-
 |||
 |-|-|
 | [Get a content type](/content-types/get-a-content-type.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
@@ -29,7 +28,17 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [List content types](/content-types/list-content-types.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/ |
 | [Delete a content type](/content-types/delete-a-content-type.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
 | [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
-| [Publish a content type](/content-types/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/workflow/events/ |
+| [Publish a component](/content-types/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/workflow/events/ |
+
+### Components
+|||
+|-|-|
+| [Get a component](/components/get-a-component.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/components/**{componentId}** |
+| [Create a component](/components/create-a-component.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/components/ |
+| [Update a component](/components/update-a-component.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/components/**{componentId}** |
+| [List components](/components/list-components.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/components/ |
+| [Delete a component](/components/delete-a-component.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/components/**{componentId}** |
+| [Publish a component](/components/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/components/**{componentId}**/workflow/events/ |
 
 ### Entries
 
@@ -59,9 +68,8 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Order nodes](/nodes/order-nodes.md)                    | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/nodes/**{parentNodeId}**/children/order |
 
 ### Roles
-
-|                                          |                                                                                                                      |
-|------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+|||
+|-|-|
 | [Get a role](/roles/get-a-role.md)       | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**       |
 | [Create a role](/roles/create-a-role.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/security/roles/                 |
 | [Update a role](/roles/update-a-role.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**       |
