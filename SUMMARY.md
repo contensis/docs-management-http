@@ -50,6 +50,7 @@
 * [List components](/components/list-components.md)
 * [Delete a component](/components/delete-a-component.md)
 * [Publish a component](/components/invoking-workflow.md)
+* [Field validations](/key-concepts/validations.md)git 
 
 ***
 * Entries
