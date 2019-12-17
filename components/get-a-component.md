@@ -18,7 +18,7 @@ Gets an existing component by the component Id.
 | projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | componentId | path | string |  | The component identifier. |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
-| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |
+| version | query | string | {Major}.{Minor} | The version number of the resource. |
 
 ### Example request
 
@@ -30,7 +30,7 @@ GET: /api/management/projects/movieDb/components/movieRole/
 
 | HTTP status code | Reason              | Response model                      |
 |:-----------------|:--------------------|:------------------------------------|
-| 200              | Success             | [Component](/model/content-type.md) |
+| 200              | Success             | [Component](/model/component.md) |
 | 401              | Unauthorized        | [Error](/key-concepts/errors.md)    |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)    |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md)    |

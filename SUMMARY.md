@@ -126,6 +126,7 @@
 
 * [Project](/model/project.md)
 * [Node](/model/node.md)
+* [Component](/model/component.md)
 * [Content type](/model/content-type.md)
 * [Content type group](/model/content-type-group.md)
 * [Entry](/model/entry.md)

@@ -24,7 +24,7 @@ GET: /api/management/projects/movieDb/components?versionStatus=published
 
 | HTTP status code | Reason              | Response model                               |
 |:-----------------|:--------------------|:---------------------------------------------|
-| 200              | Success             | [Content Type [...]](/model/content-type.md) |
+| 200              | Success             | [Component [...]](/model/component.md) |
 | 401              | Unauthorized        | [Error](/key-concepts/errors.md)             |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)             |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md)             |
