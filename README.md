@@ -28,7 +28,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [List content types](/content-types/list-content-types.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/ |
 | [Delete a content type](/content-types/delete-a-content-type.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
 | [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
-| [Publish a component](/content-types/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/workflow/events/ |
+| [Publish a content type](/content-types/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/workflow/events/ |
 
 ### Components
 |||
