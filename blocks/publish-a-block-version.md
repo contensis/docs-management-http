@@ -1,7 +1,7 @@
 ---
 description: Publishing a released block version is an action that makes the specified block version live.
 ---
-# Release a block version
+# Publish a block version
 
 Publishing a released block version is an action that makes the specified block version live. The block version gets a [Deployment status](/blocks/block-statuses.md#deployment-status) of *live* and the previous live version is updated to have a [Deployment status](/blocks/block-statuses.md#deployment-status) of *deprecated*. 
 
@@ -20,13 +20,13 @@ If the specified version is either not a released version or marked as broken, t
 
 ## Example
 
-```http
+```json
 Accept: application/json
 POST: /api/management/projects/movieDb/blocks/movie-listing/actions
 {
     "type": "makeLive",
     "data": {
-        "version": "1.5"
+        "version": "2.0"
     }
 }
 ```

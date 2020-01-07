@@ -21,7 +21,7 @@ The resource used to push a block is a subset of the final [block version](/mode
 
 ### Example request
 
-```http
+```json
 Accept: application/json
 POST: /api/management/projects/movieDb/blocks/
 {

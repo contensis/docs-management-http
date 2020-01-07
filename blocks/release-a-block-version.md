@@ -21,7 +21,7 @@ If the version specified is not the latest version or the version is already a r
 
 ## Example
 
-```http
+```json
 Accept: application/json
 POST: /api/management/projects/movieDb/blocks/movie-listing/actions
 {
