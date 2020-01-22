@@ -9,10 +9,10 @@ The link object represents a reference to another entry or asset.
 
 | Name | Type | Format | Description |
 | :------- | :--- | :-- | :---------- |
-| sys | object | | The link system data. |
-| sys.id | string | `Guid` | The identifier of the referenced entry or asset. |
-| sys.dataFormat | string | | Either *entry* or *asset*. |
-| sys.language | string | [Language code](/key-concepts/localization.md) | The target language of the entry variation. |
+| sys            | object |                                                | The link system data                            |
+| sys.id         | string | `Guid`                                         | The identifier of the referenced entry or asset |
+| sys.dataFormat | string |                                                | Either *entry* or *asset*                       |
+| sys.language   | string | [Language code](/key-concepts/localization.md) | The target language of the entry variation      |
 
 ## Remarks
 
