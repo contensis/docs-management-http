@@ -9,11 +9,11 @@ The transformation object represents the transformations that will be applied to
 
 | Name    | Type   | Description                                                                  |
 |:--------|:-------|:-----------------------------------------------------------------------------|
-| size    | object | The image height and width resize transformations.                           |
-| flip    | string | The orientation flip name to apply.                                          |
-| rotate  | int    | The image rotation in degrees.                                               |
-| crop    | object | The image crop details specifying width and height, and x and y coordinates. |
-| quality | int    | The quality in percentage.                                                   |
+| size    | object | The image height and width resize transformations                           |
+| flip    | string | The orientation flip name to apply                                          |
+| rotate  | int    | The image rotation in degrees                                               |
+| crop    | object | The image crop details specifying width and height, and x and y coordinates |
+| quality | int    | The quality in percentage                                                   |
 
 ## Example
 
