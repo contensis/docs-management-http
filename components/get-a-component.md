@@ -3,7 +3,7 @@ description: A component determines a reusable schema added to content types whi
 ---
 # Components
 
-A component determines a reusable schema added to content types which entries are then created from. Components contain a list of fields just like content types, and allow for a standardized schema for modelling content.[Find out more about components on ZenHub](https://zenhub.zengenti.com/Contensis/11.3/kb/content-types-and-entries/components/components-overview.aspx)
+A component determines a reusable schema added to content types which entries are then created from. Components contain a list of fields just like content types, and allow for a standardized schema for modelling content.[Find out more about components on ZenHub](https://zenhub.zengenti.com/Contensis/12.0/kb/content-types-and-entries/components/components-overview.aspx)
 
 ## Get a component
 
