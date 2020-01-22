@@ -7,16 +7,18 @@ The location object represents a geographical coordinate that specifies the posi
 
 ## Properties
 
-| Name | Type   | Format | Description               |
-|------|--------|--------|---------------------------|
-| lat  | number |        | The north-south position. |
-| lon  | number |        | The east-west position.   |
+| Name     | Type   | Format | Description                                                                                                                                                                                                |
+|----------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| lat      | number |        | The north-south position.                                                                                                                                                                                  |
+| lon      | number |        | The east-west position.                                                                                                                                                                                    |
+| distance | number |        | If a location field is used for a distance search, then this field will contain the distance from the search location to the field location in the units specified in the search condition (e.g. miles) |
 
 ## Example
 
 ```json
 {
     "lat": 52.415789,
-    "lon": -2.640774
+    "lon": -2.640774,
+    "distance": 112.25
 }
 ```
