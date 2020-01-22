@@ -52,7 +52,7 @@
 * [List components](/components/list-components.md)
 * [Delete a component](/components/delete-a-component.md)
 * [Publish a component](/components/invoking-workflow.md)
-* [Add a component to a content type](/components/add-a-component-to-a-content-type.md)
+    * [Add a component to a content type](/components/add-a-component-to-a-content-type.md)
 * [Field validations](/content-types/field-validations.md)git 
 
 ***
@@ -126,6 +126,7 @@
 
 * [Project](/model/project.md)
 * [Node](/model/node.md)
+* [Component](/model/component.md)
 * [Content type](/model/content-type.md)
 * [Content type group](/model/content-type-group.md)
 * [Entry](/model/entry.md)

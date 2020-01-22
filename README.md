@@ -27,8 +27,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Update a content type](/content-types/update-a-content-type.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
 | [List content types](/content-types/list-content-types.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/ |
 | [Delete a content type](/content-types/delete-a-content-type.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
-| [Add a component to a content type](/content-types/add-a-component-to-a-content-type.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
-| [Publish a component](/content-types/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/workflow/events/ |
+| [Publish a content type](/content-types/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/workflow/events/ |
 
 ### Components
 |||
@@ -36,6 +35,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Get a component](/components/get-a-component.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/components/**{componentId}** |
 | [Create a component](/components/create-a-component.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/components/ |
 | [Update a component](/components/update-a-component.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/components/**{componentId}** |
+| [Add a component to a content type](/components/add-a-component-to-a-content-type.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}** |
 | [List components](/components/list-components.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/components/ |
 | [Delete a component](/components/delete-a-component.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/components/**{componentId}** |
 | [Publish a component](/components/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/components/**{componentId}**/workflow/events/ |

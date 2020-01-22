@@ -16,7 +16,7 @@ Gets an existing content type by the content type Id.
 | projectId | path | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
 | contentTypeId | path | string |  | The content type identifier. |
 | versionStatus | query | string |  | The version status, either *published* or *latest*. The default is *latest*. |
-| version | query | string | [versionNo](/model/version.md#versionNo)  | The specific version requested. |
+| version | query | string | {Major}.{Minor} | The version number of the resource. |
 
 ### Example request
 

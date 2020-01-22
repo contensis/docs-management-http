@@ -18,7 +18,7 @@ Marking a block version as broken ensures that it cannot be [released](/blocks/r
 
 ## Example
 
-```http
+```json
 Accept: application/json
 POST: /api/management/projects/movieDb/blocks/movie-listing/actions
 {

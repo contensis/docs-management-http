@@ -20,7 +20,7 @@ Only actively live versions of a block can be rolled back.
 
 ## Example
 
-```http
+```json
 Accept: application/json
 POST: /api/management/projects/movieDb/blocks/movie-listing/actions
 {

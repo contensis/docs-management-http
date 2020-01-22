@@ -88,7 +88,7 @@ POST: /api/management/projects/movieDb/components/
 
 | HTTP status code | Reason              | Response model                         |
 |:-----------------|:--------------------|:---------------------------------------|
-| 201              | Created             | [Content Type](/model/content-type.md) |
+| 201              | Created             | [Content Type](/model/component.md) |
 | 401              | Unauthorized        | [Error](/key-concepts/errors.md)       |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)       |
 | 409              | Conflict            | [Error](/key-concepts/errors.md)       |
