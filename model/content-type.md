@@ -47,7 +47,7 @@ The field object is the definition of a field within an entry. The field also co
 
 ## Localized value
 
-A localized value is a object that has values that are keyed by [language codes](/key-concepts/localization.md) which allows multilingual variations of a specific property.
+A localized value is an object that has values that are keyed by [language codes](/key-concepts/localization.md) which allows multilingual variations of a specific property.
 
 ## Example
 
