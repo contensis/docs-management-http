@@ -1,37 +1,45 @@
 ---
-description: Updating a user can be done by PUT'ing an updated version of the user resource. 
+description: Updating a user can be done by PUT'ing an updated version of the user profile resource. 
 ---
 
-## Create a user
+# Update a user
 
-Updates an existing user resource.
+Updating a user can be done by PUT'ing an updated version of the user profile resource. 
 
 <span class="label label--put">PUT</span> /api/management/security/users/**{userId}**
 
-### Parameters
+## Parameters
 
-| Name      | Parameter type | Type   | Format | Description                                                                                             |
-|:----------|:---------------|:-------|:-------|:--------------------------------------------------------------------------------------------------------|
-| userId    | path           | string | GUID   | The user identifier.                                                                                    |
+| Name   | Parameter type | Type   | Format | Description          |
+|:-------|:---------------|:-------|:-------|:---------------------|
+| userId | path           | string | GUID   | The user identifier. |
 
-### Example request
+## Remarks
+
+TODO: Details around permissions
+
+## Example request
 
 ```json
 PUT: /api/management/security/users/4b262379-5bbe-421e-a429-f6e2ab5a849b
 {
-        "id": "4b262379-5bbe-421e-a429-f6e2ab5a849b",
-        "username": "t.durden",
-        "email": "s.yearsley@zengenti.com",
+    "profile": {
+        "username": "tdurden",
+        "email": "t.turden@fightclub.com",
         "title": "Mr",
         "firstname": "Tyler",
-        "surname": "Durden",
-        "properties": {
-            "favouriteGenre": "drama"
+        "lastname": "Durden",
+        "avatarUrl": "https://mywebsite/users/tyler.jpg",
+        "timezone": "America/New_York",
+        "language": "en-US",
+        "extended": {
+            "department": "Soap sales"
         }
-    },
+    }
+}
 ```
 
-### Response message
+## Response message
 
 | HTTP status code | Reason              | Response model                   |
 |:-----------------|:--------------------|:---------------------------------|

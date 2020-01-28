@@ -2,37 +2,34 @@
 description: Creating a user can be done by POST'ing user profile details resource to the users resource collection. 
 ---
 
-## Create a user
+# Create a user
 
 Creating a user can be done by POST'ing user profile details resource to the users resource collection. 
 
 <span class="label label--post">POST</span> /api/management/security/users/
 
-### Example request
+## Example request
 
 ```json
 POST: /api/management/security/users/
 {
     "profile": {
-        "username": "s.yearsley",
-        "email": "s.yearsley@zengenti.com",
-        "title": "Mrs",
-        "firstname": "Scott",
-        "lastname": "Yearsley",
-        "avatarUrl": "https://mywebsite/users/harry.jpg",
+        "username": "tdurden",
+        "email": "t.turden@fightclub.com",
+        "title": "Mr",
+        "firstname": "Tyler",
+        "lastname": "Durden",
+        "avatarUrl": "https://mywebsite/users/tyler.jpg",
         "timezone": "America/New_York",
-        "language": "en-GB",
-
-        // Custom properties
+        "language": "en-US",
         "extended": {
-            "department": "finance",
-            ""
+            "department": "Soap sales"
         }
     }
 }
 ```
 
-### Response message
+## Response message
 
 | HTTP status code | Reason              | Response model                   |
 |:-----------------|:--------------------|:---------------------------------|
