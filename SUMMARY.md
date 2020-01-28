@@ -20,6 +20,33 @@
 * [Authorization](security/authorization.md)
 * [Scopes](security/scopes.md)
 
+* Users and groups
+
+* [Get a user](security/get-a-user.md)
+* [Create a user](security/create-a-user.md)
+* [Update a user](security/update-a-user.md)
+* [Delete a user](security/delete-a-user.md)
+* [Get a group](security/get-a-group.md)
+* [Create a group](security/create-a-group.md)
+* [Update a group](security/update-a-group.md)
+* [Delete a group](security/delete-a-group.md)
+
+* Roles
+
+* [Get a role](/roles/get-a-role.md)
+* [Create a role](/roles/create-a-role.md)
+* [Update a role](/roles/update-a-role.md)
+* [List roles](/roles/list-roles.md)
+* [Delete a role](/roles/delete-a-role.md)
+
+
+
+* Permissions
+
+* [Overview](/permissions/overview.md)
+* [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
+* [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
+
 ***
 
 * Projects
@@ -104,24 +131,6 @@
 
 ***
 
-* Roles
-
-* [Get a role](/roles/get-a-role.md)
-* [Create a role](/roles/create-a-role.md)
-* [Update a role](/roles/update-a-role.md)
-* [List roles](/roles/list-roles.md)
-* [Delete a role](/roles/delete-a-role.md)
-
-***
-
-* Permissions
-
-* [Overview](/permissions/overview.md)
-* [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
-* [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
-
-***
-
 * Models
 
 * [Project](/model/project.md)
@@ -140,6 +149,7 @@
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
 * [Role](/model/role.md)
+* [User](/model/user.md)
 * [Paged list](/model/paged-list.md)
 * [Workflow trigger](/model/workflow-trigger.md)
 * [Block](/model/block.md)
