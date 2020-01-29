@@ -25,6 +25,9 @@ POST: /api/management/security/users/
         "extended": {
             "department": "Soap sales"
         }
+    },
+    "credentials": {
+        "password": "pr0j3ctM4yh3m"
     }
 }
 ```

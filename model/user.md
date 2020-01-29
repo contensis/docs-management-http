@@ -7,23 +7,26 @@ A user resource contains profile and workflow details for a user. Extended profi
 
 ## Properties
 
-| Name               | Type     | Format                              | Description                                            |
-|--------------------|----------|-------------------------------------|--------------------------------------------------------|
-| id                 | string   | GUID                                | The user identifier as a 128 bit GUID.                 |
-| status             | string   | [UserStatus](/model/user-status.md) | The status for the user resource                       |
-| created            | datetime |                                     | The date and time the user was first created           |
-| activated          | datetime |                                     | The date and time the user was last activated          |
-| lastLogin          | datetime |                                     | The date and time the user last logged-in              |
-| passwordChanged    | datetime |                                     | The date and time the user's password was last changed |
-| profile.username   | string   |                                     | The user's username                                    |
-| profile.email      | string   |                                     | The user's email                                       |
-| profile.title      | string   |                                     | The user's title, e.g. Mr, Mrs, Miss, Ms, Dr, etc.     |
-| profile.firstname  | string   |                                     | The user's firstname                                   |
-| profile.lastname   | string   |                                     | The user's lastname                                    |
-| profile.avatarUrl  | string   | URI                                 | The user's avatar image location                       |
-| profile.timezone   | string   | Timezone offset                     | The user's timezone preference                         |
-| profile.language   | string   | [Language code](/localization.md)   | The user's language preference                         |
-| profile.extended.* | object   |                                     | Additional custom data stored against the user         |
+| Name                 | Type     | Format                              | Description                                            |
+|----------------------|----------|-------------------------------------|--------------------------------------------------------|
+| id                   | string   | GUID                                | The user identifier as a 128 bit GUID.                 |
+| status               | string   | [UserStatus](/model/user-status.md) | The status for the user resource                       |
+| created              | datetime |                                     | The date and time the user was first created           |
+| activated            | datetime |                                     | The date and time the user was last activated          |
+| lastLogin            | datetime |                                     | The date and time the user last logged-in              |
+| passwordChanged      | datetime |                                     | The date and time the user's password was last changed |
+| profile              | object   |                                     | Container for user configurable details                |
+| profile.username     | string   |                                     | The user's username                                    |
+| profile.email        | string   |                                     | The user's email                                       |
+| profile.title        | string   |                                     | The user's title, e.g. Mr, Mrs, Miss, Ms, Dr, etc.     |
+| profile.firstname    | string   |                                     | The user's firstname                                   |
+| profile.lastname     | string   |                                     | The user's lastname                                    |
+| profile.avatarUrl    | string   | URI                                 | The user's avatar image location                       |
+| profile.timezone     | string   | Timezone offset                     | The user's timezone preference                         |
+| profile.language     | string   | [Language code](/localization.md)   | The user's language preference                         |
+| profile.extended.*   | object   |                                     | Additional custom data stored against the user         |
+| credential           | object   |                                     | Container for authentication details                   |
+| credentials.password | string   |                                     | The password value when creating a user                |
 
 
 ## Example
@@ -50,6 +53,7 @@ A user resource contains profile and workflow details for a user. Extended profi
         }
     },
     "credentials": {
+        "password": "pr0j3ctM4yh3m"
     }
 }
 ```

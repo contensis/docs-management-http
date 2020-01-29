@@ -5,12 +5,12 @@ description: OAuth 2.0 scopes allow a developer to specify which resources their
 
 OAuth 2.0 scopes allow a developer to specify which resources their application can access. These are included as a space-separated list value, in the scope parameter when invoking an [authentication](/security/authentication.md) request.
 
-| Scope name | Associated methods |
-|:-|:-|
-| Project_Read | [Get a project](/key-concepts/projects.md#get-a-project) |
-| Entry_Read | [Get a entry](/key-concepts/entries.md#get-an-entry)<br />[List entries](/key-concepts/entries.md#list-entries)<br />[List entries by content type](/key-concepts/entries.md#list-entries-by-content-type) |
-|Entry_Write|[Create an entry](/key-concepts/entries.md#create-an-entry)<br />[Update an entry](/key-concepts/entries.md#update-an-entry) <br /> [Publish an entry](/key-concepts/entries.md#publish-an-entry) |
-|Entry_Delete|[Delete an entry](/key-concepts/entries.md#delete-an-entry)|
+| Scope name   | Associated methods                                                                                                                                                                                         |
+|:-------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Project_Read | [Get a project](/key-concepts/projects.md#get-a-project)                                                                                                                                                   |
+| Entry_Read   | [Get a entry](/key-concepts/entries.md#get-an-entry)<br />[List entries](/key-concepts/entries.md#list-entries)<br />[List entries by content type](/key-concepts/entries.md#list-entries-by-content-type) |
+| Entry_Write  | [Create an entry](/key-concepts/entries.md#create-an-entry)<br />[Update an entry](/key-concepts/entries.md#update-an-entry) <br /> [Publish an entry](/key-concepts/entries.md#publish-an-entry)          |
+| Entry_Delete | [Delete an entry](/key-concepts/entries.md#delete-an-entry)                                                                                                                                                |
 
 
 
