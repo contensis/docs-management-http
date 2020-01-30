@@ -13,18 +13,16 @@ Creating a user can be done by POST'ing user profile details resource to the use
 ```json
 POST: /api/management/security/users/
 {
-    "profile": {
-        "username": "tdurden",
-        "email": "t.turden@fightclub.com",
-        "title": "Mr",
-        "firstname": "Tyler",
-        "lastname": "Durden",
-        "avatarUrl": "https://mywebsite/users/tyler.jpg",
-        "timezone": "America/New_York",
-        "language": "en-US",
-        "extended": {
-            "department": "Soap sales"
-        }
+    "username": "tdurden",
+    "email": "t.turden@fightclub.com",
+    "title": "Mr",
+    "firstname": "Tyler",
+    "lastname": "Durden",
+    "avatarUrl": "https://mywebsite/users/tyler.jpg",
+    "timezone": "America/New_York",
+    "language": "en-US",
+    "custom": {
+        "department": "Soap sales"
     },
     "credentials": {
         "password": "pr0j3ctM4yh3m"

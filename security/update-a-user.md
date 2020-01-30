@@ -23,18 +23,16 @@ TODO: Details around permissions
 ```json
 PUT: /api/management/security/users/4b262379-5bbe-421e-a429-f6e2ab5a849b
 {
-    "profile": {
-        "username": "tdurden",
-        "email": "t.turden@fightclub.com",
-        "title": "Mr",
-        "firstname": "Tyler",
-        "lastname": "Durden",
-        "avatarUrl": "https://mywebsite/users/tyler.jpg",
-        "timezone": "America/New_York",
-        "language": "en-US",
-        "extended": {
-            "department": "Soap sales"
-        }
+    "username": "tdurden",
+    "email": "t.turden@fightclub.com",
+    "title": "Mr",
+    "firstname": "Tyler",
+    "lastname": "Durden",
+    "avatarUrl": "https://mywebsite/users/tyler.jpg",
+    "timezone": "America/New_York",
+    "language": "en-US",
+    "custom": {
+        "department": "Soap sales"
     }
 }
 ```

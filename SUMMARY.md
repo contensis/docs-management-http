@@ -26,6 +26,7 @@
 * [Create a user](security/create-a-user.md)
 * [Update a user](security/update-a-user.md)
 * [Delete a user](security/delete-a-user.md)
+* [Update a user password](security/update-user-password.md)
 * [Check group membership](security/check-group-membership.md)
 * [Get a group](security/get-a-group.md)
 * [Create a group](security/create-a-group.md)
