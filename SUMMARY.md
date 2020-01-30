@@ -23,13 +23,18 @@
 * Users and groups
 
 * [Get a user](security/get-a-user.md)
+* [List user](security/list-users.md)
 * [Create a user](security/create-a-user.md)
 * [Update a user](security/update-a-user.md)
 * [Delete a user](security/delete-a-user.md)
 * [Update a user password](security/update-user-password.md)
 * [Check group membership](security/check-group-membership.md)
 * [Get a group](security/get-a-group.md)
+* [Get users in group](security/get-users-in-group.md)
+* [Get child groups in group](security/get-groups-in-group.md)
 * [Create a group](security/create-a-group.md)
+* [Add user to a group](security/add-user-to-group.md)
+* [Remove user from a group](security/remove-user-from-group.md)
 * [Update a group](security/update-a-group.md)
 * [Delete a group](security/delete-a-group.md)
 

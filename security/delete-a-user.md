@@ -24,7 +24,7 @@ TODO: Details around permissions
 
 | HTTP status code | Reason              | Response model                   |
 |:-----------------|:--------------------|:---------------------------------|
-| 200              | Success             |                                  |
+| 204              | No Content          |                                  |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md) |
 | 404              | NotFound            | [Error](/key-concepts/errors.md) |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md) |
