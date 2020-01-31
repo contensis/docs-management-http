@@ -86,7 +86,7 @@ A block version represents an incrementally pushed instance of a block.
         "commit": {
             "id": "81e13d08",
             "message": "Added marquee tag",
-            "uri": "https://gitlab.zengenti.com/container-examples/razor-pages/commit/81e13d08fb8fd33e37b64b1e95e1668e5256b38b",
+            "uri": "https://gitlab.zengenti.com/container-examples/razor-pages/commit/81e13d08fb8fd33e37b64b1e95e1668e5256b38b"
         }        
     },
     "version": {
