@@ -2,7 +2,7 @@
 description: Creating a group can be done by POST'ing user details resource to the group resource collection. 
 ---
 
-# Create a group
+# Update a group
 
 Updating a group can be done by PUT'ing group details resource to the group resource location. 
 
