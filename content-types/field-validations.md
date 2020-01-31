@@ -191,7 +191,7 @@ When publishing an entry, in addition to the above content validations, required
             <a href="#mincount">MinCount</a>
         </td>
     </tr>
-</table>                                                                                                                              | -->
+</table>                                                                                                                              | 
 
 ## Required
 
@@ -357,7 +357,7 @@ string, stringArray
         ],
         "message": {
             "en-GB": "The selected value is not allowed",
-            "fr-FR": "La valeur sélectionnée n'est pas autorisée."
+            "fr-FR": "La valeur sélectionnée n'est pas autorisée"
         }
     }
 }
@@ -451,7 +451,7 @@ composer
 
 ### Description
 
-Specifies the root Taxonomy node that values can be selected from.
+Specifies the root taxonomy node that values can be selected from.
 
 ### Applies to
 
@@ -464,7 +464,7 @@ taxonomy, taxonomyArray
     "taxonomyRoot": {
         "key": "0/1/2",
         "message": {
-            "en-GB": "The taxonomy code is not in the allowed root"
+            "en-GB": "The taxonomy node is not a descendant of the allowed root"
         }
     }
 }
@@ -558,7 +558,7 @@ dateTimeArray, decimalArray, integerArray, objectArray, stringArray
     "maxCount": {
         "value": 3,
         "message": {
-            "en-GB": "The value cannot contain more ts 3 elements"
+            "en-GB": "The value cannot contain more than 3 node keys"
         }
     }
 }
@@ -581,7 +581,7 @@ dateTimeArray, decimalArray, integerArray, objectArray, stringArray
     "minCount": {
         "value": 3,
         "message": {
-            "en-GB": "The value cannot contain less ts 3 elements"
+            "en-GB": "The value cannot contain less than 3 node keys"
         }
     }
 }
