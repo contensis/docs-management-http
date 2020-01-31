@@ -191,7 +191,7 @@ When publishing an entry, in addition to the above content validations, required
             <a href="#mincount">MinCount</a>
         </td>
     </tr>
-</table>                                                                                                                              | 
+</table>                                                      
 
 ## Required
 
