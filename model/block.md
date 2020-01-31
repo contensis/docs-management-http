@@ -36,7 +36,7 @@ The block resource provides details about each pushed version of a block. Block 
                         "broken": false, 
                         "deployment": "Deployed",      
                         "running": "Pending",
-                        "workflow": "Draft",
+                        "workflow": "Draft"
                     }
                 },
                 {
@@ -45,7 +45,7 @@ The block resource provides details about each pushed version of a block. Block 
                         "broken": false, 
                         "deployment": "Deployed",      
                         "running": "Available",
-                        "workflow": "Released",
+                        "workflow": "Released"
                     }    
                 },
                 {
@@ -54,7 +54,7 @@ The block resource provides details about each pushed version of a block. Block 
                         "broken": false, 
                         "deployment": "Deprecated",      
                         "running": "Stopped",
-                        "workflow": "Draft",
+                        "workflow": "Draft"
                     }    
                 },
                 {
@@ -63,7 +63,7 @@ The block resource provides details about each pushed version of a block. Block 
                         "broken": true, 
                         "deployment": "Deprecated",      
                         "running": "Stopped",
-                        "workflow": "Draft",
+                        "workflow": "Draft"
                     }  
                 }
 
@@ -78,7 +78,7 @@ The block resource provides details about each pushed version of a block. Block 
                         "broken": false, 
                         "deployment": "Deployed",      
                         "running": "None",
-                        "workflow": "Created",
+                        "workflow": "Created"
                     }  
                 },
                 {
@@ -87,7 +87,7 @@ The block resource provides details about each pushed version of a block. Block 
                         "broken": false, 
                         "deployment": "Deprecated",      
                         "running": "Stopped",
-                        "workflow": "Draft",
+                        "workflow": "Draft"
                     } 
                 },
                 {
@@ -96,7 +96,7 @@ The block resource provides details about each pushed version of a block. Block 
                         "broken": false, 
                         "deployment": "Deprecated",      
                         "running": "Stopped",
-                        "workflow": "Draft",
+                        "workflow": "Draft"
                     } 
                 }
             ]
