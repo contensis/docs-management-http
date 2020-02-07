@@ -42,17 +42,20 @@ A user resource contains profile and workflow details for a user. Extended profi
 {
     "username": "s.yearsley",
     "email": "s.yearsley@zengenti.com",
-    "title": "Mr",
     "firstname": "Tyler",
     "lastname": "Durden",
     "avatarUrl": "https://mywebsite/users/tyler.jpg",
     "timezone": "America/New_York",
-    "language": "en-GB",
+    
     "custom": {
+        "language": "en-GB",
         "department": "finance",
     },
     "credentials": {
-        "password": "pr0j3ctM4yh3m"
+        "provider": {
+            "type": "zengenti",
+            "name": "zengenti"
+        }
     },
     "sys": {
         "id": "e09e77b9-9dd9-4d46-b7dd-deb9702a5835",
@@ -61,7 +64,7 @@ A user resource contains profile and workflow details for a user. Extended profi
             "deactivationReason": null,
             "locked": false,
             "passwordResetRequired": false,
-            "passwordExpiry": "2020-01-31 16:07:51"
+            "passwordExpiry": "2020-01-31T16:07:51.000Z"
         },
         "created": "2020-06-24T16:39:18.000Z",
         "modified": "2020-06-24T16:39:18.000Z",
