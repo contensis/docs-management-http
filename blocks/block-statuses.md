@@ -40,5 +40,5 @@ These statuses describe the current running status of the block.
 | Starting  | The block is currently starting up                                 |
 | Available | The block is running successfully                                  |
 | Stopped   | The block was running but is no longer                             |
-| Faulting  | The block is not running successfully one or more instances        |
+| Degraded  | The block is not running successfully in one or more instances     |
 | Faulted   | The block is not running successfully in all instances             |
