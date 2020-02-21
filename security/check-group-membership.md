@@ -53,3 +53,30 @@ HEAD: /api/management/security/groups/9f02a3d1-d8eb-4b10-8ed6-293a11d5201f/users
 | 403              | Forbidden                    | [Error](/key-concepts/errors.md) |
 | 404              | NotFound - user not in group | [Error](/key-concepts/errors.md) |
 | 500              | InternalServerError          | [Error](/key-concepts/errors.md) |
+
+---
+
+# Check the current user is a member of a group
+
+The current user can be checked to see if they are a member of a specific group using the following HEAD request. A 200 HTTP status response confirms membership, whereas a 404 HTTP status marks no membership.
+
+<span class="label label--head">HEAD</span> /api/management/security/groups/**{groupId}
+
+## Remarks
+
+Membership will be classed as true if the user is a member of a child group of the specified group. 
+
+## Example request
+
+```json
+HEAD: /api/management/security/groups/9f02a3d1-d8eb-4b10-8ed6-293a11d5201f
+```
+
+## Response message
+
+| HTTP status code | Reason                       | Response model                   |
+|:-----------------|:-----------------------------|:---------------------------------|
+| 200              | OK - user in group           |                                  |
+| 403              | Forbidden                    | [Error](/key-concepts/errors.md) |
+| 404              | NotFound - user not in group | [Error](/key-concepts/errors.md) |
+| 500              | InternalServerError          | [Error](/key-concepts/errors.md) |
