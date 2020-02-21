@@ -12,7 +12,7 @@ These statuses describe the state the block has progressed to in its workflow st
 
 | Name             | Description                                                                     |
 | :--------------- | :------------------------------------------------------------------------------ |
-| Created          | The block has just been pushed and has not yet started being discovered              |           
+| Created          | The block has just been pushed and has not yet started being discovered         |           
 | Discovering      | The block discovery process is ongoing                                          |
 | DiscoveryFailure | The block discovery process has failed                                          |
 | Draft            | The block discovery process was successful and the block is now a draft version |
