@@ -33,7 +33,7 @@ HEAD: /api/management/security/groups/9bb89380-fd49-41a5-ab2f-fc25e482a251/users
 
 A user can be checked to see if it is a member of a specific group using the following HEAD request. A 200 HTTP status response confirms membership, whereas a 404 HTTP status marks no membership.
 
-<span class="label label--head">HEAD</span> /api/management/security/groups/**{groupId}**/users/**{userId}**
+<span class="label label--head">HEAD</span> /api/management/security/users/**{userId}**/groups/**{groupId}**
 
 ## Remarks
 
@@ -42,7 +42,7 @@ Membership will be classed as true if the user is a member of a child group of t
 ## Example request
 
 ```json
-HEAD: /api/management/security/groups/9f02a3d1-d8eb-4b10-8ed6-293a11d5201f/users/9bb89380-fd49-41a5-ab2f-fc25e482a251
+HEAD: /api/management/security/users/9f02a3d1-d8eb-4b10-8ed6-293a11d5201f/groups/9bb89380-fd49-41a5-ab2f-fc25e482a251
 ```
 
 ## Response message
