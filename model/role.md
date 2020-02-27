@@ -57,15 +57,27 @@ This JSON example shows a role that gives authoring permissions for the user gro
         "entries": [
             {
                 "id": "movie",
-                "languages": ["en-GB"],
-                "actions": ["sys.update", "draft.*", "awaitingApproval.revoke"]
+                "languages": [
+                    "en-GB"
+                ],
+                "actions": [
+                    "sys.update",
+                    "draft.*",
+                    "awaitingApproval.revoke"
+                ]
             }
         ]
     },
     "assignments": {
-        "users": [ "f.haygood" ],
-        "groups": [ "Movie Editors" ],
-        "apiKeys": [ "Movie Import" ]
+        "users": [
+            "f.haygood"
+        ],
+        "groups": [
+            "Movie Editors"
+        ],
+        "apiKeys": [
+            "Movie Import"
+        ]
     }
 }
 ```
