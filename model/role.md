@@ -60,11 +60,10 @@ This JSON example shows a role that gives authoring permissions for the user gro
                 "languages": ["en-GB"],
                 "actions": ["sys.update", "draft.*", "awaitingApproval.revoke"]
             }
-        ],
-        "contentTypes": [ ]
+        ]
     },
     "assignments": {
-        "users": [ "a.user" ],
+        "users": [ "f.haygood" ],
         "groups": [ "Movie Editors" ],
         "apiKeys": [ "Movie Import" ]
     }
