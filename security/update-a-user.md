@@ -16,7 +16,7 @@ Updating a user can be done by PUT'ing an updated version of the user profile re
 
 ## Remarks
 
-TODO: Details around permissions
+Only the current user and a member of the System Administrators group can update a user resource
 
 ## Example request
 
@@ -28,9 +28,9 @@ PUT: /api/management/security/users/4b262379-5bbe-421e-a429-f6e2ab5a849b
     "title": "Mr",
     "firstname": "Tyler",
     "lastname": "Durden",
-    "avatarUrl": "https://mywebsite/users/tyler.jpg",
     "timezone": "America/New_York",
     "language": "en-US",
+    "avatar": "/api/management/security/users/56a7c76c-2e80-403d-a960-fd93e7523d06/avatar?w=600&h=800",
     "custom": {
         "department": "Soap sales"
     }

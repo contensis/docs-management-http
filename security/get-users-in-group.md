@@ -6,7 +6,7 @@ description: Gets the users as direct members of the group
 
 Gets the users as direct members of the group
 
-A group="label label--get">GET</span> /api/management/security/groups/**{groupId}**/users
+<span class="label label--get">GET</span> /api/management/security/groups/**{groupId}**/users
 
 ### Parameters
 
@@ -35,7 +35,7 @@ GET: /api/management/security/groups/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c/users
 
 Gets the users as direct members of the group
 
-A group="label label--get">GET</span> /api/management/security/groups/**{groupName}**/users
+<span class="label label--get">GET</span> /api/management/security/groups/**{groupName}**/users
 
 ### Parameters
 

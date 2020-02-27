@@ -34,7 +34,9 @@ A block version represents an incrementally pushed instance of a block.
 | version.releasedBy     | object   |                                                                  | The username of the person who released the block version           |
 | version.released       | object   | datetime                                                         | The date/time of the release action                                 |
 | version.markedBrokenBy | object   |                                                                  | The username of the person who declared the block version as broken |
-| version.markedBroken   | object   | datetime                                                         | The date/time of the marled as broken action                        |
+| version.markedBroken   | object   | datetime                                                         | The date/time of the marked as broken action                        |
+| version.madeLiveBy     | object   |                                                                  | The username of the person who made the block live                  |
+| version.madeLive       | object   | datetime                                                         | The date/time of the make block live action                         |
 
 ## Remarks
 
@@ -86,7 +88,7 @@ A block version represents an incrementally pushed instance of a block.
         "commit": {
             "id": "81e13d08",
             "message": "Added marquee tag",
-            "uri": "https://gitlab.zengenti.com/container-examples/razor-pages/commit/81e13d08fb8fd33e37b64b1e95e1668e5256b38b",
+            "uri": "https://gitlab.zengenti.com/container-examples/razor-pages/commit/81e13d08fb8fd33e37b64b1e95e1668e5256b38b"
         }        
     },
     "version": {
@@ -96,6 +98,8 @@ A block version represents an incrementally pushed instance of a block.
         "released": "2016-10-13T10:15:12.1973648+01:00",
         "markedBrokenBy": null,
         "markedBroken": null,
+        "madeLiveBy": null,
+        "madeLive": null,
         "versionNo": "2.0"
     }
 }

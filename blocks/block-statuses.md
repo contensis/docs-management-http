@@ -12,7 +12,7 @@ These statuses describe the state the block has progressed to in its workflow st
 
 | Name             | Description                                                                     |
 | :--------------- | :------------------------------------------------------------------------------ |
-| Created          | The block has just been pushed and has not yet started being discovered              |           
+| Created          | The block has just been pushed and has not yet started being discovered         |           
 | Discovering      | The block discovery process is ongoing                                          |
 | DiscoveryFailure | The block discovery process has failed                                          |
 | Draft            | The block discovery process was successful and the block is now a draft version |
@@ -40,5 +40,5 @@ These statuses describe the current running status of the block.
 | Starting  | The block is currently starting up                                 |
 | Available | The block is running successfully                                  |
 | Stopped   | The block was running but is no longer                             |
-| Faulting  | The block is not running successfully one or more instances        |
+| Degraded  | The block is not running successfully in one or more instances     |
 | Faulted   | The block is not running successfully in all instances             |

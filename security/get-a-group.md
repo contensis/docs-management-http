@@ -4,7 +4,9 @@ description: A group resource can be retrieved by it's GUID identifier
 
 ## Get a group by id
 
-A group="label label--get">GET</span> /api/management/security/groups/**{groupId}**
+A group resource can be retrieved by it's GUID identifier.
+
+<span class="label label--get">GET</span> /api/management/security/groups/**{groupId}**
 
 ### Parameters
 
@@ -31,7 +33,9 @@ GET: /api/management/security/groups/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 
 ## Get a group by name
 
-A group="label label--get">GET</span> /api/management/security/groups/**{groupName}**
+A group resource can be retrieved by it's name.
+
+<span class="label label--get">GET</span> /api/management/security/groups/**{groupName}**
 
 ### Parameters
 

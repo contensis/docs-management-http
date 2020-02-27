@@ -23,7 +23,7 @@
 * Users and groups
 
 * [Get a user](security/get-a-user.md)
-* [List user](security/list-users.md)
+* [List users](security/list-users.md)
 * [Create a user](security/create-a-user.md)
 * [Update a user](security/update-a-user.md)
 * [Delete a user](security/delete-a-user.md)
