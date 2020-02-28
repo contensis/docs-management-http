@@ -138,6 +138,16 @@
 
 ***
 
+* Renderers
+
+* [Get a renderer](/renderers/get-a-renderer.md)
+* [List renderers](/renderers/list-renderers.md)
+* [Create a renderer](/renderers/create-renderer.md)
+* [Update a renderer](/renderers/update-renderer.md)
+* [Delete a renderer](/renderers/delete-renderer.md)
+
+***
+
 * Models
 
 * [Project](/model/project.md)
