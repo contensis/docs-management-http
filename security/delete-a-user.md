@@ -18,7 +18,7 @@ DELETE: /api/management/security/users/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 
 ## Remarks
 
-TODO: Details around permissions
+This action requires system administration privileges.
 
 ### Response message
 
