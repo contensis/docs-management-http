@@ -42,7 +42,7 @@ POST: /api/management/projects/website/renderers
 
 | HTTP status code | Reason                | Response model                   |
 |:-----------------|:----------------------|:---------------------------------|
-| 202              | No Content            |                                  |
+| 201              | Created               | [Renderer](/model/renderer.md)   |
 | 401              | Unauthorized          | [Error](/key-concepts/errors.md) |
 | 404              | NotFound              | [Error](/key-concepts/errors.md) |
 | 409              | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |

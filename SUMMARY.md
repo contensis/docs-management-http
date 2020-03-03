@@ -172,5 +172,6 @@
 * [Workflow trigger](/model/workflow-trigger.md)
 * [Block](/model/block.md)
 * [Block version](/model/block-version.md)
+* [Renderer](/model/renderer.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
