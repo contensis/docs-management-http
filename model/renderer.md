@@ -9,14 +9,16 @@ TODO:
 
 ### Renderer
 
-| Name                 | Type        | Format               | Description                              |
-|----------------------|-------------|----------------------|------------------------------------------|
-| id                   | string      |                      | The renderer api identifier              |
-| name                 | string      |                      | The renderer friendly name               |
-| description          | string      |                      | An optional description for the renderer |
-| assignedContentTypes | string[...] |                      | An optional description for the renderer |
-| rules                | object[...] | rule                 | An optional description for the renderer |
-| version              | object      | [version](./version) | An optional description for the renderer |
+| Name                 | Type        | Format               | Description                                                                                  |
+|----------------------|-------------|----------------------|----------------------------------------------------------------------------------------------|
+| uuid                 | string      | UUID                 | The renderer identifier as a 128 bit GUID.                                                   |
+| id                   | string      |                      | The renderer api identifier                                                                  |
+| projectId                   | string      |                      | The project api identifier                                                                  |
+| name                 | string      |                      | The renderer friendly name                                                                   |
+| description          | string      |                      | An optional description for the renderer                                                     |
+| assignedContentTypes | string[...] |                      | A list of content types that the renderer will handle the renderering of derived entries for |
+| rules                | object[...] | rule                 | The renderer rule conditions                                                                 |
+| version              | object      | [version](./version) | The version details for the renderer resource                                                |
 
 ### Rule
 
@@ -28,7 +30,9 @@ TODO:
 
 ```json
 {
+    "uuid": "7622b5f7-e245-4226-9e64-3aeafa930eae",
     "id": "newsRecord",
+    "projectId": "movieDb",
     "name": "News record",
     "description": "Renders news record entries",
     "assignedContentTypes": [
@@ -38,7 +42,8 @@ TODO:
         {
             "return": {
                 "blockId": "news",
-                "endpointId": "news-record"
+                "endpointId": "news-record",
+                "version": "latest"
             }
         }
     ],
