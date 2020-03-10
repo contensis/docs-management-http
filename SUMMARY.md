@@ -141,6 +141,7 @@
 * Renderers
 
 * [Get a renderer](/renderers/get-a-renderer.md)
+* [Get a renderer for content type](/renderers/get-a-renderer-for-content-type.md)
 * [List renderers](/renderers/list-renderers.md)
 * [Create a renderer](/renderers/create-renderer.md)
 * [Update a renderer](/renderers/update-renderer.md)
