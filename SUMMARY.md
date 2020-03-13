@@ -22,21 +22,23 @@
 
 * Users and groups
 
-* [Get a user](security/get-a-user.md)
-* [List users](security/list-users.md)
-* [Create a user](security/create-a-user.md)
-* [Update a user](security/update-a-user.md)
-* [Delete a user](security/delete-a-user.md)
-* [Update a user password](security/update-user-password.md)
-* [Check group membership](security/check-group-membership.md)
-* [Get a group](security/get-a-group.md)
-* [Get users in group](security/get-users-in-group.md)
-* [Get child groups in group](security/get-groups-in-group.md)
-* [Create a group](security/create-a-group.md)
-* [Add user to a group](security/add-user-to-group.md)
-* [Remove user from a group](security/remove-user-from-group.md)
-* [Update a group](security/update-a-group.md)
-* [Delete a group](security/delete-a-group.md)
+* [Get a user](security/users-and-groups/get-a-user.md)
+* [List users](security/users-and-groups/list-users.md)
+* [Create a user](security/users-and-groups/create-a-user.md)
+* [Update a user](security/users-and-groups/update-a-user.md)
+* [Delete a user](security/users-and-groups/delete-a-user.md)
+* [Update a user password](security/users-and-groups/update-user-password.md)
+* [Check group membership](security/users-and-groups/check-group-membership.md)
+* [Get a group](security/users-and-groups/get-a-group.md)
+* [Create a group](security/users-and-groups/create-a-group.md)
+* [Update a group](security/users-and-groups/update-a-group.md)
+* [Delete a group](security/users-and-groups/delete-a-group.md)
+* [Get users in group](security/users-and-groups/get-users-in-group.md)
+* [Get child groups in group](security/users-and-groups/get-groups-in-group.md)
+* [Add user to a group](security/users-and-groups/add-user-to-group.md)
+* [Remove user from a group](security/users-and-groups/remove-user-from-group.md)
+* [Add child group to a group](security/users-and-groups/add-group-to-group.md)
+* [Remove child group from a group](security/users-and-groups/remove-group-from-group.md)
 
 * Roles
 
@@ -45,8 +47,6 @@
 * [Update a role](/roles/update-a-role.md)
 * [List roles](/roles/list-roles.md)
 * [Delete a role](/roles/delete-a-role.md)
-
-
 
 * Permissions
 
