@@ -13,6 +13,10 @@ A child group can be added to a group by sending a PUT request specifying the gr
 | groupId      | path           | string | GUID   | The group identifier. |
 | childGroupId | path           | string | GUID   | The child group identifier.  |
 
+## Remarks
+
+A group cannot be added as a child group of itself.
+
 ## Example request
 
 ```json

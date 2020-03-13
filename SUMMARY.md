@@ -30,6 +30,7 @@
 * [Update a user password](security/users-and-groups/update-user-password.md)
 * [Check group membership](security/users-and-groups/check-group-membership.md)
 * [Get a group](security/users-and-groups/get-a-group.md)
+* [List groups](security/users-and-groups/list-groups.md)
 * [Create a group](security/users-and-groups/create-a-group.md)
 * [Update a group](security/users-and-groups/update-a-group.md)
 * [Delete a group](security/users-and-groups/delete-a-group.md)
