@@ -7,10 +7,6 @@ The entry usage info object contains a subset of entry data to describe an entry
 
 ## Properties
 
-Data properties are items defined by the [fields collection](/model/content-type.md#field) set in a content type.
-
-## Properties
-
 | Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID. |
