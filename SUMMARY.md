@@ -48,6 +48,7 @@
 * [Update an entry](/entries/update-an-entry.md)
 * [List entries](/entries/list-entries.md)
 * [List entries by content type](/entries/list-entries-by-content-type.md)
+* [Get entry usage](/entries/entry-usage.md)
 * [Delete an entry](/entries/delete-an-entry.md)
 * [Invoking workflow](/entries/invoking-workflow.md)
   * [Unpublish an entry](/entries/unpublish-an-entry.md)
@@ -87,6 +88,7 @@
 * [Role](/model/role.md)
 * [Paged list](/model/paged-list.md)
 * [Workflow trigger](/model/workflow-trigger.md)
+* [Entry Usage Info](/model/entry-usage-info.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
 
