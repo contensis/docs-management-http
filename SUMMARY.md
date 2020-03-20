@@ -136,7 +136,7 @@
 * [Publish a block version](/blocks/publish-a-block-version.md)
 * [Rollback a block version](/blocks/rollback-a-block-version.md)
 * [Mark a block version as broken](/blocks/mark-block-version-broken.md)
-* [Block statuses](/blocks/block-statuses.md)
+* [Block version statuses](/blocks/blockversion-statuses.md)
 
 ***
 
