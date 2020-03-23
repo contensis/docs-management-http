@@ -12,9 +12,9 @@ A block version represents an incrementally pushed instance of a block.
 | id                     | string   |                                                                  | The block identifier as a camel-cased unique string                 |
 | projectId              | string   |                                                                  | The project identifier, e.g. website                                |
 | status.broken          | boolean  |                                                                  | Whether the block has been marked as broken                         |
-| status.deployment      | string   | [Deployment status](/blocks/block-statuses.md#deployment-status) | The block version deployment status                                 |
-| status.running         | string   | [Running status](/blocks/block-statuses.md#running-status)       | The block version running status                                    |
-| status.workflow        | string   | [Workflow status](/blocks/block-statuses.md#workflow-status)     | The block version workflow status                                   |
+| status.deployment      | string   | [Deployment status](/blocks/blockversion-statuses.md#deployment-status) | The block version deployment status                                 |
+| status.running         | string   | [Running status](/blocks/blockversion-statuses.md#running-status)       | The block version running status                                    |
+| status.workflow        | string   | [Workflow status](/blocks/blockversion-statuses.md#workflow-status)     | The block version workflow status                                   |
 | endpoints              | object[] |                                                                  | The endpoints exposed by this block version                         |
 | endpoints[].id         | string   |                                                                  | The endpoint identifier                                             |
 | endpoints[].path       | string   | URI path                                                         | The path to the invocable endpoint                                  |

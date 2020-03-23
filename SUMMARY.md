@@ -98,6 +98,7 @@
 * [Update an entry](/entries/update-an-entry.md)
 * [List entries](/entries/list-entries.md)
 * [List entries by content type](/entries/list-entries-by-content-type.md)
+* [Get entry usage](/entries/entry-usage.md)
 * [Delete an entry](/entries/delete-an-entry.md)
 * [Invoking workflow](/entries/invoking-workflow.md)
   * [Unpublish an entry](/entries/unpublish-an-entry.md)
@@ -135,7 +136,7 @@
 * [Publish a block version](/blocks/publish-a-block-version.md)
 * [Rollback a block version](/blocks/rollback-a-block-version.md)
 * [Mark a block version as broken](/blocks/mark-block-version-broken.md)
-* [Block statuses](/blocks/block-statuses.md)
+* [Block version statuses](/blocks/blockversion-statuses.md)
 
 ***
 
@@ -169,6 +170,7 @@
 * [Content type group](/model/content-type-group.md)
 * [Entry](/model/entry.md)
 * [Version](/model/version.md)
+* [Entry Usage Info](/model/entry-usage-info.md)
 * [Composed fields](/model/composed.md)
 * [Component](/model/component.md)
 * [DateRange](/model/date-range.md)

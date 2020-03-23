@@ -1,6 +1,6 @@
-# Block statuses
+# Block version statuses
 
-A block has a number of statuses
+A block version has a number of statuses
 
 * [Workflow status](#workflow-status)
 * [Deployment status](#deployment-status)

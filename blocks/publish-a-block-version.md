@@ -3,7 +3,7 @@ description: Publishing a released block version is an action that makes the spe
 ---
 # Publish a block version
 
-Publishing a released block version is an action that makes the specified block version live. The block version gets a [Deployment status](/blocks/block-statuses.md#deployment-status) of *live* and the previous live version is updated to have a [Deployment status](/blocks/block-statuses.md#deployment-status) of *deprecated*. 
+Publishing a released block version is an action that makes the specified block version live. The block version gets a [Deployment status](/blocks/blockversion-statuses.md#deployment-status) of *live* and the previous live version is updated to have a [Deployment status](/blocks/blockversion-statuses.md#deployment-status) of *deprecated*. 
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/blocks/**{blockId}**/actions
 
