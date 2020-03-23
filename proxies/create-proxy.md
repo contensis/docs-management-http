@@ -1,11 +1,11 @@
 ---
-description: Creates a new renderer resource.
+description: Creates a new proxy resource.
 ---
-## Create a renderer
+## Create a proxy
 
-Creates a new renderer resource.
+Creates a new proxy resource.
 
-<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/renderers
+<span class="label label--post">POST</span> /api/management/projects/**{projectId}**/proxies
 
 ## Parameters
 
@@ -18,23 +18,20 @@ Creates a new renderer resource.
 ### Example request
 
 ```http
-POST: /api/management/projects/website/renderers
+POST: /api/management/projects/website/proxies
 
 {
-    "id": "newsRecord",
-    "name": "News record",
-    "description": "Renders news record entries with rules for country (Populo)",
-    "assignedContentTypes": [
-        "newsRecord"
-    ],
-    "rules": [
-        {
-            "return": {
-                "blockId": "news",
-                "endpointId": "news-record"
+    "projectId": "movieDb",
+    "name": "Thrillers section",
+    "description": "Proxies current website thrillers section",
+    "endpoints": {
+        "*": {
+            "uri": "https://10.32.187.17:443/movies/thrillers",
+            "headers": {
+                "host": "www.moviedb.com",
             }
         }
-    ]
+    }
 }
 ```
 
@@ -42,13 +39,9 @@ POST: /api/management/projects/website/renderers
 
 | HTTP status code | Reason                | Response model                   |
 |:-----------------|:----------------------|:---------------------------------|
-| 201              | Created               | [Renderer](/model/renderer.md)   |
+| 201              | Created               | [Proxy](/model/proxy.md)         |
 | 401              | Unauthorized          | [Error](/key-concepts/errors.md) |
 | 404              | NotFound              | [Error](/key-concepts/errors.md) |
 | 409              | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
 | 422              | ValidationError       | [Error](/key-concepts/errors.md) |
 | 500              | InternalServerError   | [Error](/key-concepts/errors.md) |
-
-
-
-
