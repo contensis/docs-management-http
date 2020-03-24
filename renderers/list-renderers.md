@@ -23,7 +23,7 @@ GET: /api/management/projects/website/renderers/
 
 | HTTP status code | Reason              | Response model                                 |
 |:-----------------|:--------------------|:-----------------------------------------------|
-| 200              | OK                  | PageList&lt;[Renderer](/model/renderer.md)&gt; |
+| 200              | OK                  | PagedList&lt;[Renderer](/model/renderer.md)&gt; |
 | 401              | Unauthorized        | [Error](/key-concepts/errors.md)               |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)               |
 | 422              | ValidationError     | [Error](/key-concepts/errors.md)               |

@@ -151,6 +151,16 @@
 
 ***
 
+* Proxies
+
+* [Get a proxy](/proxies/get-proxy.md)
+* [List proxies](/proxies/list-proxies.md)
+* [Create a proxy](/proxies/create-proxy.md)
+* [Update a proxy](/proxies/update-proxy.md)
+* [Delete a proxy](/proxies/delete-proxy.md)
+
+***
+
 * Models
 
 * [Project](/model/project.md)
@@ -177,5 +187,6 @@
 * [Block](/model/block.md)
 * [Block version](/model/block-version.md)
 * [Renderer](/model/renderer.md)
+* [Proxy](/model/proxy.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
