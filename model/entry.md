@@ -88,16 +88,41 @@ This JSON example shows entry based on a movie content type.
         "contentTypeId": "movie",
         "projectId": "movieDb",
         "language": "en-GB",
+        "availableLanguages": [
+            "en-GB",
+            "fr"
+        ],
+        "unavailableLanguages": [
+            "de"
+        ],
         "uri": "/api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c",
         "dataFormat": "entry",
         "metadata": {},
+        "workflow": {
+            "id": "contensisEntryBasic",
+            "state": "versionComplete",
+            "allowedEvents": [
+                "versionComplete.sysUpdate",
+                "versionComplete.sysDelete",
+                "sysUnpublish"
+            ],
+            "transition": {
+                "data": null,
+                "invoked": "2020-03-24T14:51:35.8923327Z",
+                "from": "draft",
+                "invokedBy": "zengenti",
+                "event": "publish"
+            }
+        },
+        "isPublished": true,
+        "translationState": "Translated",
         "version": {
             "createdBy": "s.derrickson",
             "created": "2016-10-12T09:29:18.5144641+01:00",
             "modifiedBy": "b.cumberbatch",
-            "modified": "2016-10-13T10:15:12.1973648+01:00",
+            "modified": "2020-03-24T14:51:35.7048498Z",
             "publishedBy": "b.cumberbatch",
-            "published": "2016-10-13T10:15:12.1973648+01:00",
+            "published": "2020-03-24T14:51:35.8610917Z",
             "versionNo": "2.0"
         }
     }
