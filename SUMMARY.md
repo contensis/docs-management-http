@@ -49,6 +49,14 @@
 * [List roles](/roles/list-roles.md)
 * [Delete a role](/roles/delete-a-role.md)
 
+* Access tokens
+
+* [Get a token](/security/access-tokens/get-token.md)
+* [Create a token](/security/access-tokens/create-token.md)
+* [Update a token](/security/access-tokens/update-token.md)
+* [List tokens](/security/access-tokens/list-tokens.md)
+* [Delete a token](/security/access-tokens/delete-token.md)
+
 * Permissions
 
 * [Overview](/permissions/overview.md)
