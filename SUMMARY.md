@@ -196,5 +196,6 @@
 * [Block version](/model/block-version.md)
 * [Renderer](/model/renderer.md)
 * [Proxy](/model/proxy.md)
+* [Access token](/model/access-token.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
