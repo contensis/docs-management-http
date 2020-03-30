@@ -12,7 +12,7 @@ API access token resource
 | id          | string   |                      | The access token identifier as a 128 bit GUID.          |
 | name        | string   |                      | The access token name                                   |
 | description | string   |                      | An optional description for the access token            |
-| token       | boolean  |                      | The generated access token value                        |
+| token       | string   |                      | The generated access token value                        |
 | enabled     | boolean  |                      | A flag to enable or disable the access token            |
 | version     | object   | [version](./version) | The version details for the proxy resource              |
 | scopes      | string[] | {projectId}_{api}    | The list of project api scopes, e.g. *website_delivery* |
