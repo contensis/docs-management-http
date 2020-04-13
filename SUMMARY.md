@@ -49,13 +49,15 @@
 * [List roles](/roles/list-roles.md)
 * [Delete a role](/roles/delete-a-role.md)
 
-* Access tokens
+* API keys
 
-* [Get a token](/security/access-tokens/get-token.md)
-* [Create a token](/security/access-tokens/create-token.md)
-* [Update a token](/security/access-tokens/update-token.md)
-* [List tokens](/security/access-tokens/list-tokens.md)
-* [Delete a token](/security/access-tokens/delete-token.md)
+* [Get an API key](/security/api-keys/get-key.md)
+* [Create an API key](/security/api-keys/create-key.md)
+* [Update an API key](/security/api-keys/update-key.md)
+* [List API keys](/security/api-keys/list-keys.md)
+* [Delete an API key](/security/api-keys/delete-key.md)
+* [Create an Access token](/security/api-keys/create-token.md)
+* [Delete an Access token](/security/api-keys/delete-token.md)
 
 * Permissions
 

@@ -15,37 +15,37 @@ These are the standard properties that all entries have. The language property i
 
 ### Entry
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| field id | Any | Any | Field data that is defined in the associated [content type](/model/content-type.md#field). The data is keyed by a unique field id.  |
-| sys | object | [Sys](#sys) | The container of the entry system data. |
+| Name     | Type   | Format      | Description                                                                                                                        |
+|:---------|:-------|:------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| field id | Any    | Any         | Field data that is defined in the associated [content type](/model/content-type.md#field). The data is keyed by a unique field id. |
+| sys      | object | [Sys](#sys) | The container of the entry system data.                                                                                            |
 
 ### Sys
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| id | string | GUID | The entry identifier as a 128 bit GUID. |
-| projectId | string | | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console. |
-| contentTypeId | string | | The API identifier of the content type that the entry is based on. |
-| dataFormat | string | | Either *entry* or *asset*. |
-| language | string | [Language code](/localization.md) | The language code of the entry variation. |
-| availableLanguages | string[] | [Language code](/localization.md) | A list languages which have available translations. |
-| unavailableLanguages | string[] | [Language code](/localization.md) | A list languages which the entry can be translated to but have yet to be completed. |
-| uri | string | URI | The entry uri. |
-| metadata | object | | Metadata associated with the entry instance. |
-| workflow | object | | Workflow associated with the entry instance. |
-| workflow.id | string | | The API identifier of the workflow that the entry is using. |
-| workflow.state | string | | The API identifier of the current workflow state of the entry. |
-| workflow.allowedEvents | string[] | | A list of workflow events which can be carried out from the current state. |
-| workflow.transition | object | | Transition data associated with the last workflow transition. |
-| workflow.data | string | | Data which has been supplied for the current transition. e.g. Declined reason. |
-| workflow.invoked | string | | When the transition took place. |
-| workflow.from | string | | Which state the entry transitioned from. |
-| workflow.invokedBy | string | | Who invoked the workflow transtion. |
-| workflow.event | string | | The workflow event which triggered the transition. |
-| isPublished | boolean | | If the entry is currently pubished then the value will be *true*. If the entry has yet to be published or has been unpublished it will be *false*. |
-| translationState | string | | The API identifier of the translation status of the entry. Possible values are *None, NeverTranslated, Translated, TranslationOutOfDate, NoDefaultLanguage, AvailableForTranslation, NotAvailableForTranslation*|
-| version | object | [Version](/model/version.md) | Version info specific to the entry variation. |
+| Name                   | Type     | Format                            | Description                                                                                                                                                                                                      |
+|:-----------------------|:---------|:----------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id                     | string   | GUID                              | The entry identifier as a 128 bit GUID.                                                                                                                                                                          |
+| projectId              | string   |                                   | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console.                                                                                                          |
+| contentTypeId          | string   |                                   | The API identifier of the content type that the entry is based on.                                                                                                                                               |
+| dataFormat             | string   |                                   | Either *entry* or *asset*.                                                                                                                                                                                       |
+| language               | string   | [Language code](/localization.md) | The language code of the entry variation.                                                                                                                                                                        |
+| availableLanguages     | string[] | [Language code](/localization.md) | A list languages which have available translations.                                                                                                                                                              |
+| unavailableLanguages   | string[] | [Language code](/localization.md) | A list languages which the entry can be translated to but have yet to be completed.                                                                                                                              |
+| uri                    | string   | URI                               | The entry uri.                                                                                                                                                                                                   |
+| metadata               | object   |                                   | Metadata associated with the entry instance.                                                                                                                                                                     |
+| workflow               | object   |                                   | Workflow associated with the entry instance.                                                                                                                                                                     |
+| workflow.id            | string   |                                   | The API identifier of the workflow that the entry is using.                                                                                                                                                      |
+| workflow.state         | string   |                                   | The API identifier of the current workflow state of the entry.                                                                                                                                                   |
+| workflow.allowedEvents | string[] |                                   | A list of workflow events which can be carried out from the current state.                                                                                                                                       |
+| workflow.transition    | object   |                                   | Transition data associated with the last workflow transition.                                                                                                                                                    |
+| workflow.data          | string   |                                   | Data which has been supplied for the current transition. e.g. Declined reason.                                                                                                                                   |
+| workflow.invoked       | string   |                                   | When the transition took place.                                                                                                                                                                                  |
+| workflow.from          | string   |                                   | Which state the entry transitioned from.                                                                                                                                                                         |
+| workflow.invokedBy     | string   |                                   | Who invoked the workflow transtion.                                                                                                                                                                              |
+| workflow.event         | string   |                                   | The workflow event which triggered the transition.                                                                                                                                                               |
+| isPublished            | boolean  |                                   | If the entry is currently pubished then the value will be *true*. If the entry has yet to be published or has been unpublished it will be *false*.                                                               |
+| translationState       | string   |                                   | The API identifier of the translation status of the entry. Possible values are *None, NeverTranslated, Translated, TranslationOutOfDate, NoDefaultLanguage, AvailableForTranslation, NotAvailableForTranslation* |
+| version                | object   | [Version](/model/version.md)      | Version info specific to the entry variation.                                                                                                                                                                    |
 
 
 ## Example

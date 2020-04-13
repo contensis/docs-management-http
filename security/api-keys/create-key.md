@@ -1,26 +1,26 @@
 ---
-description: Creates a new API access token.
+description: Creates a new API key to allow access to one or more project APIs.
 ---
 
-# Create an API access token
+# Create an API key
 
-Creates a new API access token for one or more projects
+Creates a new API key to allow access to one or more project APIs.
 
-<span class="label label--post">POST</span> /api/management/security/accessTokens/
+<span class="label label--post">POST</span> /api/management/security/apiKeys/
 
 ## Example request
 
 ```json
-POST: /api/management/security/accessTokens/
+POST: /api/management/security/apiKeys/
 
 {
     "name": "Main website",
     "description": "Allows read/write for website project and also access to internal for meeting information",
     "enabled": true,
     "scopes": [
-        "website_delivery",
-        "website_management",
-        "internal_delivery"
+        "delivery_website",
+        "management_website",
+        "delivery_internal"
     ]
 }
 ```
@@ -29,7 +29,7 @@ POST: /api/management/security/accessTokens/
 
 | HTTP status code | Reason              | Response model                        |
 |:-----------------|:--------------------|:--------------------------------------|
-| 201              | Created             | [AccessToken](/model/access-token.md) |
+| 201              | Created             | [Api key](/model/api-key.md) |
 | 401              | Unauthorized        | [Error](/key-concepts/errors.md)      |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md)      |
 | 422              | ValidationError     | [Error](/key-concepts/errors.md)      |

@@ -7,16 +7,16 @@ A component determines a reusable schema added to [content types](/model/content
 
 ## Properties
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| id | string | | A unique component identifier |
-| projectId | string |  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
-| name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to a component |
-| description | object | [Localized value](/key-concepts/localization.md) | The description text given to a component |
-| fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry |
-| workflowId | string |  | The workflow process that derived entries will follow |
-| dataFormat | string |  | Either *entry* or *asset* |
-| version | object | [Version](/model/version.md) | Version information about the component |
+| Name        | Type         | Format                                           | Description                                                                                            |
+|:------------|:-------------|:-------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
+| id          | string       |                                                  | A unique component identifier                                                                          |
+| projectId   | string       |                                                  | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
+| name        | object       | [Localized value](/key-concepts/localization.md) | The friendly name given to a component                                                                 |
+| description | object       | [Localized value](/key-concepts/localization.md) | The description text given to a component                                                              |
+| fields      | object [...] | [Field](#field)                                  | A collection of fields that form the schema for an entry                                               |
+| workflowId  | string       |                                                  | The workflow process that derived entries will follow                                                  |
+| dataFormat  | string       |                                                  | Either *entry* or *asset*                                                                              |
+| version     | object       | [Version](/model/version.md)                     | Version information about the component                                                                |
 
 ## Field
 
@@ -24,16 +24,16 @@ The field object is the definition of a field within an entry. The field also co
 
 ### Properties
 
-| Name | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| id | string |  | A unique field identifier |
-| name | object | [Localized value](/key-concepts/localization.md) | A friendly name for the field |
-| description | object | [Localized value](/key-concepts/localization.md) | The description for the field's purpose |
-| dataType | string | [Data type](/key-concepts/data-types.md) | The field data type |
-| dataFormat | string | [Data type](/key-concepts/data-formats.md) | The field data format |
-| default | object | [Localized value](/key-concepts/localization.md) | The default value for the field if no value is provided by an editor |
-| validations | object |  | The validations that will be performed on the field when the entry is either created or updated |
-| editor | object | Editor | Configuration for the Contensis entry editor |
+| Name        | Type   | Format                                           | Description                                                                                     |
+|:------------|:-------|:-------------------------------------------------|:------------------------------------------------------------------------------------------------|
+| id          | string |                                                  | A unique field identifier                                                                       |
+| name        | object | [Localized value](/key-concepts/localization.md) | A friendly name for the field                                                                   |
+| description | object | [Localized value](/key-concepts/localization.md) | The description for the field's purpose                                                         |
+| dataType    | string | [Data type](/key-concepts/data-types.md)         | The field data type                                                                             |
+| dataFormat  | string | [Data type](/key-concepts/data-formats.md)       | The field data format                                                                           |
+| default     | object | [Localized value](/key-concepts/localization.md) | The default value for the field if no value is provided by an editor                            |
+| validations | object |                                                  | The validations that will be performed on the field when the entry is either created or updated |
+| editor      | object | Editor                                           | Configuration for the Contensis entry editor                                                    |
 
 ## Localized value
 

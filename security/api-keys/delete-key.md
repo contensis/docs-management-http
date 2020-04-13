@@ -1,17 +1,23 @@
 ---
-description: Deletes an existing API access token.
+description: Deletes an existing API keys.
 ---
 
-# Delete an API access token
+# Delete an API key
 
-Deletes an existing API access token.
+Deletes an existing API key.
 
-<span class="label label--delete">DELETE</span> /api/management/security/accessTokens/**{accessTokenId}**
+<span class="label label--delete">DELETE</span> /api/management/security/apiKeys/**{apiKeyId}**
+
+## Parameters
+
+| Name     | Parameter type | Type   | Format | Description            |
+|----------|:---------------|:-------|:-------|:-----------------------|
+| apiKeyId | path           | string | Guid   | The API key identifier |
 
 ## Example request
 
 ```http
-DELETE: /api/management/security/accessTokens/8f3dad0f-9ac3-450f-a825-0457542c04c7
+DELETE: /api/management/security/apiKeys/8f3dad0f-9ac3-450f-a825-0457542c04c7
 ```
 
 ### Response message
