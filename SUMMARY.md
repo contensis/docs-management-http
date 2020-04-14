@@ -198,6 +198,7 @@
 * [Block version](/model/block-version.md)
 * [Renderer](/model/renderer.md)
 * [Proxy](/model/proxy.md)
+* [API key](/model/api-key.md)
 * [Access token](/model/access-token.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
