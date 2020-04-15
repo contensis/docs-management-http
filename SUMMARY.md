@@ -56,8 +56,8 @@
 * [Update an API key](/security/api-keys/update-key.md)
 * [List API keys](/security/api-keys/list-keys.md)
 * [Delete an API key](/security/api-keys/delete-key.md)
-* [Create an Access token](/security/api-keys/create-token.md)
-* [Delete an Access token](/security/api-keys/delete-token.md)
+* [Create an API key flow](/security/api-keys/create-flow.md)
+* [Delete an API key flow](/security/api-keys/delete-flow.md)
 
 * Permissions
 

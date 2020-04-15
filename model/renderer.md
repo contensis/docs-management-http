@@ -9,16 +9,17 @@ TODO:
 
 ### Renderer
 
-| Name                 | Type        | Format               | Description                                                                                  |
-|----------------------|-------------|----------------------|----------------------------------------------------------------------------------------------|
-| uuid                 | string      | UUID                 | The renderer identifier as a 128 bit GUID.                                                   |
-| id                   | string      |                      | The renderer api identifier                                                                  |
-| projectId                   | string      |                      | The project api identifier                                                                  |
-| name                 | string      |                      | The renderer friendly name                                                                   |
-| description          | string      |                      | An optional description for the renderer                                                     |
-| assignedContentTypes | string[...] |                      | A list of content types that the renderer will handle the renderering of derived entries for |
-| rules                | object[...] | rule                 | The renderer rule conditions                                                                 |
-| version              | object      | [version](./version) | The version details for the renderer resource                                                |
+| Name                 | Type        | Format               | Description                                                                                    |
+|----------------------|-------------|----------------------|------------------------------------------------------------------------------------------------|
+| uuid                 | string      | UUID                 | The renderer identifier as a 128 bit GUID.                                                     |
+| id                   | string      |                      | The renderer api identifier                                                                    |
+| projectId            | string      |                      | The project api identifier                                                                     |
+| name                 | string      |                      | The renderer friendly name                                                                     |
+| description          | string      |                      | An optional description for the renderer                                                       |
+| layoutRendererId     | string      |                      | An reference to the renderer that will wrap the current renderer output with additional markup |
+| assignedContentTypes | string[...] |                      | A list of content types that the renderer will handle the renderering of derived entries for   |
+| rules                | object[...] | rule                 | The renderer rule conditions                                                                   |
+| version              | object      | [version](./version) | The version details for the renderer resource                                                  |
 
 ### Rule
 
@@ -35,6 +36,7 @@ TODO:
     "projectId": "movieDb",
     "name": "News record",
     "description": "Renders news record entries",
+    "layoutRendererId": "layout",
     "assignedContentTypes": [
         "newsRecord"
     ],
