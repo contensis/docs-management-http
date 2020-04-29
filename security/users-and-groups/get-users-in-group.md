@@ -24,7 +24,7 @@ GET: /api/management/security/groups/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c/users
 
 | HTTP status code | Reason              | Response model                          |
 |:-----------------|:--------------------|:----------------------------------------|
-| 200              | Success             | [PagedList&lt;User&gt;](/model/list.md) |
+| 200              | Success             | [PagedList&lt;User&gt;](/model/user.md) |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md)        |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)        |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md)        |
@@ -53,7 +53,7 @@ GET: /api/management/security/groups/Paper%20Street%20Soap%20Company/users
 
 | HTTP status code | Reason              | Response model                          |
 |:-----------------|:--------------------|:----------------------------------------|
-| 200              | Success             | [PagedList&lt;User&gt;](/model/list.md) |
+| 200              | Success             | [PagedList&lt;User&gt;](/model/user.md) |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md)        |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)        |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md)        |

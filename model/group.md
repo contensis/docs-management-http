@@ -7,17 +7,15 @@ A group resource contains references to users and child groups that form members
 
 ## Properties
 
-| Name         | Type     | Format | Description                                        |
-|--------------|----------|--------|----------------------------------------------------|
-| id | string | GUID | The group identifier as a 128 bit GUID. |
-| name         | string   |        | The unique group name                              |
-| description  | string   |        | A description for the purpose of the group         |
-| type         | string   |        | The type of group - 'sys', 'contensis', 'external' |
-| custom.*     | object   |        | Custom string properties for the group             |
-| adminUserId  | string   | GUID   | The admin user identifier                          |
-| adminGroupId | string   | GUID   | The admin group identifier                         |
-| created  | datetime |        | The group identifier as a 128 bit GUID.            |
-| modified | datetime |        | The group identifier as a 128 bit GUID.            |
+| Name        | Type     | Format | Description                                        |
+|-------------|----------|--------|----------------------------------------------------|
+| id          | string   | GUID   | The group identifier as a 128 bit GUID.            |
+| name        | string   |        | The unique group name                              |
+| description | string   |        | A description for the purpose of the group         |
+| type        | string   |        | The type of group - 'sys', 'contensis', 'external' |
+| custom.*    | object   |        | Custom string properties for the group             |
+| created     | datetime |        | The datetime the group was created.                |
+| modified    | datetime |        | The datetime the group was last modified.          |
 
 ## Example
 
@@ -30,8 +28,6 @@ A group resource contains references to users and child groups that form members
     "custom" : {
         "clientId": "PSSC"
     },
-    "adminUserId": "7c0b186e-94bc-4bde-8a9d-07d2bfa4139d",
-    "adminGroupId": "9c768b00-cc74-4d8d-8cee-bc65b52c152b",
     "created": "2020-01-31 15:26:54",
     "modified": "2020-01-31 15:27:00"    
 }
