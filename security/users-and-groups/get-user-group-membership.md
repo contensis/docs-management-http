@@ -13,7 +13,7 @@ Gets the groups the user is a member of.
 | Name              | Parameter type | Type   | Format | Description                                                           |
 |:------------------|:---------------|:-------|:-------|:----------------------------------------------------------------------|
 | userId            | path           | string | GUID   | The user identifier                                                   |
-| includedInherited | query          | bool   |        | If set to true, the response will include all inherited parent groups |
+| includeInherited | query          | bool   |        | If set to true, the response will include all inherited parent groups |
 
 ### Example request
 
