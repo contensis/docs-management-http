@@ -2,7 +2,7 @@
 description: A user's password can be updated with a call that includes the user's current password.
 ---
 
-# Check a group has a user member
+# Update a user password
 
 A user can update their password with a call that includes a new password and the user's current password. A member of the `System Administrator` group can update the password without the need to provide the existing password.
 
@@ -37,7 +37,7 @@ POST: /api/management/security/users/9bb89380-fd49-41a5-ab2f-fc25e482a251/creden
 
 | HTTP status code | Reason                                      | Response model                   |
 |:-----------------|:--------------------------------------------|:---------------------------------|
-| 200              | OK - user in group                          |                                  |
+| 200              | OK - password updated successfully          |                                  |
 | 403              | Forbidden                                   | [Error](/key-concepts/errors.md) |
 | 404              | NotFound                                    | [Error](/key-concepts/errors.md) |
 | 409              | Conflict - existing password invalid        | [Error](/key-concepts/errors.md) |
