@@ -35,6 +35,7 @@
 * [Update a group](security/users-and-groups/update-a-group.md)
 * [Delete a group](security/users-and-groups/delete-a-group.md)
 * [Get users in group](security/users-and-groups/get-users-in-group.md)
+* [Get user group membership](security/users-and-groups/get-user-group-membership.md)
 * [Get child groups in group](security/users-and-groups/get-groups-in-group.md)
 * [Add user to a group](security/users-and-groups/add-user-to-group.md)
 * [Remove user from a group](security/users-and-groups/remove-user-from-group.md)
