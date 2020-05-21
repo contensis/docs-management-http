@@ -1,7 +1,7 @@
 ---
 description: The entry usage info object contains a subset of entry data to describe an entry. 
 ---
-# Entries
+# Entry usage info
 
 The entry usage info object contains a subset of entry data to describe an entry. This is used when [retrieving a list of entries which link to an entry](/entries/entry-usage.md)
 

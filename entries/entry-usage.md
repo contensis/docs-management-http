@@ -14,6 +14,8 @@ Gets a list of entries which link to the current entry
 | pageIndex | query | number | integer | The index of the page |
 | pageSize | query | number | integer | The number of results per page. The default is 25. |
 | language | query | string | [LanguageCode](/key-concepts/localization.md) | The variation language code. |
+| contentTypeId | query | string |  | The content type identifier. Filters the results to the specified content type only. If this is not specified then entries for all content types will be returned. |
+| q | query | string |  | Filters the results to entries which contain the specified string in either the entry title or the entry description. |
 
 ### Example request
 
