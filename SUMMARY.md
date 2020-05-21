@@ -203,3 +203,9 @@
 * [Access token](/model/access-token.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
+
+## Search
+
+* [Search basics](/search/search-basics.md)
+* [Query operators](/search/query-operators.md)
+* [Query weighting](/search/query-boosting.md)
