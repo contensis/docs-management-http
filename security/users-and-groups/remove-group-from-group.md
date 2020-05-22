@@ -6,7 +6,7 @@ description: A child group can be removed from a group by sending a DELETE reque
 
 A child group can be removed from a group by sending a DELETE request specifying the group identifiers.
 
-<span class="label label--put">PUT</span> /api/management/security/groups/**{groupId}**/childGroups/**{childGroupId}**
+<span class="label label--put">DELETE</span> /api/management/security/groups/**{groupId}**/childGroups/**{childGroupId}**
 
 | Name         | Parameter type | Type   | Format | Description           |
 |:-------------|:---------------|:-------|:-------|:----------------------|
