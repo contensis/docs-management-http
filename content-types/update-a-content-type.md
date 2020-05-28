@@ -1,5 +1,5 @@
 ---
-description: Creates a new content type resource.
+description: Updates an existing content type resource.
 ---
 
 # Update a content type

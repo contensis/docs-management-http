@@ -18,7 +18,7 @@ POST: /api/management/security/groups/
     "type": "contensis",
     "custom" : {
         "clientId": "PSSC"
-    },
+    }
 }
 ```
 
