@@ -21,11 +21,14 @@ A user resource contains profile and workflow details for a user. Extended profi
 | custom.* | object | | Additional custom data stored against the user |
 | credentials | object | | Container for authentication details |
 | credentials.password | string | | The password value when creating a user.<br>The value is never returned in a response |
+| credentials.provider | string | | The security provider details for the user |
+| credentials.provider.type | string | | The security provider type |
+| credentials.provider.name | string | | The security provider name |
 | status | object | | Container for status information |
 | status.active | boolean | | A flag to indicate whether the user is active |
 | status.deactivationReason | string | | Information on why the user was deactivated |
 | status.locked | boolean | | A flag to indicate whether the user is active |
-| status.passwordExpired | boolean | | A flag to indicate whether the user's password has expired |
+| status.passwordResetRequired | boolean | | A flag to indicate whether the user's password requires resetting |
 | status.passwordExpiry | datetime | | If a global policy is set, the date and time when the user's password will expire |
 | created | datetime | | The date and time the user was first created |
 | modified | datetime | | The date and time the user was modified |
