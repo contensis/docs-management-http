@@ -38,3 +38,14 @@ POST: /api/management/projects/movieDb/workflow/definitions/approvalWorkflow/wor
 | 409              | NotLatestVersion            | [Error](/key-concepts/errors.md) |
 | 422              | ValidationError     | [Error](/key-concepts/errors.md)       |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md) |
+
+
+## Validations
+
+| Type | Description |
+|-|-|
+| Project does not exist | A project must exist to be able to publish a workflow definition. |
+| Id missing | The workflow definition id must be defined. |
+| Workflow definition not found | The workflow definition must exist in order to be deleted. |
+| Version not latest | Only the latest version of a workflow definition can be published. |
+| Workflow definition already published | The latest version of the workflow definition has already been published. |
