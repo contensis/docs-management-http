@@ -331,7 +331,54 @@ PUT: /api/management/projects/movieDb/workflow/definitions/approvalWorkflow
 
 | Type | Description |
 |-|-|
-| Id does not exist | The workflow definition must be unique for the project |
-| Project does not exist | The content type must be unique for the project |
+| Project does not exist | A project must exist to be able to update a workflow definition. |
+| Id does not exist | The workflow definition must exist. |
+| Name missing | The workflow definition name must be defined. |
+| Version not latest | Only the latest version of a workflow definition can be updated. |
 
-*TODO - Add validations*
+## Validations for [states](/model/workflow-definitions/state.md)
+
+| Type | Description |
+|-|-|
+| State id missing | The state id must be defined. |
+| State id non-unique | State ids must be unique for the workflow definition. |
+| State id maximum length | A state id cannot be more than 50 characters long. |
+| State id invalid | A state id must begin with a letter and only contain alphanumeric characters, and no spaces. |
+| State name missing | The state name must be defined. |
+
+## Validations for [events](/model/workflow-definitions/event.md)
+
+| Type | Description |
+|-|-|
+| Event id missing | The event id must be defined. |
+| Event id non-unique | Event ids must be unique for the parent state. |
+| Event id maximum length | An event id cannot be more than 50 characters long. |
+| Event  id invalid | An event id must begin with a letter and only contain alphanumeric characters, and no spaces. |
+| Event name missing | The event name must be defined. |
+| Transition to state invalid | The transition to state must be a valid state id. |
+| Group id missing | The group id must be defined. |
+| Group id invalid | The group id must be a valid event group id. |
+| Exit action invalid | If defined, the exit action must be a valid [action](/model/workflow-definitions/action.md). |
+
+
+## Validations for [parameters](/model/workflow-definitions/parameter.md)
+
+| Type | Description |
+|-|-|
+| Parameter id missing | The parameter id must be defined. |
+| Parameter id non-unique | Parameter ids must be unique for the parent event. |
+| Parameter id maximum length | A parameter id cannot be more than 50 characters long. |
+| Parameter id invalid | A parameter id must begin with a letter and only contain alphanumeric characters, and no spaces. |
+| Parameter name missing | The parameter name must be defined. |
+| Validation invalid | If defined, the validation must be a valid [validation](/model/workflow-definitions/validation.md). |
+| Editor invalid | If defined, the editor must be a valid [editor](/model/workflow-definitions/editor.md). |
+
+## Validations for [event groups](/model/workflow-definitions/event-group.md)
+
+| Type | Description |
+|-|-|
+| Event group id missing | The event group id must be defined. |
+| Event group id non-unique | Event group ids must be unique for the workflow definition. |
+| Event group id maximum length | An event group id cannot be more than 50 characters long. |
+| Event group id invalid | An event group id must begin with a letter and only contain alphanumeric characters, and no spaces. |
+| Event group name missing | The event group name must be defined. |
