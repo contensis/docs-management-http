@@ -15,10 +15,8 @@ POST: /api/management/security/users/
 {
     "username": "tdurden",
     "email": "t.turden@fightclub.com",
-    "title": "Mr",
     "firstname": "Tyler",
     "lastname": "Durden",
-    "avatarUrl": "https://mywebsite/users/tyler.jpg",
     "timezone": "America/New_York",
     "language": "en-US",
     "custom": {
