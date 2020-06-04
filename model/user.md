@@ -28,7 +28,6 @@ A user resource contains profile and workflow details for a user. Extended profi
 | status.deactivationReason | string | | Information on why the user was deactivated |
 | status.locked | boolean | | A flag to indicate whether the user is active |
 | status.passwordResetRequired | boolean | | A flag to indicate whether the user's password requires resetting |
-| status.passwordExpiry | datetime | | If a global policy is set, the date and time when the user's password will expire |
 | created | datetime | | The date and time the user was first created |
 | modified | datetime | | The date and time the user was modified |
 | lastLogin | datetime | | The date and time the user last logged-in |
@@ -60,8 +59,7 @@ A user resource contains profile and workflow details for a user. Extended profi
         "active": true,
         "deactivationReason": null,
         "locked": false,
-        "passwordResetRequired": false,
-        "passwordExpiry": "2020-01-31T16:07:51.000Z"
+        "passwordResetRequired": false
     },
     "created": "2020-06-24T16:39:18.000Z",
     "modified": "2020-06-24T16:39:18.000Z",
