@@ -251,7 +251,7 @@ POST: /api/management/projects/{projectId}/entries/search
 
 ## HTTP GET queries
 
-Searches can also be carried out using an HTTP GET query, with the JSON for the individual sections of the query (*where*, *orderBy*, *pageSize*, *pageIndex*, *fields*) specified as querystring parameters.
+Searches can also be carried out using an HTTP GET query, with the JSON for the individual sections of the query (*where*, *orderBy*, *pageSize*, *pageIndex*) specified as querystring parameters.
 
 This example demonstrates a simple search using HTTP GET:
 
@@ -262,7 +262,7 @@ GET: /api/management/projects/{projectId}/entries/search?where=[{"field":"title"
 This example demonstrates a more complex search using all the search options:
 
 ```json
-GET: /api/management/projects/{projectId}/entries/search?where=[{"field":"title","contains":"Batman"},{"field":"runtime","greaterThan":200}]&orderBy=[{"asc":"title"}]&pageSize=10&pageIndex=0&fields=["entryTitle","entryDescription"]
+GET: /api/management/projects/{projectId}/entries/search?where=[{"field":"title","contains":"Batman"},{"field":"runtime","greaterThan":200}]&orderBy=[{"asc":"title"}]&pageSize=10&pageIndex=0
 ```
 
 N.B. The querystring parameters will need to be URL encoded, this has not been done in the above examples for clarity. When URL encoded the examples look like this:
@@ -272,5 +272,5 @@ GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22
 ```
 
 ```json
-GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22%3A%22title%22%2C%22contains%22%3A%22Batman%22%7D%2C%7B%22field%22%3A%22runtime%22%2C%22greaterThan%22%3A200%7D%5D%26orderBy%3D%5B%7B%22asc%22%3A%22title%22%7D%5D%26pageSize%3D10%26pageIndex%3D0%26fields%3D%5B%22entryTitle%22%2C%22entryDescription%22%5D
+GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22%3A%22title%22%2C%22contains%22%3A%22Batman%22%7D%2C%7B%22field%22%3A%22runtime%22%2C%22greaterThan%22%3A200%7D%5D%26orderBy%3D%5B%7B%22asc%22%3A%22title%22%7D%5D%26pageSize%3D10%26pageIndex%3D0
 ```
