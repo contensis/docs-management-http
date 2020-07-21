@@ -265,12 +265,12 @@ This example demonstrates a more complex search using all the search options:
 GET: /api/management/projects/{projectId}/entries/search?where=[{"field":"title","contains":"Batman"},{"field":"runtime","greaterThan":200}]&orderBy=[{"asc":"title"}]&pageSize=10&pageIndex=0
 ```
 
-N.B. The querystring parameters will need to be URL encoded, this has not been done in the above examples for clarity. When URL encoded the examples look like this:
+N.B. The 'where' value of the querystring parameters will need to be URL encoded, this has not been done in the above examples for clarity. When URL encoded the examples look like this:
 
 ```json
 GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22%3A%22title%22%2C%22contains%22%3A%22Batman%22%7D%2C%7B%22field%22%3A%22runtime%22%2C%22greaterThan%22%3A200%7D%5D
 ```
 
 ```json
-GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22%3A%22title%22%2C%22contains%22%3A%22Batman%22%7D%2C%7B%22field%22%3A%22runtime%22%2C%22greaterThan%22%3A200%7D%5D%26orderBy%3D%5B%7B%22asc%22%3A%22title%22%7D%5D%26pageSize%3D10%26pageIndex%3D0
+GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22%3A%22title%22%2C%22contains%22%3A%22Batman%22%7D%2C%7B%22field%22%3A%22runtime%22%2C%22greaterThan%22%3A200%7D%5D%26orderBy%3D%5B%7B%22asc%22%3A%22title%22%7D%5D&pageSize=10&pageIndex=0
 ```
