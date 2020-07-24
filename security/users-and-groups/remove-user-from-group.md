@@ -9,7 +9,7 @@ A user can be removed from a group by sending a DELETE request specifying the gr
 <span class="label label--delete">DELETE</span> /api/management/security/groups/**{groupId}**/users/**{userId}**
 
 | Name    | Parameter type | Type   | Format | Description           |
-|:--------|:---------------|:-------|:-------|:----------------------|
+| :------ | :------------- | :----- | :----- | :-------------------- |
 | groupId | path           | string | GUID   | The group identifier. |
 | userId  | path           | string | GUID   | The user identifier.  |
 
@@ -22,8 +22,9 @@ DELETE: /api/management/security/groups/6254736c-70e1-43b0-b769-f8e0f6359862/use
 ## Response message
 
 | HTTP status code | Reason              | Response model                   |
-|:-----------------|:--------------------|:---------------------------------|
+| :--------------- | :------------------ | :------------------------------- |
 | 204              | No Content          |                                  |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md) |
 | 404              | NotFound            | [Error](/key-concepts/errors.md) |
+| 409              | Conflict            | [Error](/key-concepts/errors.md) |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md) |
