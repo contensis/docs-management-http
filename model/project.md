@@ -28,7 +28,8 @@ A project resource can be retrieved from the Delivery API to understand the lang
         "en-US",
         "fr"
     ],
-    "primaryLanguage": "en-GB"
+    "primaryLanguage": "en-GB",
+    "color": "charcoal"
 }
 
 ```
