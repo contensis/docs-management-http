@@ -14,7 +14,7 @@ A project resource can be retrieved from the Delivery API to understand the lang
 | description | string |  | The description text given to a project |
 | supportedLanguages | string [...] |  | An array of all the languages supported by the project |
 | primaryLanguage | string | [Language code](/localization.md)  | The primary language for the project |
-
+| color | string | [Color](colors) | The color to be displayed in the Contensis UI for the project |
 
 ## Example
 
