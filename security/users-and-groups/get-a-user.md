@@ -2,7 +2,7 @@
 description: A user resource can be retrieved by it's GUID identifier
 ---
 
-## Get a user by id
+# Get a user by id
 
 A user resource can be retrieved by it's GUID identifier.
 
@@ -11,7 +11,7 @@ A user resource can be retrieved by it's GUID identifier.
 ### Parameters
 
 | Name   | Parameter type | Type   | Format | Description          |
-|:-------|:---------------|:-------|:-------|:---------------------|
+| :----- | :------------- | :----- | :----- | :------------------- |
 | userId | path           | string | GUID   | The user identifier. |
 
 ### Example request
@@ -23,7 +23,7 @@ GET: /api/management/security/users/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 ### Response message
 
 | HTTP status code | Reason              | Response model                   |
-|:-----------------|:--------------------|:---------------------------------|
+| :--------------- | :------------------ | :------------------------------- |
 | 200              | Success             | [User](/model/user.md)           |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md) |
 | 404              | NotFound            | [Error](/key-concepts/errors.md) |
@@ -31,7 +31,7 @@ GET: /api/management/security/users/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c
 
 ---
 
-## Get a user by username
+# Get a user by username
 
 A user resource can be retrieved by it's username.
 
@@ -40,7 +40,7 @@ A user resource can be retrieved by it's username.
 ### Parameters
 
 | Name     | Parameter type | Type   | Format | Description               |
-|:---------|:---------------|:-------|:-------|:--------------------------|
+| :------- | :------------- | :----- | :----- | :------------------------ |
 | username | path           | string |        | The username of the user. |
 
 ### Example request
@@ -52,7 +52,7 @@ GET: /api/management/security/users/tdurden
 ### Response message
 
 | HTTP status code | Reason              | Response model                   |
-|:-----------------|:--------------------|:---------------------------------|
+| :--------------- | :------------------ | :------------------------------- |
 | 200              | Success             | [User](/model/user.md)           |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md) |
 | 404              | NotFound            | [Error](/key-concepts/errors.md) |
@@ -60,7 +60,7 @@ GET: /api/management/security/users/tdurden
 
 ---
 
-## Get a user by email
+# Get a user by email
 
 A user resource can be retrieved by it's email address.
 
@@ -69,7 +69,7 @@ A user resource can be retrieved by it's email address.
 ### Parameters
 
 | Name  | Parameter type | Type   | Format | Description            |
-|:------|:---------------|:-------|:-------|:-----------------------|
+| :---- | :------------- | :----- | :----- | :--------------------- |
 | email | path           | string |        | The email of the user. |
 
 ### Example request
@@ -81,7 +81,7 @@ GET: /api/management/security/users/t.durden@fightclub.com
 ### Response message
 
 | HTTP status code | Reason              | Response model                   |
-|:-----------------|:--------------------|:---------------------------------|
+| :--------------- | :------------------ | :------------------------------- |
 | 200              | Success             | [User](/model/user.md)           |
 | 403              | Forbidden           | [Error](/key-concepts/errors.md) |
 | 404              | NotFound            | [Error](/key-concepts/errors.md) |

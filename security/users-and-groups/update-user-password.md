@@ -16,8 +16,16 @@ If the new password does not meet the password policy then a 422 Unprocessable E
 
 ## Example request for user
 
-```json
+```http
 POST: /api/management/security/users/9bb89380-fd49-41a5-ab2f-fc25e482a251/credentials/password
+{
+    "existing": "m4rl451ng3r",
+    "new": "pr0j3ctM4yh3m"
+}
+```
+
+```http
+POST: /api/management/security/users/tdurden/credentials/password
 {
     "existing": "m4rl451ng3r",
     "new": "pr0j3ctM4yh3m"
@@ -26,8 +34,15 @@ POST: /api/management/security/users/9bb89380-fd49-41a5-ab2f-fc25e482a251/creden
 
 ## Example request for a System Adminstrator member
 
-```json
+```http
 POST: /api/management/security/users/9bb89380-fd49-41a5-ab2f-fc25e482a251/credentials/password
+{
+    "new": "pr0j3ctM4yh3m"
+}
+```
+
+```http
+POST: /api/management/security/users/t.durden@fightclub.com/credentials/password
 {
     "new": "pr0j3ctM4yh3m"
 }
@@ -36,7 +51,7 @@ POST: /api/management/security/users/9bb89380-fd49-41a5-ab2f-fc25e482a251/creden
 ## Response message
 
 | HTTP status code | Reason                                      | Response model                   |
-|:-----------------|:--------------------------------------------|:---------------------------------|
+| :--------------- | :------------------------------------------ | :------------------------------- |
 | 200              | OK - password updated successfully          |                                  |
 | 403              | Forbidden                                   | [Error](/key-concepts/errors.md) |
 | 404              | NotFound                                    | [Error](/key-concepts/errors.md) |
