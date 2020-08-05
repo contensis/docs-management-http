@@ -13,7 +13,7 @@ A state that an entry can be assigned to as part of its life cycle.
 | name | object | [Localized value](/key-concepts/localization.md)  | The friendly name given to the state. |
 | entryActions | object[] | [Action](actions) | Actions to be performed on the entry when it enters the current state. |
 | events | object[] | [Event](/model/workflow-definitions/event.md) | A collection of events that can occur to an entry in this state. |
-| color | string | [Color](colors) | The color to be displayed in the Contensis UI for the state. |
+| color | string | [Color](/model/colors) | The color to be displayed in the Contensis UI for the state. |
 | uiEditorView | string | [Ui Editor View](ui-editor-view) | The view used by the Contensis UI to display the entry when it is in this state.  |
 
 ## Example

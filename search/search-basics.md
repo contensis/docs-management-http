@@ -272,5 +272,5 @@ GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22
 ```
 
 ```json
-GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22%3A%22title%22%2C%22contains%22%3A%22Batman%22%7D%2C%7B%22field%22%3A%22runtime%22%2C%22greaterThan%22%3A200%7D%5D%26orderBy%3D%5B%7B%22asc%22%3A%22title%22%7D%5D&pageSize=10&pageIndex=0
+GET: /api/management/projects/{projectId}/entries/search?where=%5B%7B%22field%22%3A%22title%22%2C%22contains%22%3A%22Batman%22%7D%2C%7B%22field%22%3A%22runtime%22%2C%22greaterThan%22%3A200%7D%5D&orderBy=[{"asc":"title"}]&pageSize=10&pageIndex=0
 ```
