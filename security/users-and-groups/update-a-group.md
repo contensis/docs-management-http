@@ -8,12 +8,11 @@ Updating a group can be done by PUT'ing group details resource to the group reso
 
 <span class="label label--put">PUT</span> /api/management/security/groups/**{groupIdentifier}**
 
-### Parameters
+## Parameters
 
-| Name            | Parameter type | Type   | Format | Description                       |
-| :-------------- | :------------- | :----- | :----- | :-------------------------------- |
-| groupIdentifier | path           | string | GUID   | The group id as the identifier.   |
-| groupIdentifier | path           |        | Name   | The group name as the identifier. |
+| Name            | Parameter type | Type                                        | Description                  |
+| :-------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
 
 ## Example request
 

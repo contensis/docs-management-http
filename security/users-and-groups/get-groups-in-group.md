@@ -2,25 +2,29 @@
 description: Gets the groups as direct child members of the group
 ---
 
-## Get child group membership by group id
+# Get child group membership by group id
 
 Gets the direct child group members of the group
 
-<span class="label label--get">GET</span> /api/management/security/groups/**{groupId}**/groups
+<span class="label label--get">GET</span> /api/management/security/groups/**{groupIdentifier}**/groups
 
-### Parameters
+## Parameters
 
-| Name    | Parameter type | Type   | Format | Description          |
-| :------ | :------------- | :----- | :----- | :------------------- |
-| groupId | path           | string | GUID   | The group identifier |
+| Name            | Parameter type | Type                                        | Description                  |
+| :-------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
 
-### Example request
+## Example requests
 
 ```http
 GET: /api/management/security/groups/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c/groups
 ```
 
-### Response message
+```http
+GET: /api/management/security/groups/Paper%20Street%20Soap%20Company/groups
+```
+
+## Response message
 
 | HTTP status code | Reason              | Response model                           |
 | :--------------- | :------------------ | :--------------------------------------- |
@@ -28,32 +32,3 @@ GET: /api/management/security/groups/82f73a9b-2a13-4d63-bcc1-e8ee5047b01c/groups
 | 403              | Forbidden           | [Error](/key-concepts/errors.md)         |
 | 404              | NotFound            | [Error](/key-concepts/errors.md)         |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md)         |
-
----
-
-## Get child group membership by group name
-
-Gets the direct child group members of the group
-
-<Span class="label label--get">GET</span> /api/management/security/groups/**{groupName}**/groups
-
-### Parameters
-
-| Name      | Parameter type | Type   | Format | Description    |
-| :-------- | :------------- | :----- | :----- | :------------- |
-| groupName | path           | string |        | The group name |
-
-### Example request
-
-```http
-GET: /api/management/security/groups/Paper%20Street%20Soap%20Company/groups
-```
-
-### Response message
-
-| HTTP status code | Reason              | Response model                          |
-| :--------------- | :------------------ | :-------------------------------------- |
-| 200              | Success             | [PagedList&lt;User&gt;](/model/list.md) |
-| 403              | Forbidden           | [Error](/key-concepts/errors.md)        |
-| 404              | NotFound            | [Error](/key-concepts/errors.md)        |
-| 500              | InternalServerError | [Error](/key-concepts/errors.md)        |

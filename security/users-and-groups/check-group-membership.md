@@ -6,17 +6,14 @@ description: Checks users membership within a group
 
 A group can be checked to see if it has a user member using the following HEAD request. A 204 HTTP status response confirms membership, whereas a 404 HTTP status marks no membership.
 
-If an invalid value for userId or any groupId is passed then a 400 HTTP status response will be returned.
+If an invalid value for userIdentifier or any groupIdentifier is passed then a 400 HTTP status response will be returned.
 
 <span class="label label--head">HEAD</span> /api/management/security/groups/**{groupIdentifier}**/users/**{userIdentifier}**
 
-| Name            | Parameter type | Type   | Format   | Description                       |
-| :-------------- | :------------- | :----- | :------- | :-------------------------------- |
-| groupIdentifier | path           | string | GUID     | The group id as the identifier.   |
-| groupIdentifier | path           |        | Name     | The group name as the identifier. |
-| userIdentifier  | path           | string | GUID     | The user id as the identifier.    |
-| userIdentifier  | path           |        | Username | The username as the identifier.   |
-| userIdentifier  | path           |        | Email    | The user email as the identifier. |
+| Name            | Parameter type | Type                                        | Description                  |
+| :-------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
+| userIdentifier  | path           | [UserIdentifier](/security/identifiers.md)  | One of the user identifiers  |
 
 ## Remarks
 
@@ -55,17 +52,16 @@ HEAD: /api/management/security/groups/Paper%20Street%20Soap%20Company/users/3d06
 
 A user can be checked to see if it is a member of a specific group, or groups, using the following HEAD request. A 204 HTTP status response confirms membership, whereas a 404 HTTP status marks no membership.
 
-If an invalid value for userId or any groupId is passed then a 400 HTTP status response will be returned.
+Multiple groups can be specified using a CSV of [GroupIdentifiers](/security/identifiers.md).
 
-<span class="label label--head">HEAD</span> /api/management/security/users/**{userIdentifier}**/groups/**{groupIdentifier}**[,...n]
+If an invalid value for userIdentifier or any groupIdentifier is passed then a 400 HTTP status response will be returned.
 
-| Name            | Parameter type | Type   | Format   | Description                       |
-| :-------------- | :------------- | :----- | :------- | :-------------------------------- |
-| groupIdentifier | path           | string | GUID     | The group id as the identifier.   |
-| groupIdentifier | path           |        | Name     | The group name as the identifier. |
-| userIdentifier  | path           | string | GUID     | The user id as the identifier.    |
-| userIdentifier  | path           |        | Username | The username as the identifier.   |
-| userIdentifier  | path           |        | Email    | The user email as the identifier. |
+<span class="label label--head">HEAD</span> /api/management/security/users/**{userIdentifier}**/groups/**{groupIdentifier}**[ ,...n ]
+
+| Name            | Parameter type | Type                                        | Description                  |
+| :-------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
+| userIdentifier  | path           | [UserIdentifier](/security/identifiers.md)  | One of the user identifiers  |
 
 ## Remarks
 
@@ -109,6 +105,10 @@ HEAD: /api/management/security/users/tdurden/groups/9bb89380-fd49-41a5-ab2f-fc25
 
 ```http
 HEAD: /api/management/security/users/t.durden@fightclub.com/groups/Paper%20Street%20Soap%20Company,Liposuction%20Technicians
+```
+
+```http
+HEAD: /api/management/security/users/t.durden@fightclub.com/groups/0ccf6d37-56a2-4a0d-bda1-efc377369232,Liposuction%20Technicians
 ```
 
 ## Response message

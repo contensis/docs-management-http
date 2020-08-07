@@ -8,12 +8,11 @@ Deleting a group can be done by sending a DELETE request to the group resource l
 
 <span class="label label--delete">DELETE</span> /api/management/security/groups/**{groupIdentifier}**
 
-### Parameters
+## Parameters
 
-| Name            | Parameter type | Type   | Format | Description                       |
-| :-------------- | :------------- | :----- | :----- | :-------------------------------- |
-| groupIdentifier | path           | string | GUID   | The group id as the identifier.   |
-| groupIdentifier | path           |        | Name   | The group name as the identifier. |
+| Name            | Parameter type | Type                                        | Description                  |
+| :-------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
 
 ## Example requests
 

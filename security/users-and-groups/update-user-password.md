@@ -6,13 +6,19 @@ description: A user's password can be updated with a call that includes the user
 
 A user can update their password with a call that includes a new password and the user's current password. A member of the `System Administrator` group can update the password without the need to provide the existing password.
 
-<span class="label label--post">POST</span> /api/management/security/users/**{userId}**/credentials/password
+<span class="label label--post">POST</span> /api/management/security/users/**{userIdentifier}**/credentials/password
+
+## Parameters
+
+| Name           | Parameter type | Type                                       | Description                 |
+| :------------- | :------------- | :----------------------------------------- | :-------------------------- |
+| userIdentifier | path           | [UserIdentifier](/security/identifiers.md) | One of the user identifiers |
 
 ## Remarks
 
 If the existing password is wrong then a 409 Conflict status is returned.
 
-If the new password does not meet the password policy then a 422 Unprocessable Entity status is returned.
+If the new password does not meet the [password policy](/security/password-policy.md) then a 422 Unprocessable Entity status is returned.
 
 ## Example request for user
 

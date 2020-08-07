@@ -4,16 +4,14 @@ description: A child group can be added to a group by sending a PUT request spec
 
 # Add child group to a group
 
-A child group can be added to a group by sending a PUT request specifying the group identifiers.
+A child group can be added to a group by sending a PUT request specifying the [group identifiers](/security/identifiers.md).
 
 <span class="label label--put">PUT</span> /api/management/security/groups/**{groupIdentifier}**/childGroups/**{childGroupIdentifier}**
 
-| Name                 | Parameter type | Type   | Format | Description                             |
-| :------------------- | :------------- | :----- | :----- | :-------------------------------------- |
-| groupIdentifier      | path           | string | GUID   | The group id as the identifier.         |
-|                      |                |        | Name   | The group name as the identifier.       |
-| childGroupIdentifier | path           | string | GUID   | The child group id as the identifier.   |
-|                      |                |        | Name   | The child group name as the identifier. |
+| Name                 | Parameter type | Type                                        | Description                  |
+| :------------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier      | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
+| childGroupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
 
 ## Remarks
 

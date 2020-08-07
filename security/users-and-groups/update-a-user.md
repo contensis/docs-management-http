@@ -10,11 +10,9 @@ Updating a user can be done by PUT'ing an updated version of the user profile re
 
 ## Parameters
 
-| Name           | Parameter type | Type   | Format   | Description                       |
-| :------------- | :------------- | :----- | :------- | :-------------------------------- |
-| userIdentifier | path           | string | GUID     | The user id as the identifier.    |
-| userIdentifier | path           |        | Username | The username as the identifier.   |
-| userIdentifier | path           |        | Email    | The user email as the identifier. |
+| Name           | Parameter type | Type                                       | Description                 |
+| :------------- | :------------- | :----------------------------------------- | :-------------------------- |
+| userIdentifier | path           | [UserIdentifier](/security/identifiers.md) | One of the user identifiers |
 
 ## Remarks
 

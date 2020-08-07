@@ -4,17 +4,14 @@ description: A user can be added to a group by sending a PUT request specifying 
 
 # Add user to a group
 
-A user can be added to a group by sending a PUT request specifying the group and user identifiers.
+A user can be added to a group by sending a PUT request specifying the [group and user identifiers](/security/identifiers.md).
 
 <span class="label label--put">PUT</span> /api/management/security/groups/**{groupIdentifier}**/users/**{userIdentifier}**
 
-| Name            | Parameter type | Type   | Format   | Description                       |
-| :-------------- | :------------- | :----- | :------- | :-------------------------------- |
-| groupIdentifier | path           | string | GUID     | The group id as the identifier.   |
-| groupIdentifier | path           |        | Name     | The group name as the identifier. |
-| userIdentifier  | path           | string | GUID     | The user id as the identifier.    |
-| userIdentifier  | path           |        | Username | The username as the identifier.   |
-| userIdentifier  | path           |        | Email    | The user email as the identifier. |
+| Name            | Parameter type | Type                                        | Description                  |
+| :-------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| userIdentifier  | path           | [UserIdentifier](/security/identifiers.md)  | One of the user identifiers  |
+| groupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
 
 ## Example requests
 
@@ -51,14 +48,14 @@ PUT: /api/management/security/groups/Paper%20Street%20Soap%20Company/users/t.dur
 
 # Add many users to a group
 
-Multiple users can be added to a group in bulk by sending a POST request to the group's users collection with the user identifiers as an array in the body.
+Multiple users can be added to a group in bulk by sending a POST request to the group's users collection with the user ids as an array in the body.
 
 <span class="label label--post">POST</span> /api/management/security/groups/**{groupIdentifier}**/users/
 
-| Name            | Parameter type | Type   | Format | Description                       |
-| :-------------- | :------------- | :----- | :----- | :-------------------------------- |
-| groupIdentifier | path           | string | GUID   | The group id as the identifier.   |
-| groupIdentifier | path           |        | Name   | The group name as the identifier. |
+| Name            | Parameter type | Type                                        | Description                  |
+| :-------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
+| userIds         | body           | Array\<GUID>                                | An array of user ids         |
 
 ## Example request
 

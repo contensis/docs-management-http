@@ -8,12 +8,10 @@ A child group can be removed from a group by sending a DELETE request specifying
 
 <span class="label label--put">DELETE</span> /api/management/security/groups/**{groupIdentifier}**/childGroups/**{childGroupIdentifier}**
 
-| Name                 | Parameter type | Type   | Format | Description                              |
-| :------------------- | :------------- | :----- | :----- | :--------------------------------------- |
-| groupIdentifier      | path           | string | GUID   | The parent group id as the identifier.   |
-| groupIdentifier      | path           |        | Name   | The parent group name as the identifier. |
-| childGroupIdentifier | path           | string | GUID   | The child group id as the identifier.    |
-| childGroupIdentifier | path           |        | Name   | The child group name as the identifier.  |
+| Name                 | Parameter type | Type                                        | Description                  |
+| :------------------- | :------------- | :------------------------------------------ | :--------------------------- |
+| groupIdentifier      | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
+| childGroupIdentifier | path           | [GroupIdentifier](/security/identifiers.md) | One of the group identifiers |
 
 ## Example requests
 
