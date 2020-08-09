@@ -18,6 +18,8 @@
 
 * [Authentication](security/authentication.md)
 * [Authorization](security/authorization.md)
+* [Identifiers](security/identifiers.md)
+* [Password policy](security/password-policy.md)
 * [Scopes](security/scopes.md)
 
 * Users and groups
