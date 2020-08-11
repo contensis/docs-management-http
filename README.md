@@ -82,3 +82,14 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Overview](/permissions/overview.md) | |
 | [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/**{resourceType}**/**{resourceId?}**?userId=**{userId}** |
 | [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/**{resourceType}**/**{resourceId?}**/actions/**{action}**?userId=**{userId}** |
+
+### Workflow definitions
+|||
+|-|-|
+|[Get a workflow definition](/workflow-definitions/get-a-workflow-definition.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/workflow/definitions/**{workflowDefinitionId}** |
+|[Create a workflow definition](/workflow-definitions/create-a-workflow-definition.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/workflow/definitions/ |
+|[Update a workflow definition](/workflow-definitions/update-a-workflow-definition.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/workflow/definitions/**{workflowDefinitionId}** |
+|[List workflow definitions](/workflow-definitions/list-workflow-definition.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/workflow/definitions/ |
+|[Delete a workflow definition](/workflow-definitions/delete-a-workflow-definition.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/workflow/definitions/**{workflowDefinitionId}** |
+
+

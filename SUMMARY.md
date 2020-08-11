@@ -101,7 +101,7 @@
 * [Delete a component](/components/delete-a-component.md)
 * [Publish a component](/components/invoking-workflow.md)
     * [Add a component to a content type](/components/add-a-component-to-a-content-type.md)
-* [Field validations](/content-types/field-validations.md)git 
+* [Field validations](/content-types/field-validations.md)
 
 ***
 * Entries
@@ -122,6 +122,16 @@
 
 * [Uploading asset files](/assets/upload-asset-file.md)
 * [Managing assets](/assets/managing-assets.md)
+
+***
+
+* Workflow
+
+* [Get a workflow definition](/workflow-definitions/get-a-workflow-definition.md)
+* [Create a workflow definition](/workflow-definitions/create-a-workflow-definition.md)
+* [Update a workflow definition](/workflow-definitions/update-a-workflow-definition.md)
+* [List workflow definitions](/workflow-definitions/list-workflow-definition.md)
+* [Delete a workflow definition](/workflow-definitions/delete-a-workflow-definition.md)
 
 ***
 
@@ -203,6 +213,20 @@
 * [Proxy](/model/proxy.md)
 * [API key](/model/api-key.md)
 * [Access token](/model/access-token.md)
+
+***
+
+* Workflow definition models
+
+* [Workflow definition](/model/workflow-definition.md)
+* [State](/model/workflow-definitions/state.md)
+* [Event](/model/workflow-definitions/event.md)
+* [Event group](/model/workflow-definitions/event-group.md)
+* [Action](/model/workflow-definitions/actions.md)
+* [Editor](/model/workflow-definitions/editor.md)
+* [Parameter](/model/workflow-definitions/parameter.md)
+* [Validation](/model/workflow-definitions/validation.md)
+* [UI editor view](/model/workflow-definitions/ui-editor-view.md)
 
 <!-- * [AssetFile](/model/assetfile.md) -->
 
