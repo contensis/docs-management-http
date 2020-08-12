@@ -91,5 +91,6 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 |[Update a workflow definition](/workflow-definitions/update-a-workflow-definition.md) | <span class="label label--put">PUT</span> /api/management/projects/**{projectId}**/workflow/definitions/**{workflowDefinitionId}** |
 |[List workflow definitions](/workflow-definitions/list-workflow-definition.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/workflow/definitions/ |
 |[Delete a workflow definition](/workflow-definitions/delete-a-workflow-definition.md) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/workflow/definitions/**{workflowDefinitionId}** |
+|[Publish a workflow definition](/workflow-definitions/invoking-workflow.md) | <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/workflow/definitions/**{workflowDefinitionId}**/workflow/events|
 
 

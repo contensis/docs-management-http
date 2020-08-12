@@ -7,6 +7,8 @@ Creates a new workflow definition resource.
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/workflow/definitions/
 
+*N.B.* A custom workflow definition must be [published](/workflow-definitions/invoking-workflow.md) before it can be assigned to a content type.
+
 ## Parameters
 
 | Name | Parameter type | Type | Format | Description |

@@ -3,6 +3,8 @@ description: Workflow events can be invoked for a workflow definition using the 
 ---
 # Invoking workflow for a workflow definition
 
+A custom workflow definition must be published before it can be assigned to a content type.
+
 Workflow events can be invoked for a workflow definition using the following POST request.
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/workflow/definitions/**{workflowDefinitionId}**/workflow/events
@@ -21,8 +23,7 @@ POST: /api/management/projects/movieDb/workflow/definitions/approvalWorkflow/wor
 
 ```json
 {
-    "language": "en-GB",
-    "version": "2.0",
+    "version": "0.1",
     "event": "publish"
 }
 ```

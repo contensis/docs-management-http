@@ -132,6 +132,7 @@
 * [Update a workflow definition](/workflow-definitions/update-a-workflow-definition.md)
 * [List workflow definitions](/workflow-definitions/list-workflow-definition.md)
 * [Delete a workflow definition](/workflow-definitions/delete-a-workflow-definition.md)
+* [Publish a workflow definition](/workflow-definitions/invoking-workflow.md)
 
 ***
 
