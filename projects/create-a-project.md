@@ -73,6 +73,10 @@ A project must have a primary language defined. If you attempt to create a proje
 }
 ```
 
+#### Maximum id length
+
+The id of the project cannot be longer than 25 characters.
+
 ### Remarks
 
 If the *primaryLanguage* value is not included in the *supportedLanguages* array then it will automatically be added by the service when the project is created.
