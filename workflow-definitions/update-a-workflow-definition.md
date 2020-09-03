@@ -342,7 +342,7 @@ PUT: /api/management/projects/movieDb/workflow/definitions/approvalWorkflow
 |-|-|
 | State id missing | The state id must be defined. |
 | State id non-unique | State ids must be unique for the workflow definition. |
-| State id maximum length | A state id cannot be more than 50 characters long. |
+| State id maximum length | A state id cannot be more than 30 characters long. |
 | State id invalid | A state id must begin with a letter and only contain alphanumeric characters, and no spaces. |
 | State name missing | The state name must be defined. |
 
@@ -352,7 +352,7 @@ PUT: /api/management/projects/movieDb/workflow/definitions/approvalWorkflow
 |-|-|
 | Event id missing | The event id must be defined. |
 | Event id non-unique | Event ids must be unique for the parent state. |
-| Event id maximum length | An event id cannot be more than 50 characters long. |
+| Event id maximum length | An event id cannot be more than 30 characters long. |
 | Event  id invalid | An event id must begin with a letter and only contain alphanumeric characters, and no spaces. |
 | Event name missing | The event name must be defined. |
 | Transition to state invalid | The transition to state must be a valid state id. |

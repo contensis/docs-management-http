@@ -334,7 +334,7 @@ POST: /api/management/projects/movieDb/workflow/definitions/
 | Project does not exist | A project must exist to be able to create a workflow definition. |
 | Id missing | The workflow definition id must be defined. |
 | Non-unique id | The workflow definition id must be unique for the project. |
-| Maximum id length | The workflow definition id cannot be more than 50 characters long. |
+| Maximum id length | The workflow definition id cannot be more than 25 characters long. |
 | Invalid id | The workflow definition id must begin with a letter and only contain alphanumeric characters. |
 | Name missing | The workflow definition name must be defined. |
 
@@ -344,7 +344,7 @@ POST: /api/management/projects/movieDb/workflow/definitions/
 |-|-|
 | State id missing | The state id must be defined. |
 | State id non-unique | State ids must be unique for the workflow definition. |
-| State id maximum length | A state id cannot be more than 50 characters long. |
+| State id maximum length | A state id cannot be more than 30 characters long. |
 | State id invalid | A state id must begin with a letter and only contain alphanumeric characters, and no spaces. |
 | State name missing | The state name must be defined. |
 
@@ -354,7 +354,7 @@ POST: /api/management/projects/movieDb/workflow/definitions/
 |-|-|
 | Event id missing | The event id must be defined. |
 | Event id non-unique | Event ids must be unique for the parent state. |
-| Event id maximum length | An event id cannot be more than 50 characters long. |
+| Event id maximum length | An event id cannot be more than 30 characters long. |
 | Event  id invalid | An event id must begin with a letter and only contain alphanumeric characters, and no spaces. |
 | Event name missing | The event name must be defined. |
 | Transition to state invalid | The transition to state must be a valid state id. |
