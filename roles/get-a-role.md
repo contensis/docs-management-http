@@ -1,6 +1,6 @@
 ## Get a role
 
-Gets a role by its Id.
+Gets a [role](/model/role.md) by its Id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**
 

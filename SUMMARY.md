@@ -67,6 +67,8 @@
 * [Overview](/permissions/overview.md)
 * [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md)
 * [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md)
+* [Get permissions for webhook subscriptions](/permissions/get-permissions-for-webhook-subscriptions.md)
+* [Get authorization for a webhook subscription action](/permissions/get-authorization-for-a-webhook-subscription-action.md)
 
 ***
 

@@ -1,6 +1,6 @@
 ## Create a Role
 
-Creates a new role.
+Creates a new [role](/model/role.md).
 
 <span class="label label--post">POST</span> /api/management/projects/**{projectId}**/security/roles
 
@@ -31,7 +31,15 @@ POST: /api/management/projects/movieDb/security/roles/
                 "actions": ["sys.update", "awaitingApproval.revoke"]
             }
         ],
-        "contentTypes": [ ]
+        "assets": [{
+                "id": "*",
+                "languages": ["*"],
+                "actions": ["contensisEntryBasic.*"]
+            }
+        ],
+        "webhookSubscription": {
+            "actions": [ "create", "view" ]
+        }
     },
     "assignments": {
         "users": [ "a.user" ],

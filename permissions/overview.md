@@ -1,6 +1,6 @@
 # Permissions overview
 
-There are three system defined permissions that can be assigned, these are:
+There are three system defined permissions for entries that can be assigned, these are:
 
 |            |                                                                                                                                  |
 |------------|----------------------------------------------------------------------------------------------------------------------------------|

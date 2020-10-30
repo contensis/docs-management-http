@@ -82,6 +82,8 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 | [Overview](/permissions/overview.md) | |
 | [Get permissions for a resource](/permissions/get-permissions-for-a-resource.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/**{resourceType}**/**{resourceId?}**?userId=**{userId}** |
 | [Get authorization for a resource action](/permissions/get-authorization-for-a-resource-action.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/**{resourceType}**/**{resourceId?}**/actions/**{action}**?userId=**{userId}** |
+| [Get permissions for webhook subscriptions](/permissions/get-permissions-for-webhook-subscriptions.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/webhookSubscriptions?userId=**{userId}** |
+| [Get authorization for a webhook subscription action](/permissions/get-authorization-for-a-webhook-subscription-action.md) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/permissions/webhookSubscriptions/actions/**{action}**?userId=**{userId}** |
 
 ### Workflow definitions
 |||

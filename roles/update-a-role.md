@@ -1,6 +1,6 @@
 ## Update a Role
 
-Updates an existing role.
+Updates an existing [role](/model/role.md).
 
 <span class="label label--post">PUT</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**
 
@@ -32,7 +32,15 @@ PUT: /api/management/projects/movieDb/security/roles/71b48d24-7f65-457d-bd51-cba
                 "actions": ["draft.*", "awaitingApproval.revoke"]
             }
         ],
-        "contentTypes": [ ]
+        "assets": [{
+                "id": "*",
+                "languages": ["*"],
+                "actions": ["contensisEntryBasic.*"]
+            }
+        ],
+        "webhookSubscription": {
+            "actions": [ "create", "view" ]
+        }
     },
     "assignments": {
         "users": [ "a.user" ],

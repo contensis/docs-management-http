@@ -1,6 +1,6 @@
 ## Delete a role
 
-Deletes a role by its Id.
+Deletes a [role](/model/role.md) by its Id.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/security/roles/**{roleId}**
 

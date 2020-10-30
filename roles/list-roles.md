@@ -1,5 +1,5 @@
 ## List roles
-List roles by project Id.
+List [roles](/model/role.md) by project Id.
 
 <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/security/roles
 
