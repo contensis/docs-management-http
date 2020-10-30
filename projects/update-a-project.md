@@ -34,6 +34,12 @@ PUT: /api/management/projects/movieDb
 | 422              | ValidationError     | [Error](/key-concepts/errors.md) |
 | 500              | InternalServerError | [Error](/key-concepts/errors.md) |
 
+### Validations
+
+#### Maximum name length
+
+The name of the project cannot be longer than 40 characters.
+
 ### Remarks
 
 It is not possible to update the Id once you've created a project.

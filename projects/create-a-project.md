@@ -75,7 +75,11 @@ A project must have a primary language defined. If you attempt to create a proje
 
 #### Maximum id length
 
-The id of the project cannot be longer than 25 characters.
+The id of the project cannot be longer than 40 characters.
+
+#### Maximum name length
+
+The name of the project cannot be longer than 40 characters.
 
 ### Remarks
 
