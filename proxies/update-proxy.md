@@ -29,10 +29,12 @@ PUT: /api/management/projects/movieDb/proxies/ec0b25dc-0c46-4a90-8610-c0886c51b7
     "name": "Thrillers section",
     "description": "Proxies current website thrillers section",
     "endpoints": {
+        "endpoints": {
         "*": {
-            "uri": "https://10.32.187.17:443/movies/thrillers",
+            "server": "10.65.18.4",
+            "ssl": true,
             "headers": {
-                "host": "www.moviedb.com",
+                "host": "www.moviedb-oldsite.com"
             }
         }
     },

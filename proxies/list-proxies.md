@@ -9,9 +9,10 @@ Lists proxy resources for a project.
 
 ## Parameters
 
-| Name      | Parameter type | Type   | Format | Description                                                                                            |
-|-----------|:---------------|:-------|:-------|:-------------------------------------------------------------------------------------------------------|
-| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
+| Name          | Parameter type | Type   | Format | Description                                                                                            |
+|---------------|:---------------|:-------|:-------|:-------------------------------------------------------------------------------------------------------|
+| projectId     | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
+| versionStatus | query          | string |        | The version status, either published or latest. The default is latest.                                 |
 
 
 ### Example request

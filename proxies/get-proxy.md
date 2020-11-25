@@ -9,10 +9,11 @@ Gets an existing proxy resource.
 
 ## Parameters
 
-| Name      | Parameter type | Type   | Format | Description                                                                                            |
-|-----------|:---------------|:-------|:-------|:-------------------------------------------------------------------------------------------------------|
-| projectId | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
-| proxyId   | path           | string | GUID   | The proxy identifier                                                                                   |
+| Name          | Parameter type | Type   | Format | Description                                                                                            |
+|---------------|:---------------|:-------|:-------|:-------------------------------------------------------------------------------------------------------|
+| projectId     | path           | string |        | The project identifier, e.g. "movieDb". Found in the project overview screen of the management console |
+| proxyId       | path           | string | GUID   | The proxy identifier                                                                                   |
+| versionStatus | query          | string |        | The version status, either published or latest. The default is latest.                                 |
 
 ### Remarks
 

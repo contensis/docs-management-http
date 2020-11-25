@@ -21,16 +21,34 @@ Creates a new proxy resource.
 POST: /api/management/projects/website/proxies
 
 {
+    "id": "7622b5f7-e245-4226-9e64-3aeafa930eae",
     "projectId": "movieDb",
     "name": "Thrillers section",
     "description": "Proxies current website thrillers section",
     "endpoints": {
         "*": {
-            "uri": "https://10.32.187.17:443/movies/thrillers",
+            "server": "10.65.18.4",
+            "ssl": true,
             "headers": {
-                "host": "www.moviedb.com",
+                "host": "www.moviedb-oldsite.com"
+            }
+        },
+        "fr-FR": {
+            "server": "10.65.18.4",
+            "ssl": true,
+            "headers": {
+                "host": "www.moviedb.fr"
             }
         }
+    },
+    "version": {
+        "versionNo": "2.0",
+        "created": "2020-02-13T10:15:12.1973648+01:00",
+        "createdBy": "t.durden",
+        "modified": "2020-02-13T10:15:12.1973648+01:00",
+        "modifiedBy": "t.durden",
+        "published": "2020-02-13T10:15:12.1973648+01:00",
+        "publishedBy": "t.durden"
     }
 }
 ```

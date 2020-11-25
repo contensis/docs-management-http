@@ -9,22 +9,23 @@ A proxy configuration
 
 ### Proxy
 
-| Name        | Type   | Format               | Description                                |
-|-------------|--------|----------------------|--------------------------------------------|
-| id          | string |                      | The proxy identifier as a 128 bit GUID.    |
-| projectId   | string |                      | The project api identifier                 |
-| name        | string |                      | The proxy name                             |
-| description | string |                      | An optional description for the proxy      |
-| endpoints   | object | [Proxy endpoint](#proxy-endpoint)             | Endpoint configurations keyed by language  |
-| version     | object | [version](./version) | The version details for the proxy resource |
+| Name        | Type   | Format                            | Description                                |
+|-------------|--------|-----------------------------------|--------------------------------------------|
+| id          | string |                                   | The proxy identifier as a 128 bit GUID.    |
+| projectId   | string |                                   | The project api identifier                 |
+| name        | string |                                   | The proxy name                             |
+| description | string |                                   | An optional description for the proxy      |
+| endpoints   | object | [Proxy endpoint](#proxy-endpoint) | Endpoint configurations keyed by language  |
+| version     | object | [version](./version)              | The version details for the proxy resource |
 
 
 ### Proxy endpoint
 
-| Name    | Type   | Format | Description                                                     |
-|---------|--------|--------|-----------------------------------------------------------------|
-| uri     | string | URI    | The full URI to the server endpoint, which may include the path |
-| headers | object |        | Header key-value pairs that should be added with each request   |
+| Name    | Type   | Format | Description                                                   |
+|---------|--------|--------|---------------------------------------------------------------|
+| server  | string |        | The hostname of the server to proxy to                        |
+| ssl     | bool   |        | Specify whether the proxied server communication uses SSL/TLS |
+| headers | object |        | Header key-value pairs that should be added with each request |
 
 ## Remarks
 
@@ -42,15 +43,17 @@ If no host is provided for a URI that includes the domain, then the host header 
     "description": "Proxies current website thrillers section",
     "endpoints": {
         "*": {
-            "uri": "https://10.32.187.17:443/{language}/movies/thrillers",
+            "server": "10.65.18.4",
+            "ssl": true,
             "headers": {
-                "host": "www.moviedb.com",
+                "host": "www.moviedb-oldsite.com"
             }
         },
         "fr-FR": {
-            "uri": "https://www.moviedb.com/movies/le-thrillers",
+            "server": "10.65.18.4",
+            "ssl": true,
             "headers": {
-                "host": "www.moviedb.com" 
+                "host": "www.moviedb.fr"
             }
         }
     },
